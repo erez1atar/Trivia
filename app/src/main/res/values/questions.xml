@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="questionA1">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA2">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA3">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA4">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA5">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA6">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA7">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA8">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA9">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questionA10">
+
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ד</item>
+    </array>
+
+    <array name="questions">
+        <item>@array/questionA1</item>
+        <item>@array/questionA2</item>
+        <item>@array/questionA3</item>
+        <item>@array/questionA4</item>
+        <item>@array/questionA5</item>
+        <item>@array/questionA6</item>
+        <item>@array/questionA7</item>
+        <item>@array/questionA8</item>
+        <item>@array/questionA9</item>
+        <item>@array/questionA10</item>
+
+    </array>
+</resources>

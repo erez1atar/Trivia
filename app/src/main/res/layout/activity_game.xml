@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="games.android.trivia.GameActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/frame_top_bar">
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@drawable/question_style"
+        android:id="@+id/question"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@drawable/button_style"
+        android:id="@+id/answer_1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@drawable/button_style"
+        android:id="@+id/answer_2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@drawable/button_style"
+        android:id="@+id/answer_3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@drawable/button_style"
+        android:id="@+id/answer_4"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/frame_bottom_bar">
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
