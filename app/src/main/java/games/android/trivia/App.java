@@ -10,9 +10,17 @@ import android.provider.CalendarContract;
 
 public class App extends Application {
     private static App Instance = null;
+    private static ResourcesManager resourcesManager;
     public App()
     {
         Instance = this;
+    }
+
+    public static ResourcesManager getResourcesManager() {
+        if(resourcesManager ==  null){
+            resourcesManager = new ResourcesManager();
+        }
+        return resourcesManager;
     }
 
     public static App getInstance() {

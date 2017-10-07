@@ -10,12 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import games.android.trivia.App;
 import games.android.trivia.R;
 
 public class BottomBar extends Fragment {
     private TextView rangeTxt = null;
+    private TextView prize = null;
     private String format = "%d  -  %d";
     private BottomBarListener listener = null;
+    private TextView StageIdTxt = null;
 
     public BottomBar() {
         // Required empty public constructor
@@ -42,11 +45,19 @@ public class BottomBar extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         this.rangeTxt = (TextView) getView().findViewById(R.id.bottom_bar_range);
+        this.prize = (TextView)getView().findViewById(R.id.bottom_bar_prize) ;
+        this.StageIdTxt = (TextView)getView().findViewById(R.id.bottom_bar_stage_id);
+        this.prize.setTypeface(App.getResourcesManager().getNumbersFont());
         this.listener.onBottomBarCreatedFinished();
     }
 
-    public void showRange(int min, int max) {
+    public void showRange(int min, int max, int id) {
         this.rangeTxt.setText(String.format(this.format,min,max));
+        this.StageIdTxt.setText(String.valueOf(id));
+    }
+
+    public void setPrize(String prize) {
+        this.prize.setText(prize);
     }
 
     public void setListener(BottomBarListener listener) {

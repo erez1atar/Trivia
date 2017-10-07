@@ -26,11 +26,11 @@ public class QuestionBank
             int id = arr.getResourceId(i, 0);
             TypedArray innerArr = res.obtainTypedArray(id);
             String[] answers = new String[4];
-            for(int k = 0; k < innerArr.length() - 1 ; ++k)
+            for(int k = 1; k < innerArr.length() ; ++k)
             {
-                answers[k] = innerArr.getString(k);
+                answers[k - 1] = innerArr.getString(k);
             }
-            questionsBank.add(new Question(innerArr.getString(0),answers,innerArr.getString(innerArr.length() - 1)));
+            questionsBank.add(new Question(innerArr.getString(0),answers,answers[0]));
         }
 
         Collections.shuffle(questionsBank);

@@ -23,6 +23,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
     private int hearts;
     private int questionNum = 0;
     private Timer timer = null;
+    private int currntPrize;
 
 
     public GameController(IGamePresentor presentor) {
@@ -46,7 +47,9 @@ public class GameController implements IGameController,StagesManager.StagesListe
     public void loadNewQuestion() {
         currentQuestion = questionBank.getNextQuestion();
         presentor.onNewQuestionLoaded(currentQuestion);
-        presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange());
+        presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId());
+        this.currntPrize = this.getRandomPrize();
+        presentor.setPrize(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.currntPrize);
         timer.endTimer();
         timer.start(30);
     }
@@ -56,7 +59,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
         boolean isAnswerCorrect = currentQuestion.isAnswerCorrect(answer);
         Log.d("GameController", "onAnswerPicked");
         if(isAnswerCorrect){
-            wallet.addMoney(this.getRandomPrize());
+            wallet.addMoney(this.currntPrize);
             presentor.onCorrectAnswer();
             presentor.onMoneyChanged(wallet.getMoney());
             this.questionNum++;
@@ -88,7 +91,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
 
     @Override
     public void onStageChanged() {
-        this.presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange());
+        this.presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId());
     }
 
 

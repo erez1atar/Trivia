@@ -18,10 +18,12 @@ public interface IGamePresentor {
 
     void onLoseGame();
 
-    void showStage(int minValue, int maxValue);
+    void showStage(int minValue, int maxValue, int id);
 
     void showHearts(int hearts);
 
     void showTime(int seconds);
+
+    void setPrize(int minValue, int maxValue, int prize);
 
 }

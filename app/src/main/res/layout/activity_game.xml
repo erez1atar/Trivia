@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/black"
+    android:background="@drawable/game_background"
     tools:context="games.android.trivia.GameActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="4.5"
         android:id="@+id/frame_top_bar">
 
     </FrameLayout>
@@ -21,7 +21,7 @@
         android:layout_weight="8"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:background="@drawable/question_style"
         android:id="@+id/question"/>
 
@@ -76,7 +76,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="9"
         android:id="@+id/frame_bottom_bar">
 
     </FrameLayout>

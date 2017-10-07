@@ -3,65 +3,65 @@
 
     <array name="questionA1">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>מה היה ראש הממשלה הראשון של מדינת ישראל</item>
+        <item>דוד בן גוריון</item>
+        <item>משה דיין</item>
+        <item>גולדה מאיר</item>
+        <item>בנימין זאב הרצל</item>
     </array>
 
     <array name="questionA2">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>מהי העיר הדרומית בארץ?</item>
+        <item>אילת</item>
+        <item>קרית שמונה</item>
+        <item>תל אביב</item>
+        <item>באר שבע</item>
     </array>
 
     <array name="questionA3">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>העיר בעלת הצפיפות אוכלוסין הגבוהה ביותר</item>
+        <item>בני ברק</item>
+        <item>תל אביב</item>
+        <item>באר שבע</item>
+        <item>חיפה</item>
     </array>
 
     <array name="questionA4">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>מיהו כוכב הסרט צרלי וחצי?</item>
+        <item>יהודה ברקן</item>
+        <item>אבי גריניק</item>
+        <item>ספי ריבלין</item>
+        <item>יהורם גאון</item>
     </array>
 
     <array name="questionA5">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>כמה דקות משחקים כדורגל?</item>
+        <item>90 דקות</item>
+        <item>60 שניות</item>
+        <item>90 שניות</item>
+        <item>60 דקות</item>
     </array>
 
     <array name="questionA6">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>מהו שמה הפרטי של אשתו של יצחק רבין</item>
+        <item>לאה</item>
+        <item>רבקה</item>
+        <item>מרים</item>
+        <item>לילי</item>
     </array>
 
     <array name="questionA7">
 
-        <item>א</item>
-        <item>ב</item>
-        <item>ג</item>
-        <item>ד</item>
-        <item>ד</item>
+        <item>מה מקצועה של שרית חדד?</item>
+        <item>זמרת</item>
+        <item>ספרנית</item>
+        <item>מגישת חדשות</item>
+        <item>שרת האוצר</item>
     </array>
 
     <array name="questionA8">
@@ -99,9 +99,9 @@
         <item>@array/questionA5</item>
         <item>@array/questionA6</item>
         <item>@array/questionA7</item>
-        <item>@array/questionA8</item>
+<!--        <item>@array/questionA8</item>
         <item>@array/questionA9</item>
-        <item>@array/questionA10</item>
+        <item>@array/questionA10</item>-->
 
     </array>
 </resources>

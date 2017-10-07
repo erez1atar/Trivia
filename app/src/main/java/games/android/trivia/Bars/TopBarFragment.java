@@ -2,6 +2,7 @@ package games.android.trivia.Bars;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -10,9 +11,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import games.android.trivia.App;
 import games.android.trivia.R;
 
 
@@ -23,6 +27,8 @@ public class TopBarFragment extends Fragment {
     private ImageView heart2 = null;
     private ImageView heart3 = null;
     private TopBarListener listener = null;
+    private Animation heartPulse = null;
+    private Typeface numbersFont = null;
 
 
     public TopBarFragment() {
@@ -87,6 +93,18 @@ public class TopBarFragment extends Fragment {
         heart3 = (ImageView) getView().findViewById(R.id.heart_3);
         timerTxt = (TextView) getView().findViewById(R.id.timer);
         this.listener.onTopBarCreatedFinished();
+        this.startAnimationHears();
+
+        numbersFont = Typeface.createFromAsset(App.getInstance().getAssets(),"fonts/hebrew.ttf");
+        scoreTxt.setTypeface(numbersFont);
+        timerTxt.setTypeface(numbersFont);
+    }
+
+    private void startAnimationHears() {
+        heartPulse = AnimationUtils.loadAnimation(App.getInstance().getApplicationContext(),R.anim.heart_pulse_big);
+        heart1.startAnimation(heartPulse);
+        heart2.startAnimation(heartPulse);
+        heart3.startAnimation(heartPulse);
     }
 
     public void setListener(TopBarListener listener) {

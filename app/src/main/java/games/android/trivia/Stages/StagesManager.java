@@ -34,7 +34,9 @@ public class StagesManager
     public int getMaxInRange() {
         return currentStage.getMax();
     }
-
+    public int getStageId(){
+        return currentStage.getId();
+    }
     private void initStages() {
         stages = this.stagesData.getStages();
     }
