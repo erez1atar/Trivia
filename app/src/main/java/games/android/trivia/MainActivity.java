@@ -22,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,StagesPresentor.class));
             }
         });
+
+        Button hallOfFame = (Button)findViewById(R.id.hall_of_fame_btn);
+        hallOfFame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,HallOfFame.class));
+            }
+        });
     }
 }

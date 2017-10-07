@@ -2,7 +2,13 @@ package games.android.trivia.Logic;
 
 import android.util.Log;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import games.android.trivia.App;
+import games.android.trivia.HighScores.WinnerAdapter;
+import games.android.trivia.HighScores.WinnerData;
 import games.android.trivia.IGamePresentor;
 import games.android.trivia.Questions.Question;
 import games.android.trivia.Questions.QuestionBank;
@@ -72,6 +78,8 @@ public class GameController implements IGameController,StagesManager.StagesListe
             presentor.onMoneyChanged(wallet.getMoney());
             if(this.hearts == 0){
                 this.presentor.onLoseGame();
+                updateDataBase(wallet.getMoney(), 0);
+                addToHallOfFame();
                 timer.endTimer();
             }
         }
@@ -104,5 +112,19 @@ public class GameController implements IGameController,StagesManager.StagesListe
     public void onTimeFinished() {
         this.presentor.onLoseGame();
         timer.endTimer();
+    }
+
+    private void addToHallOfFame()
+    {
+        WinnerData winner  = new WinnerData(DateFormat.getDateInstance().format(new Date()),this.wallet.getMoney(),"ארז");
+        WinnerAdapter adpt = App.getWinAdapter();
+        adpt.add(winner);
+    }
+
+    private void updateDataBase(int score, int helpsLeft)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        String s = dateFormat.format(new Date());
+        App.getDataBase().add(new WinnerData(s,score , "ארז"));
     }
 }

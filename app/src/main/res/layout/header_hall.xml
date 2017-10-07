@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:text="ניקוד"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:id="@+id/hall_of_fame_score"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="תאריך"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:id="@+id/hall_of_fame_date" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="שם"
+        android:id="@+id/hall_of_fame_name"
+         />
+
+</LinearLayout>
