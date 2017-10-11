@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import games.android.trivia.App;
+import games.android.trivia.GlobalHighScore.GlobalHighScoreManager;
 import games.android.trivia.HighScores.WinnerAdapter;
 import games.android.trivia.HighScores.WinnerData;
 import games.android.trivia.IGamePresentor;
@@ -30,6 +31,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
     private int questionNum = 0;
     private Timer timer = null;
     private int currntPrize;
+    private GlobalHighScoreManager globalHighScoreManager;
 
 
     public GameController(IGamePresentor presentor) {
@@ -38,6 +40,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
         stagesManager = new StagesManager();
         stagesManager.setStagesListener(this);
         timer = new Timer(this);
+        globalHighScoreManager = new GlobalHighScoreManager();
     }
     @Override
     public void onNewGameStart() {
@@ -58,6 +61,8 @@ public class GameController implements IGameController,StagesManager.StagesListe
         presentor.setPrize(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.currntPrize);
         timer.endTimer();
         timer.start(30);
+        this.questionNum++;
+        this.stagesManager.onQuestionNumChanged(this.questionNum);
     }
 
     @Override
@@ -68,8 +73,6 @@ public class GameController implements IGameController,StagesManager.StagesListe
             wallet.addMoney(this.currntPrize);
             presentor.onCorrectAnswer();
             presentor.onMoneyChanged(wallet.getMoney());
-            this.questionNum++;
-            this.stagesManager.onQuestionNumChanged(this.questionNum);
         }
         else {
             this.hearts--;
@@ -77,16 +80,26 @@ public class GameController implements IGameController,StagesManager.StagesListe
             presentor.onIncorrectAnswer();
             presentor.onMoneyChanged(wallet.getMoney());
             if(this.hearts == 0){
-                this.presentor.onLoseGame();
-                updateDataBase(wallet.getMoney(), 0);
-                addToHallOfFame();
-                timer.endTimer();
+                this.actFinishGame();
             }
         }
     }
 
+    private void actFinishGame() {
+        globalHighScoreManager.tryAddWinner("Erez", wallet.getMoney());
+        this.presentor.onLoseGame(wallet.getMoney());
+        updateDataBase(wallet.getMoney(), 0);
+        addToHallOfFame();
+        timer.endTimer();
+    }
+
     @Override
     public void onShowCurrectQuestionfinished() {
+        this.loadNewQuestion();
+    }
+
+    @Override
+    public void onShowIncurrectQuestionfinished() {
         this.loadNewQuestion();
     }
 
@@ -110,21 +123,18 @@ public class GameController implements IGameController,StagesManager.StagesListe
 
     @Override
     public void onTimeFinished() {
-        this.presentor.onLoseGame();
-        timer.endTimer();
+        this.actFinishGame();
     }
 
     private void addToHallOfFame()
     {
-        WinnerData winner  = new WinnerData(DateFormat.getDateInstance().format(new Date()),this.wallet.getMoney(),"ארז");
+        WinnerData winner  = new WinnerData(this.wallet.getMoney(),"ארז");
         WinnerAdapter adpt = App.getWinAdapter();
         adpt.add(winner);
     }
 
     private void updateDataBase(int score, int helpsLeft)
     {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-        String s = dateFormat.format(new Date());
-        App.getDataBase().add(new WinnerData(s,score , "ארז"));
+        App.getDataBase().add(new WinnerData(score , "ארז"));
     }
 }

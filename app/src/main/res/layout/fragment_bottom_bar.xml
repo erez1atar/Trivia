@@ -47,6 +47,11 @@
             android:text=" 500000       -       1000000"
             android:id="@+id/bottom_bar_range"/>
 
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -54,6 +59,11 @@
             android:scaleY="0.8"
             android:scaleX="0.8"
             android:layout_weight="1"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
 
     </LinearLayout>
 

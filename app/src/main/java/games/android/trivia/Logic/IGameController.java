@@ -12,5 +12,7 @@ public interface IGameController {
 
     void onShowCurrectQuestionfinished();
 
+    void onShowIncurrectQuestionfinished();
+
 
 }

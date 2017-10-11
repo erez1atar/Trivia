@@ -49,6 +49,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:textSize="50dp"
+        android:textColor="@color/colorPrimary"
         android:gravity="center"
         android:textAlignment="center"
         android:background="@drawable/circle_grey"

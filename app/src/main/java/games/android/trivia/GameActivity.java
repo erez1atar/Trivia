@@ -1,24 +1,24 @@
 package games.android.trivia;
 
 import android.animation.ValueAnimator;
+import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.graphics.Color;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.shapes.Shape;
+import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.lang.ref.WeakReference;
 
 import games.android.trivia.Bars.BottomBar;
 import games.android.trivia.Bars.TopBarFragment;
@@ -48,21 +48,19 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     private Drawable watingBackground1 = null;
     private Drawable watingBackground2 = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        this.initButtons();
         this.initTopBar();
         this.initBottomBar();
-
 
         scaleInAnim =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale_in);
         incorrectBackground = ContextCompat.getDrawable(this, R.drawable.button_incorrect_style);
         correctBackground = ContextCompat.getDrawable(this, R.drawable.button_correct_style);
         regularBackground = ContextCompat.getDrawable(this, R.drawable.button_style);
         watingBackground1 = ContextCompat.getDrawable(this, R.drawable.button_waiting);
-        watingBackground2 = ContextCompat.getDrawable(this, R.drawable.button_waiting);
         questionTxt = (TextView)findViewById(R.id.question);
         answer1 = (Button) findViewById(R.id.answer_1);
         answer2 = (Button)findViewById(R.id.answer_2);
@@ -71,6 +69,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
         this.gameController = new GameController(this);
         this.answerListener = new AnswerListener(this.gameController);
+
+        this.initButtons();
 
     }
 
@@ -94,30 +94,10 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
 
         Log.d("GameActivity", "initButtons");
-        answer1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                answerListener.onClick(v);
-            }
-        });
-        answer2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                answerListener.onClick(v);
-            }
-        });
-        answer3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                answerListener.onClick(v);
-            }
-        });
-        answer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                answerListener.onClick(v);
-            }
-        });
+        answer1.setOnClickListener(answerListener);
+        answer2.setOnClickListener(answerListener);
+        answer3.setOnClickListener(answerListener);
+        answer4.setOnClickListener(answerListener);
     }
 
     private void initTopBar() {
@@ -143,43 +123,13 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     @Override
     public void onCorrectAnswer() {
         Log.d("GameActivity", "onCorrectAnswer");
-        this.lastAnswerPicked.setBackgroundResource(R.drawable.button_waiting);
         this.showcorrectAnim();
     }
 
     private void showcorrectAnim() {
         Log.d("GameActivity", "showCurrectAnim");
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                Log.d("GameActivity", "before run on UI thread");
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.d("GameActivity", "inside run on UI thread");
-                        showCorrectAnswerColor();
-                    }
-                });
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        gameController.onShowCurrectQuestionfinished();
-                    }
-                });
-
-            }
-        });
-        thread.run();
+        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,true), 300);
+        new Handler().postDelayed(new FinishQuestionRunnable(gameController, true), 1500);
     }
 
     void showCorrectAnswerColor() {
@@ -193,8 +143,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     @Override
     public void onIncorrectAnswer() {
         Log.d("GameActivity", "onInCorrectAnswer");
-        lastAnswerPicked.setBackground(incorrectBackground);
-        this.setEnabledAllAnswers(true);
+        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,false), 1000);
+        new Handler().postDelayed(new FinishQuestionRunnable(gameController, false), 1500);
     }
 
     @Override
@@ -224,9 +174,11 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     }
 
     @Override
-    public void onLoseGame() {
-        Log.d("game", "You Lose");
-        this.finish();
+    public void onLoseGame(int score) {
+        Log.d("game", "You Lose " + score);
+        Intent intent =  new Intent(GameActivity.this, ActivityGameResult.class);
+        intent.putExtra(ActivityGameResult.INTENT_SCORE_KEY, score);
+        startActivity(intent);
     }
 
     @Override
@@ -311,6 +263,7 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
             Log.d("answerListener", "onClick");
             lastAnswerPicked = v;
             setEnabledAllAnswers(false);
+            v.setBackground(watingBackground1);
             controller.onAnswerPicked(((Button)v).getText().toString());
         }
     }
@@ -350,5 +303,56 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         this.answer2.setEnabled(enable);
         this.answer3.setEnabled(enable);
         this.answer4.setEnabled(enable);
+    }
+
+    public class ResultAnswerRunnable implements Runnable {
+        private WeakReference<Activity> activity;
+        private IGameController controller;
+        private View view;
+        private boolean isCorrectAns = false;
+
+        public ResultAnswerRunnable(Activity activity, IGameController controller, View view, boolean isCorrectAns) {
+            this.activity = new WeakReference<>(activity);
+            this.controller = controller;
+            this.view = view;
+            this.isCorrectAns = isCorrectAns;
+        }
+
+        @Override
+        public void run() {
+            Activity activity = this.activity.get();
+            if (activity != null) {
+                if(isCorrectAns){
+                    view.setBackground(correctBackground);
+                }
+                else {
+                    view.setBackground(incorrectBackground);
+                }
+            }
+        }
+    }
+
+    private class FinishQuestionRunnable implements Runnable {
+        private WeakReference<IGameController> controllerWeakRef;
+        private boolean isCorrectAns = false;
+
+        public FinishQuestionRunnable(IGameController controller, boolean isCorrectAns) {
+            this.controllerWeakRef = new WeakReference<>(controller);
+            this.isCorrectAns = isCorrectAns;
+        }
+
+        @Override
+        public void run() {
+            IGameController controller = this.controllerWeakRef.get();
+            if (controller != null) {
+                if(isCorrectAns){
+                    gameController.onShowCurrectQuestionfinished();
+                }
+                else {
+                    gameController.onShowIncurrectQuestionfinished();
+                }
+
+            }
+        }
     }
 }

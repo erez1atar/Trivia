@@ -32,7 +32,6 @@ public class DBManager
             return;
         }
         SQLiteStatement stmt = db.compileStatement(DBConsts.SQL_INSERT_STATMENT);
-        stmt.bindString(DBConsts.INSERT_DATE_IDX, String.valueOf(data.getDate()));
         stmt.bindString(DBConsts.INSERT_SCORE_IDX, String.valueOf(data.getScore()));
         stmt.bindString(DBConsts.INSERT_NAME_IDX, data.getName());
         stmt.execute();
@@ -58,7 +57,6 @@ public class DBManager
             SQLiteStatement stmt = db.compileStatement(DBConsts.SQL_UPDATE_STATMENT);
             stmt.bindString(DBConsts.UPDATE_SCORE_IDX, String.valueOf(data.getScore()));
             stmt.bindString(DBConsts.UPDATE_NAME_IDX, data.getName());
-            stmt.bindString(DBConsts.UPDATE_DATE_IDX, String.valueOf(data.getDate()));
             stmt.bindString(DBConsts.UPDATE_ID_IDX, String.valueOf(id));
             stmt.execute();
         }

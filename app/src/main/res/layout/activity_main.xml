@@ -8,20 +8,49 @@
     android:background="@color/colorPrimary"
     tools:context="games.android.trivia.MainActivity">
 
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@drawable/coins"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"/>
+        android:layout_weight="1"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/circle_light_blue"
+        android:layout_weight="1.5"
+        android:background="@drawable/button_waiting2"
         android:textAlignment="center"
         android:gravity="center"
         android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:scaleY="0.6"
         android:text="התחל"
         android:textSize="40dp"
         android:id="@+id/start_game_btn"
@@ -30,20 +59,44 @@
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"/>
+        android:layout_weight="1"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/circle_light_blue"
+        android:layout_weight="1.5"
+        android:background="@drawable/button_waiting2"
         android:textAlignment="center"
         android:gravity="center"
         android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:text="שיאים"
+        android:scaleY="0.6"
+        android:text="שיאים אישיים"
         android:textSize="40dp"
         android:id="@+id/hall_of_fame_btn"
         />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/button_waiting2"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:scaleX="0.7"
+        android:scaleY="0.6"
+        android:text="שיאים"
+        android:textSize="40dp"
+        android:id="@+id/hall_of_fame_global_btn"
+        />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
 
 </LinearLayout>

@@ -16,7 +16,7 @@ public interface IGamePresentor {
 
     void onMoneyChanged(int money);
 
-    void onLoseGame();
+    void onLoseGame(int score);
 
     void showStage(int minValue, int maxValue, int id);
 

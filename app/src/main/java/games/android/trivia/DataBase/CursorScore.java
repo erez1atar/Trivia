@@ -26,11 +26,6 @@ public class CursorScore extends CursorWrapper
         return cursor.getString(cursor.getColumnIndexOrThrow(DBConsts.FeedEntry.SCORES_COLUMN_NAME));
     }
 
-    public String getDate()
-    {
-        return cursor.getString(cursor.getColumnIndexOrThrow(DBConsts.FeedEntry.SCORES_COLUMN_DATE));
-    }
-
     public int getID()
     {
         return cursor.getInt(cursor.getColumnIndexOrThrow(DBConsts.FeedEntry._ID));

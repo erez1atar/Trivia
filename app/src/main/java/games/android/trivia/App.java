@@ -1,11 +1,10 @@
 package games.android.trivia;
 
 import android.app.Application;
-import android.content.Intent;
-import android.provider.CalendarContract;
 
 import games.android.trivia.DataBase.DBManager;
 import games.android.trivia.DataBase.ScoreCursorAdapter;
+import games.android.trivia.GlobalHighScore.FirebaseManager;
 import games.android.trivia.HighScores.HallOfFameBuilder;
 import games.android.trivia.HighScores.WinnerAdapter;
 
@@ -15,10 +14,12 @@ import games.android.trivia.HighScores.WinnerAdapter;
 
 public class App extends Application {
     private static App Instance = null;
-    private static ResourcesManager resourcesManager;
-    private static DBManager dbManager;
-    private static ScoreCursorAdapter cursorAdapter;
-    private static WinnerAdapter winAdapter;
+    private static ResourcesManager resourcesManager = null;
+    private static DBManager dbManager = null;
+    private static ScoreCursorAdapter cursorAdapter = null;
+    private static WinnerAdapter winAdapter = null;
+    private static FirebaseManager firebaseManager = null;
+    private static UserDefaultManager userDefaultManager = null;
 
     public App()
     {
@@ -65,5 +66,19 @@ public class App extends Application {
 
     public static App getInstance() {
         return Instance;
+    }
+
+    public static FirebaseManager getFirebaseManager() {
+        if(firebaseManager == null){
+            firebaseManager = new FirebaseManager();
+        }
+        return firebaseManager;
+    }
+
+    public static UserDefaultManager getUserDefaultManager() {
+        if(userDefaultManager == null){
+            userDefaultManager = new UserDefaultManager();
+        }
+        return userDefaultManager;
     }
 }

@@ -16,7 +16,7 @@ public class HallOfFameBuilder
         list = new ArrayList<>(20);
         for(int i = 0 ; i < 20 ; i ++)
         {
-            list.add(new WinnerData(DateFormat.getDateInstance().format(new Date()), i, "" + i));
+            list.add(new WinnerData(i, "" + i));
         }
         return list;
     }

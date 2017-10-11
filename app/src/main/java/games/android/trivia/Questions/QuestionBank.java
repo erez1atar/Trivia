@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import games.android.trivia.R;
+import games.android.trivia.ResourcesManager;
 
 
 /**
@@ -16,9 +17,14 @@ public class QuestionBank
 {
     private ArrayList<Question> questionsBank;
     private int currentQuestion = 0;
+    private Resources res = null;
 
-    public QuestionBank(Resources res)
-    {
+    public QuestionBank(Resources res) {
+        this.res = res;
+        this.initQuestions();
+    }
+
+    private void initQuestions() {
         TypedArray arr = res.obtainTypedArray(R.array.questions);
         questionsBank = new ArrayList(arr.length());
         for(int i = 0; i < arr.length() ; ++i)
@@ -38,11 +44,11 @@ public class QuestionBank
 
     public Question getNextQuestion()
     {
-        if(currentQuestion < questionsBank.size())
-        {
-            return questionsBank.get(currentQuestion++);
+        if(currentQuestion >= questionsBank.size()){
+            this.initQuestions();
         }
-        return null;
+        return questionsBank.get(currentQuestion++);
+
     }
 
     public void resetQuestions()

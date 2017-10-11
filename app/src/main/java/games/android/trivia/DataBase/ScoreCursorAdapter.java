@@ -28,10 +28,8 @@ public class ScoreCursorAdapter extends CursorAdapter
     {
         View view = LayoutInflater.from(context).inflate(R.layout.winner, parent, false);
         ViewHolder vh = new ViewHolder();
-        vh.date = (TextView) view.findViewById(R.id.dateWinner);
         vh.name = (TextView) view.findViewById(R.id.nameWinner);
         vh.score = (TextView) view.findViewById(R.id.scoreWinner);
-        vh.date.setTypeface(App.getResourcesManager().getNumbersFont());
         vh.name.setTypeface(App.getResourcesManager().getNumbersFont());
         vh.score.setTypeface(App.getResourcesManager().getNumbersFont());
         view.setTag(vh);
@@ -40,7 +38,6 @@ public class ScoreCursorAdapter extends CursorAdapter
 
     private class ViewHolder
     {
-        TextView date;
         TextView name;
         TextView score;
     }
@@ -51,13 +48,10 @@ public class ScoreCursorAdapter extends CursorAdapter
         ViewHolder vh = (ViewHolder)view.getTag();
         CursorScore cursorScore = (CursorScore)cursor;
 
-        String dateVal = cursorScore.getDate();
         String nameVal = cursorScore.getName();
         int scoreVal = cursorScore.getScore();
 
-        vh.date.setText(dateVal);
         vh.name.setText(nameVal);
         vh.score.setText(String.valueOf(scoreVal));
-
     }
 }

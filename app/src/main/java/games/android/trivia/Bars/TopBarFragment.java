@@ -2,6 +2,7 @@ package games.android.trivia.Bars;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -29,10 +30,13 @@ public class TopBarFragment extends Fragment {
     private TopBarListener listener = null;
     private Animation heartPulse = null;
     private Typeface numbersFont = null;
+    private int secondAlert = 5;
+    private Animation onePulse = null;
 
 
     public TopBarFragment() {
         // Required empty public constructor
+        onePulse = AnimationUtils.loadAnimation(App.getInstance().getApplicationContext(),R.anim.heart_pulse_big);
     }
 
     @Override
@@ -43,21 +47,28 @@ public class TopBarFragment extends Fragment {
     }
 
     public void setHearts(int hearts) {
+        Log.d("top bar", "set " + hearts + " hearts");
         switch (hearts) {
             case 1 :
                 heart1.setVisibility(View.VISIBLE);
                 heart2.setVisibility(View.INVISIBLE);
+                heart2.clearAnimation();
                 heart3.setVisibility(View.INVISIBLE);
                 break;
             case 2 :
                 heart1.setVisibility(View.VISIBLE);
                 heart2.setVisibility(View.VISIBLE);
                 heart3.setVisibility(View.INVISIBLE);
+                heart3.clearAnimation();
                 break;
             case 3 :
                 heart1.setVisibility(View.VISIBLE);
                 heart2.setVisibility(View.VISIBLE);
                 heart3.setVisibility(View.VISIBLE);
+                break;
+            default:
+                heart1.clearAnimation();
+                heart1.setVisibility(View.INVISIBLE);
                 break;
         }
     }
@@ -116,6 +127,10 @@ public class TopBarFragment extends Fragment {
     }
 
     public void setTime(int seconds){
+        if(seconds < secondAlert){
+            timerTxt.setTextColor(Color.RED);
+            timerTxt.startAnimation(onePulse);
+        }
         timerTxt.setText(String.valueOf(seconds));
     }
 }

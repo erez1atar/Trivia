@@ -16,17 +16,6 @@
         android:id="@+id/hall_of_fame_score"
         />
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="תאריך"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:layout_weight="1"
-        android:id="@+id/hall_of_fame_date" />
-
 
     <TextView
         android:layout_width="0dp"

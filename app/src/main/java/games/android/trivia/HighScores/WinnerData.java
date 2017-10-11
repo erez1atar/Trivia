@@ -1,17 +1,19 @@
 package games.android.trivia.HighScores;
 
+import java.io.Serializable;
+
 /**
  * Created by LENOVO on 15/02/2016.
  */
-public class WinnerData implements Comparable
+public class WinnerData implements Comparable,Serializable
 {
-    private String date;
     private int score;
     private String name;
 
-    public WinnerData(String date, int score, String name)
+    public WinnerData() {}
+
+    public WinnerData(int score, String name)
     {
-        this.date = date;
         this.name = name;
         this.score = score;
 
@@ -25,8 +27,18 @@ public class WinnerData implements Comparable
         return score;
     }
 
-    public String getDate() {
-        return date;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "FirebaseWinnerData{name='" + name + "\', score='" + score + "\'}";
     }
 
     @Override
