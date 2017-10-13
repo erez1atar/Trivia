@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import games.android.trivia.App;
 import games.android.trivia.GameActivity;
 import games.android.trivia.R;
 
@@ -24,6 +25,7 @@ public class StagesPresentor extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        start.setTypeface(App.getResourcesManager().getNumbersFont());
 
     }
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="questionB1">
+
+        <item>היכן נמצאת מערת המכפלה?</item>
+        <item>חברון</item>
+        <item>ירושלים</item>
+        <item>יפו</item>
+        <item>חיפה</item>
+    </array>
+
+    <array name="questionB2">
+
+        <item>היכן נמצא קבר הרמב"ם?</item>
+        <item>טבריה</item>
+        <item>ירושלים</item>
+        <item>חברון</item>
+        <item>יפו</item>
+    </array>
+
+    <array name="questionB3">
+
+        <item>בת כמה הייתה שרה אימנו כשילדה את יצחק?</item>
+        <item>90</item>
+        <item>30</item>
+        <item>50</item>
+        <item>15</item>
+    </array>
+
+    <array name="questionB4">
+
+        <item>מה הבקיע את שער הניצחון של ישראל מול צרפת ב1993?</item>
+        <item>ראובן עטר</item>
+        <item>יוסי בניון</item>
+        <item>רוני רונזטל</item>
+        <item>אייל ברקוביץ</item>
+    </array>
+
+    <array name="questionB5">
+
+        <item>היכן ממוקם איצטדיון וינטר?</item>
+        <item>רמת גן</item>
+        <item>תל אביב</item>
+        <item>חיפה</item>
+        <item>נתניה</item>
+    </array>
+
+    <array name="questionB6">
+
+        <item>מהו שמה הקודם של המדינה תאילנד?</item>
+        <item>סיאם</item>
+        <item>סודן</item>
+        <item>ילטה</item>
+        <item>ויים</item>
+    </array>
+
+    <array name="questionB7">
+
+        <item>איך הוצא להורג שליט עיראק סדאם חוסיין?</item>
+        <item>בתלייה</item>
+        <item>בעזרת זריקה</item>
+        <item>בשריפה</item>
+        <item>בעזרת כסא חשמלי</item>
+    </array>
+
+    <array name="questions_medium">
+        <item>@array/questionB1</item>
+        <item>@array/questionB2</item>
+        <item>@array/questionB3</item>
+        <item>@array/questionB4</item>
+        <item>@array/questionB5</item>
+        <item>@array/questionB6</item>
+        <item>@array/questionB7</item>
+
+    </array>
+</resources>

@@ -20,7 +20,9 @@
         <activity android:name=".GameActivity" />
         <activity android:name=".Stages.StagesPresentor" />
         <activity android:name=".HighScores.HallOfFame" />
-        <activity android:name=".ActivityGameResult"></activity>
+        <activity android:name=".ActivityGameResult" />
+        <activity android:name=".EnterNameActivity" />
+        <activity android:name=".Settings.SettingsActivity"></activity>
     </application>
 
 </manifest>

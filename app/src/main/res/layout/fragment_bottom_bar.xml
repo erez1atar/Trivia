@@ -40,22 +40,22 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:textAlignment="center"
             android:gravity="center"
-            android:background="@drawable/square_kaki"
+            android:background="@drawable/stage_background"
             android:text=" 500000       -       1000000"
             android:id="@+id/bottom_bar_range"/>
 
         <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.3"/>
+            android:layout_weight="1"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@drawable/shekel"
+            android:background="@drawable/shekel_regular"
             android:scaleY="0.8"
             android:scaleX="0.8"
             android:layout_weight="1"/>
@@ -63,7 +63,7 @@
         <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"/>
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -104,7 +104,7 @@
             android:layout_weight="1"
             android:scaleX="0.7"
             android:scaleY="0.7"
-            android:background="@drawable/shekel_regular"/>
+            android:background="@drawable/money_bag"/>
 
         <android.support.v4.widget.Space
             android:layout_width="0dp"

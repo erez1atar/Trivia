@@ -11,8 +11,8 @@
         android:layout_weight="1.1"
         android:textSize="20dp"
         android:gravity="center"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         android:id="@+id/heart_1"
         android:background="@drawable/heart"
          />
@@ -22,8 +22,8 @@
         android:layout_weight="1.1"
         android:textSize="20dp"
         android:gravity="center"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         android:id="@+id/heart_2"
         android:background="@drawable/heart"
         />
@@ -33,8 +33,8 @@
         android:layout_weight="1.1"
         android:textSize="20dp"
         android:gravity="center"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         android:id="@+id/heart_3"
         android:background="@drawable/heart"
         />
@@ -49,6 +49,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:textSize="50dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
         android:textColor="@color/colorPrimary"
         android:gravity="center"
         android:textAlignment="center"
@@ -64,9 +66,9 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:scaleY="0.85"
-        android:scaleX="0.85"
-        android:background="@drawable/shekel"
+        android:scaleY="0.65"
+        android:scaleX="0.65"
+        android:background="@drawable/money_bag"
         />
 
     <TextView

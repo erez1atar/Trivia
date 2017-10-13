@@ -54,7 +54,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
     }
 
     public void loadNewQuestion() {
-        currentQuestion = questionBank.getNextQuestion();
+        currentQuestion = questionBank.getNextQuestion(this.stagesManager.getDiffculty());
         presentor.onNewQuestionLoaded(currentQuestion);
         presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId());
         this.currntPrize = this.getRandomPrize();
@@ -86,7 +86,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
     }
 
     private void actFinishGame() {
-        globalHighScoreManager.tryAddWinner("Erez", wallet.getMoney());
+        globalHighScoreManager.tryAddWinner(App.getUserDefaultManager().getUserName(), wallet.getMoney());
         this.presentor.onLoseGame(wallet.getMoney());
         updateDataBase(wallet.getMoney(), 0);
         addToHallOfFame();
@@ -128,7 +128,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
 
     private void addToHallOfFame()
     {
-        WinnerData winner  = new WinnerData(this.wallet.getMoney(),"ארז");
+        WinnerData winner  = new WinnerData(this.wallet.getMoney(),App.getUserDefaultManager().getUserName());
         WinnerAdapter adpt = App.getWinAdapter();
         adpt.add(winner);
     }

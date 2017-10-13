@@ -5,6 +5,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import games.android.trivia.Questions.QuestionBank;
+
 /**
  * Created by Erez on 04/10/2017.
  */
@@ -28,17 +30,25 @@ public class StagesManager
     public void onGameStart() {
         this.currentStage = stages.get(1);
     }
+
     public int getMinInRange() {
         return currentStage.getMin();
     }
+
     public int getMaxInRange() {
         return currentStage.getMax();
     }
+
     public int getStageId(){
         return currentStage.getId();
     }
+
     private void initStages() {
         stages = this.stagesData.getStages();
+    }
+
+    public QuestionBank.QuestionDifficulty getDiffculty() {
+        return currentStage.getDifficulty();
     }
     public void onQuestionNumChanged(int questionNum){
         boolean isStageChanged = false;

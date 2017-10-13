@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="questionC1">
+
+        <item>מתי התרחש מבצע שלום הגליל?</item>
+        <item>1982</item>
+        <item>1980</item>
+        <item>1993</item>
+        <item>1995</item>
+    </array>
+
+    <array name="questionC2">
+
+        <item>מי אמר את המשפט "אם אינך יכול לשכנע את העם לקבל את עקרונותיך-לך אל תרמה אותו"</item>
+        <item>יצחק שמיר</item>
+        <item>יצחק רבין</item>
+        <item>משה דיין</item>
+        <item>שמעון פרס</item>
+    </array>
+
+    <array name="questionC3">
+
+        <item>"לא הביישן למד..."</item>
+        <item>ולא הקפדן מלמד</item>
+        <item>ולא הבולט מנצח</item>
+        <item>ולא הדברן משכיל</item>
+        <item>ולא השטקן מרמז</item>
+    </array>
+
+    <array name="questionC4">
+
+        <item>"קנאת סופרים..."</item>
+        <item>תרבה חוכמה</item>
+        <item>תפיק תורה</item>
+        <item>תוליד אגדה</item>
+        <item>תמית אסון</item>
+    </array>
+
+    <array name="questionC5">
+
+        <item>מי הגיש את התוכנית הראשון בבידור?</item>
+        <item>דודו טופז</item>
+        <item>ארז טל</item>
+        <item>רז זהבי</item>
+        <item>יעקב איילון</item>
+    </array>
+
+    <array name="questionC6">
+
+        <item>מתי שודר הפרק הראשון של התוכנית חברים?</item>
+        <item>1993</item>
+        <item>1998</item>
+        <item>2003</item>
+        <item>1995</item>
+    </array>
+
+    <array name="questionC7">
+
+        <item>מי גילמה את פיבי בחברים?</item>
+        <item>ליסה קודרו</item>
+        <item>קורטני קוקס</item>
+        <item>גניפר אניסטון</item>
+        <item>גולייטה רוברטס</item>
+    </array>
+
+    <array name="questions_hard">
+        <item>@array/questionC1</item>
+        <item>@array/questionC2</item>
+        <item>@array/questionC3</item>
+        <item>@array/questionC4</item>
+        <item>@array/questionC5</item>
+        <item>@array/questionC6</item>
+        <item>@array/questionC7</item>
+
+    </array>
+</resources>
