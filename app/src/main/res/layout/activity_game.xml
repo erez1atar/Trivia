@@ -23,12 +23,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/game_timer"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="4"
         android:scaleX="0.95"
         android:scaleY="0.95"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="30dp"
+        android:textSize="25sp"
         android:background="@drawable/question_style"
         android:id="@+id/question"/>
 
@@ -40,62 +48,62 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4.5"
         android:scaleX="0.8"
         android:scaleY="0.6"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:background="@drawable/button_style"
         android:id="@+id/answer_1"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.05"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4.5"
         android:scaleX="0.8"
         android:scaleY="0.6"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:background="@drawable/button_style"
         android:id="@+id/answer_2"/>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.05"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4.5"
         android:scaleX="0.8"
         android:scaleY="0.6"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:background="@drawable/button_style"
         android:id="@+id/answer_3"/>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.05"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4.5"
         android:scaleX="0.8"
         android:scaleY="0.6"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:background="@drawable/button_style"
         android:id="@+id/answer_4"/>
 
@@ -111,6 +119,17 @@
         android:id="@+id/frame_bottom_bar">
 
     </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1765755909018734/6521755219">
+    </com.google.android.gms.ads.AdView>
 
 
 

@@ -10,16 +10,22 @@ import games.android.trivia.Questions.QuestionBank;
 
 public class StagesData{
 
+    private final int maxQuestionsInStage = 3;
+
     public StagesData() {
 
     }
 
     public int getStageIdFromQuestionNum(int questionNum) {
-        int stageId = (int)Math.ceil(0.5 + questionNum / 3);
+        int stageId = (int)Math.ceil(0.5 + (questionNum - 1) / maxQuestionsInStage);
         if(stageId > 10) {
             return 10;
         }
         return stageId;
+    }
+
+    public boolean getIsFirstQuestionInStage(int questionNum) {
+        return ((questionNum - 1) % 3) == 0;
     }
 
     HashMap<Integer,Stage> getStages() {

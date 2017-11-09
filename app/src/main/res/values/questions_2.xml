@@ -12,7 +12,7 @@
 
     <array name="questionB2">
 
-        <item>היכן נמצא קבר הרמב"ם?</item>
+        <item>היכן נמצא קבר הרמב\"ם?</item>
         <item>טבריה</item>
         <item>ירושלים</item>
         <item>חברון</item>
@@ -64,6 +64,1066 @@
         <item>בעזרת כסא חשמלי</item>
     </array>
 
+    <array name="questionB8">
+
+        <item>באילו שנים התחוללה מלחמת העולם הראשונה?</item>
+        <item>1914 - 1918</item>
+        <item>1918 - 1922</item>
+        <item>1912 - 1914</item>
+        <item>1905 - 1909</item>
+    </array>
+
+    <array name="questionB9">
+
+        <item>באילו שנים התחוללה מלחמת העולם השנייה?</item>
+        <item>1939 - 1945</item>
+        <item>1914 - 1918</item>
+        <item>1936 - 1939</item>
+        <item>1936 - 1942</item>
+    </array>
+
+    <array name="questionB10">
+        <item>מה פירוש המושג \"תהום הנשיה\"?</item>
+        <item>שכחה מוחלטת</item>
+        <item>תהום עמוק מאד</item>
+        <item>חשיבה קדימה</item>
+        <item>חוסר החלטתיות</item>
+    </array>
+
+    <array name="questionB11">
+
+        <item>מה פירוש המילה \"שביס\"?</item>
+        <item>כיסוי ראש </item>
+        <item>חרב</item>
+        <item>חולצה</item>
+        <item>מכנס</item>
+    </array>
+
+    <array name="questionB12">
+
+        <item>מה פירוש המילה \"שוקת\"?</item>
+        <item>כלי להשקיית בהמות</item>
+        <item>בור עמוק באדמה</item>
+        <item>צנצנת זכוכית</item>
+        <item>מחבת רחבה מאד</item>
+    </array>
+
+    <array name="questionB13">
+
+        <item>מה פירוש המילה רגרסיה?</item>
+        <item>נסיגה לאחור</item>
+        <item>התקדמות מהירה </item>
+        <item>עמידה במקום</item>
+        <item>חשיבה נכונה</item>
+    </array>
+
+    <array name="questionB14">
+
+        <item>מה פירוש המשוג \"מהשפה ולחוץ\"?</item>
+        <item>דיבור שאינו תואם למחשבה</item>
+        <item>דיבור פזיז</item>
+        <item>דיבור לא רהוט</item>
+        <item>משפט שאינו מתקבל על הרוב</item>
+    </array>
+
+    <array name="questionB15">
+
+        <item>מה פירוש המושג \"אזר חלציו\"?</item>
+        <item>התחזק</item>
+        <item>נחלש</item>
+        <item>חיזק את ילדיו</item>
+        <item>מיהר מאד</item>
+    </array>
+
+    <array name="questionB16">
+
+        <item>שברטלט זהו רכב...</item>
+        <item>אמריקאי</item>
+        <item>ישראלי</item>
+        <item>איטלקי</item>
+        <item>רומני</item>
+    </array>
+
+    <array name="questionB17">
+
+        <item>סיטרואן זהו רכב..</item>
+        <item>צרפתי</item>
+        <item>איטלקי</item>
+        <item>ספרדי</item>
+        <item>סיני</item>
+    </array>
+
+    <array name="questionB18">
+
+        <item>כמה זמן נמשך היריון של חתול</item>
+        <item>כחודש</item>
+        <item>כחודשיים</item>
+        <item>חצי שנה</item>
+        <item>9 חודשים</item>
+    </array>
+
+    <array name="questionB19">
+
+        <item>באיזו יבשת שוכנת המדינה לוקסמבורג?</item>
+        <item>אירופה</item>
+        <item>אסיה</item>
+        <item>אמריקה</item>
+        <item>אפריקה</item>
+    </array>
+
+    <array name="questionB20">
+
+        <item>כמה תושבים יש ברמת גן נכון ל2017?</item>
+        <item>150 אלף</item>
+        <item>50 אלף</item>
+        <item>300 אלף</item>
+        <item>450 אלף</item>
+    </array>
+
+    <array name="questionB21">
+
+        <item>כמה תושבים מתגוררים בירושלים נכון ל2017?</item>
+        <item>כ1.1 מיליון</item>
+        <item>כ 850 אלף</item>
+        <item>כחצי מיליון</item>
+        <item>כ100 אלף</item>
+    </array>
+
+    <array name="questionB22">
+
+        <item>מי זכתה במונדיאל הראשון?</item>
+        <item>אורוגווי</item>
+        <item>ברזיל</item>
+        <item>ארגנטינה</item>
+        <item>ישראל</item>
+    </array>
+
+    <array name="questionB23">
+
+        <item>מתי התקיים המונדיאל הראשון?</item>
+        <item>1930</item>
+        <item>1936</item>
+        <item>1900</item>
+        <item>1946</item>
+    </array>
+
+    <array name="questionB24">
+
+        <item>העיר העברית הראשונה היא</item>
+        <item>תל אביב</item>
+        <item>פתח תקווה</item>
+        <item>זכרון יעקב</item>
+        <item>דימונה</item>
+    </array>
+
+    <array name="questionB25">
+
+        <item>איזו עיר מכונה \"אם המושבות\"?</item>
+        <item>פתח תקווה</item>
+        <item>תל אביב</item>
+        <item>רמת גן</item>
+        <item>חיפה</item>
+    </array>
+
+    <array name="questionB26">
+
+        <item>מיהו אביו של סימבה במלך האריות?</item>
+        <item>מופסה</item>
+        <item>סקאר</item>
+        <item>זאזו</item>
+        <item>בלו</item>
+    </array>
+
+    <array name="questionB27">
+
+        <item>אמפנדס הינו מאכל</item>
+        <item>דרום אמריקאי</item>
+        <item>אפריקאי</item>
+        <item>אירופאי</item>
+        <item>אסייתי</item>
+    </array>
+
+    <array name="questionB28">
+
+        <item>מתי נהוג לאכול מופלטות?</item>
+        <item>מוצאי חג הפסח</item>
+        <item>מוצאי ראש השנה</item>
+        <item>מוצאי חג הסוכות</item>
+        <item>מוצאי יום כיפור</item>
+    </array>
+
+    <array name="questionB29">
+
+        <item>שטחי A הם שטחים ביהודה בשומרון בשליטה...</item>
+        <item>פלסטינית מלאה</item>
+        <item>ישראלית מלאה</item>
+        <item>בטחונית ישראלית, אזרחית פלסטינית</item>
+        <item>אזרחית ישראלית, בטחונית פלסטינית</item>
+    </array>
+
+    <array name="questionB30">
+
+        <item>מי כיהן כרמטכ"ל במלחמת לבנון השניה?</item>
+        <item>דני חלוץ</item>
+        <item>אבי אשכנזי</item>
+        <item>יצחק רבין</item>
+        <item>רפאל איתן</item>
+    </array>
+
+    <array name="questionB31">
+
+        <item>באיזו שנה התקיימה מלחמת יום הכיפורים?</item>
+        <item>1973</item>
+        <item>1976</item>
+        <item>1983</item>
+        <item>1967</item>
+    </array>
+
+    <array name="questionB32">
+
+        <item>מי כיהן כרמטכ\"ל במלחמת ששת הימים?</item>
+        <item>יצחק רבין</item>
+        <item>חיים בר לב</item>
+        <item>רפאל איתן</item>
+        <item>דוד אלעזר</item>
+    </array>
+
+    <array name="questionB33">
+
+        <item>באיזה עיר נמצאת שכונת פולג?</item>
+        <item>נתניה</item>
+        <item>תל אביב</item>
+        <item>הרצליה</item>
+        <item>רעננה</item>
+    </array>
+
+    <array name="questionB34">
+
+        <item>כביש שמספרו זוגי הוא בוודאות..</item>
+        <item>נע מצפון לדרום ולהיפך</item>
+        <item>נע ממזרח למערב ולהיפך</item>
+        <item>כביש מהיר</item>
+        <item>כביש עירוני</item>
+    </array>
+
+    <array name="questionB35">
+
+        <item>מי שר את השיר \"גבר הולך לאיבוד\"?</item>
+        <item>שלמה ארצי</item>
+        <item>אביב גפן</item>
+        <item>רמי פורטיס</item>
+        <item>רמי קליינשטיין</item>
+    </array>
+
+    <array name="questionB36">
+
+        <item>איך קראו לאביו של רוס בסדרה \"חברים\"?</item>
+        <item>ג\'ק</item>
+        <item>ויליאם</item>
+        <item>ברוס</item>
+        <item>ריצ\'ארד</item>
+    </array>
+
+    <array name="questionB37">
+
+        <item>כמה קומות של בבנין העגול של עזריאלי?</item>
+        <item>49</item>
+        <item>42</item>
+        <item>56</item>
+        <item>67</item>
+    </array>
+
+    <array name="questionB38">
+
+        <item>באיזו שנה נולד עברי לידר?</item>
+        <item>1974</item>
+        <item>1978</item>
+        <item>1982</item>
+        <item>1971</item>
+    </array>
+
+    <array name="questionB39">
+
+        <item>מי שר את השיר \"בלוז כנעני\"?</item>
+        <item>אהוד בנאי</item>
+        <item>מאיר בנאי</item>
+        <item>ברי סחרוף</item>
+        <item>משה פרץ</item>
+    </array>
+
+    <array name="questionB40">
+
+        <item>מה שווי של סוללת כיפת ברזל אחת?</item>
+        <item>50 מיליון דולר</item>
+        <item>10 מיליון דולר</item>
+        <item>מיליון דולר</item>
+        <item>5 מיליון דולר</item>
+    </array>
+
+    <array name="questionB41">
+
+        <item>באיזו שנה כיפת ברזל יירטה לראשונה טיל לעבר ישראל?</item>
+        <item>2011</item>
+        <item>2013</item>
+        <item>2008</item>
+        <item>2003</item>
+    </array>
+
+    <array name="questionB42">
+
+        <item>מהי בירת ברזיל?</item>
+        <item>ברזיליה</item>
+        <item>ריו דה ז\'נרו</item>
+        <item>בואנוס איירס</item>
+        <item>ניו יורק</item>
+    </array>
+
+    <array name="questionB43">
+
+        <item>מהי בירת כיוות?</item>
+        <item>כיוות סיטי</item>
+        <item>מפוטו</item>
+        <item>במקו</item>
+        <item>דילי</item>
+    </array>
+
+    <array name="questionB44">
+
+        <item>מהי בירת נורווגיה?</item>
+        <item>אוסלו</item>
+        <item>קופנאגן</item>
+        <item>אלופי</item>
+        <item>בלגרד</item>
+    </array>
+
+    <array name="questionB45">
+
+        <item>דגל של איזו מדינה ברובו ירוק?</item>
+        <item>ערב הסעודית </item>
+        <item>עיראק</item>
+        <item>רוסיה </item>
+        <item>תיאלנד</item>
+    </array>
+
+    <array name="questionB46">
+
+        <item>מהי עיר הבירה של הונגריה?</item>
+        <item>בודפשט</item>
+        <item>וילנה</item>
+        <item>סופיה</item>
+        <item>ברטיסלבה</item>
+    </array>
+
+    <array name="questionB47">
+
+        <item>כאשר רכבי נע בתאוצה שלילית</item>
+        <item>הרכב בהאטה</item>
+        <item>הרכב בהאצה</item>
+        <item>מהירותו אינה משתנה</item>
+        <item>הרכב בעצירה</item>
+    </array>
+
+    <array name="questionB48">
+
+        <item>יחידת תאוצה</item>
+        <item>מטר לשנייה בריבוע</item>
+        <item>מטר לשנייה</item>
+        <item>מטר לדקה</item>
+        <item>מטר למסה</item>
+    </array>
+
+    <array name="questionB49">
+
+        <item>למי נמכרה אפליקצית וייז?</item>
+        <item>גוגל</item>
+        <item>פייסבוק</item>
+        <item>יאהו</item>
+        <item>אפל</item>
+    </array>
+
+    <array name="questionB50">
+
+        <item>מי זכה בעוננ הראשונה של הישרדות?</item>
+        <item>נעמה קסרי</item>
+        <item>טילטיל</item>
+        <item>שי אראל</item>
+        <item>נתן בקשבין</item>
+    </array>
+
+    <array name="questionB51">
+
+        <item>כמה עונות היו להישרדות נכון ל2017?</item>
+        <item>8</item>
+        <item>10</item>
+        <item>3</item>
+        <item>6</item>
+    </array>
+
+    <array name="questionB52">
+
+        <item>מהו מקצועו של צ\'נדלר מחברים?</item>
+        <item>מנתח נתונים</item>
+        <item>מתכנת</item>
+        <item>עובד בבנק</item>
+        <item>מורה</item>
+    </array>
+
+    <array name="questionB53">
+
+        <item>מה הכי הפריעה לרייצ\'ל מחברים בבעלה בארי?</item>
+        <item>לא היה מוריד גרביים בזמן סקס</item>
+        <item>היה עושה גבות</item>
+        <item>היה מצחצח שיניים 7 פעמים ביום</item>
+        <item>לבש רק חולצות כחולות</item>
+    </array>
+
+    <array name="questionB54">
+
+        <item>היכן נולד אלברט איינשטיין?</item>
+        <item>גרמניה</item>
+        <item>פולין</item>
+        <item>ספרד</item>
+        <item>איטליה</item>
+    </array>
+
+    <array name="questionB55">
+
+        <item>באיזו שנה נפטר אלברט איינשטיין?</item>
+        <item>1955</item>
+        <item>1965</item>
+        <item>1945</item>
+        <item>1935</item>
+    </array>
+
+    <array name="questionB56">
+
+        <item>באיזו חברה עבד נפתלי בנט לפני כניסתו לכנסת?</item>
+        <item>סולוטו</item>
+        <item>מיקרוסופט</item>
+        <item>וייז</item>
+        <item>גוגל</item>
+    </array>
+
+    <array name="questionB57">
+
+        <item>המנורה היא סימלה של קבוצת..</item>
+        <item>בייתר ירושלים</item>
+        <item>מכבי תל אביב</item>
+        <item>מכבי פתח תקווה</item>
+        <item>מכבי חיפה</item>
+    </array>
+
+    <array name="questionB58">
+
+        <item>מי מהבאים אינו סוג של דג?</item>
+        <item>אקיטה</item>
+        <item>אמנון</item>
+        <item>חדקן</item>
+        <item>קרפיון</item>
+    </array>
+
+    <array name="questionB59">
+
+        <item>מי מהבאים אינו סוג של כלב?</item>
+        <item>שיבוטה</item>
+        <item>סן ברנרד</item>
+        <item>סלוקי</item>
+        <item>פקינז</item>
+    </array>
+
+    <array name="questionB60">
+
+        <item>איזה ישוב הוא הצפוני ביותר מבין הערים :</item>
+        <item>חריש</item>
+        <item>כפר נטר</item>
+        <item>ירוחם</item>
+        <item>ראש העין</item>
+    </array>
+
+    <array name="questionB61">
+
+        <item>איזה ישוב הוא הדרומי ביותר מבין הארבעה?</item>
+        <item>שדה בוקר</item>
+        <item>באר שבע</item>
+        <item>דימונה</item>
+        <item>ערד</item>
+    </array>
+
+    <array name="questionB62">
+        <item>איזה כביש מן הבאים אינו עובר בקרבת חדרה?</item>
+        <item>531</item>
+        <item>9</item>
+        <item>4</item>
+        <item>2</item>
+    </array>
+
+    <array name="questionB63">
+
+        <item>מעל איזה נחל עובר \"גשר הצבים\"?</item>
+        <item>אלכסנדר</item>
+        <item>הירקון</item>
+        <item>הקישון</item>
+        <item>השופט</item>
+    </array>
+
+    <array name="questionB64">
+
+        <item>מייקל סקורפילד הוא כוכב הסדרה..</item>
+        <item>נמלטים</item>
+        <item>שובר שורות</item>
+        <item>כשפגשתי את אמא שלך</item>
+        <item>משחקי הכס</item>
+    </array>
+
+    <array name="questionB65">
+
+        <item>מה שמו של הקאובוי בצעצוע של סיפור?</item>
+        <item>וודי</item>
+        <item>ונדי</item>
+        <item>ג\'ון</item>
+        <item>שנדי</item>
+    </array>
+
+    <array name="questionB66">
+
+        <item>בסרט \"תזיזו את הרגליים\" כל הדמויות הן..</item>
+        <item>פינגווינים</item>
+        <item>סנוניות</item>
+        <item>בונים</item>
+        <item>כרישים</item>
+    </array>
+
+    <array name="questionB67">
+
+        <item>הדמויות ג\'ולי,הלן,ובארי לקוחות מתוך הסרט..</item>
+        <item>אני יודע מה עשית בקיץ האחרון</item>
+        <item>אמריקן פאי</item>
+        <item>אמריקן פסיכו</item>
+        <item>הצעקה</item>
+    </array>
+
+    <array name="questionB68">
+
+        <item>מהו הסרט השני בסדרת הסרטים \"אני יודע מה עשית בקיץ האחרון\"?</item>
+        <item>אני עדיין יודע מה עשית בקיץ האחרון</item>
+        <item>אני תמיד אדע מה עשית בקיץ האחרון</item>
+        <item>לא היה סרט שני</item>
+        <item>אני חושב שאני יודע מה עשית בקיץ האחרון</item>
+    </array>
+
+    <array name="questionB69">
+
+        <item>הרוצח בסרט אני יודע מה עשית בקיץ האחרון היה</item>
+        <item>דייג</item>
+        <item>חקלאי</item>
+        <item>נגר</item>
+        <item>סנדלר</item>
+    </array>
+
+    <array name="questionB70">
+
+        <item>כמה סרטים יצאו בסדרת \"רוקי\" נכון ל2017?</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>7</item>
+    </array>
+
+    <array name="questionB71">
+
+        <item>באיזו שנה יצא הסרט רוקי 5?</item>
+        <item>1990</item>
+        <item>1993</item>
+        <item>1985</item>
+        <item>1983</item>
+    </array>
+
+    <array name="questionB72">
+
+        <item>מיהו חבר הכנסת הצעיר ביותר שנבחר מקום המדינה ועד 2017?</item>
+        <item>משה נסים</item>
+        <item>שרון גל</item>
+        <item>נפתלי בנט</item>
+        <item>אורן חזן</item>
+    </array>
+
+    <array name="questionB73">
+
+        <item>המדינה הראשונה שאישרה נישואין חד מיניים</item>
+        <item>הולנד</item>
+        <item>גרמניה</item>
+        <item>ישראל</item>
+        <item>ארה\"ב</item>
+    </array>
+
+    <array name="questionB74">
+
+        <item>מלוח\'יה מקורו ב..</item>
+        <item>מצרים</item>
+        <item>לבנון</item>
+        <item>איראן</item>
+        <item>אלג\'יר</item>
+    </array>
+
+    <array name="questionB75">
+
+        <item>מפרום נהוג לאכול במשפחות..</item>
+        <item>טריפוליטאיות</item>
+        <item>לבנוניות</item>
+        <item>עיראקיות</item>
+        <item>רוסיות</item>
+    </array>
+
+    <array name="questionB76">
+
+        <item>פרמזן הינו סוג של</item>
+        <item>גבינה</item>
+        <item>משקה</item>
+        <item>כובע</item>
+        <item>דג</item>
+    </array>
+
+    <array name="questionB77">
+
+        <item>לפי מילות השיר \"אם תלך..\"</item>
+        <item>מי יחבק אותי ככה</item>
+        <item>מי ינשק אותי ככה</item>
+        <item>מי ינענע אותי ככה</item>
+        <item>מי יברך אותי ככה</item>
+    </array>
+
+    <array name="questionB78">
+
+        <item>מי שרה את השיר \"חשמל זורם בכפות ידייך\"?</item>
+        <item>רותי נבון</item>
+        <item>סמדר שיר</item>
+        <item>מיכל זוארץ</item>
+        <item>שרית חדד</item>
+    </array>
+
+    <array name="questionB79">
+
+        <item>מי שר את השיר \"לכל אחד יש\" ביחד עם ליאור נרקיס?</item>
+        <item>שלומי שבת</item>
+        <item>מושיק עפיה</item>
+        <item>קובי פרץ</item>
+        <item>אבי ביטר</item>
+    </array>
+
+    <array name="questionB80">
+
+        <item>פזמון השיר \"באנו חושך לגרש\"?</item>
+        <item>סורה חושך, הלאה שחור</item>
+        <item>סורה חושך על השחור</item>
+        <item>סורה חושך אל השחור</item>
+        <item>סורה חושך בא השחור</item>
+    </array>
+
+    <array name="questionB81">
+
+        <item>מיהם הדמויות הראשיות בסרט \"חמישים גוונים של אפור\"?</item>
+        <item>כריסטיאן ואנה</item>
+        <item>כריסטיאן ומריה</item>
+        <item>ג\'ק ואנה</item>
+        <item>ג\'ון ומריה</item>
+    </array>
+
+    <array name="questionB82">
+
+        <item>איזו תוכנית לא הנחה ארז טל?</item>
+        <item>משאבת הכסף</item>
+        <item>רק בישראל</item>
+        <item>האח הגדול</item>
+        <item>גלגל המזל</item>
+    </array>
+
+    <array name="questionB83">
+
+        <item>מי הנחה את "גלגל המזל" לאחר ארז טל?</item>
+        <item>גיל סבובר</item>
+        <item>טל מוסרי</item>
+        <item>ליאור סושרד</item>
+        <item>אסי כהן</item>
+    </array>
+
+    <array name="questionB84">
+
+        <item>באיזו שנה נולד משה איבגי?</item>
+        <item>1953</item>
+        <item>1965</item>
+        <item>1940</item>
+        <item>1961</item>
+    </array>
+
+    <array name="questionB85">
+
+        <item>המכה האחרונה בעשר המכות היא</item>
+        <item>מכת בכורות</item>
+        <item>דם</item>
+        <item>צפרדע </item>
+        <item>כינים</item>
+    </array>
+
+    <array name="questionB86">
+
+        <item>המכה לאחר מכת ברד במצרים היא</item>
+        <item>ארבה</item>
+        <item>חושך</item>
+        <item>שחין</item>
+        <item>דם</item>
+    </array>
+
+    <array name="questionB87">
+
+        <item>שלושת מילדיי אדם וחווה היו..</item>
+        <item>קין,הבל ושת</item>
+        <item>קין,הבל ויעקב</item>
+        <item>קין הבל ואברהם</item>
+        <item>קין הבל ונח</item>
+    </array>
+
+    <array name="questionB88">
+
+        <item>בווקמן ניתן לנגן שירים מתוך..</item>
+        <item>קלטת</item>
+        <item>דיסק</item>
+        <item>דיסק און קי</item>
+        <item>לא ניתן לנגן שירים</item>
+    </array>
+
+    <array name="questionB89">
+
+        <item>כמה שנים כיהן ז\'אק שיראק כנשיא צרפת?</item>
+        <item>12</item>
+        <item>22</item>
+        <item>6</item>
+        <item>18</item>
+    </array>
+
+    <array name="questionB90">
+
+        <item>מהו שכרו השנתי של נשיא ארה"ב נכון ל2017?</item>
+        <item>כ400 אלף דולר</item>
+        <item>כ2 מיליון דולר</item>
+        <item>כ5 מיליון דולר</item>
+        <item>כ800 אלף דולר</item>
+    </array>
+
+    <array name="questionB91">
+
+        <item>ולנסיה נמצאת ב..</item>
+        <item>ספרד</item>
+        <item>איטליה</item>
+        <item>גרמניה</item>
+        <item>פורטוגל</item>
+    </array>
+
+    <array name="questionB92">
+
+        <item>קרקוב נמצאת ב..</item>
+        <item>פולין</item>
+        <item>רומניה</item>
+        <item>גרמניה</item>
+        <item>בלגיה</item>
+    </array>
+
+    <array name="questionB93">
+
+        <item>ברוז\' הינה עיר ב..</item>
+        <item>בלגיה</item>
+        <item>גרמניה</item>
+        <item>ספרד</item>
+        <item>פולין</item>
+    </array>
+
+    <array name="questionB94">
+
+        <item>ה"קולוסאום" נמצא ב..</item>
+        <item>רומא</item>
+        <item>פירנצה</item>
+        <item>ונציה</item>
+        <item>מילאנו</item>
+    </array>
+
+    <array name="questionB95">
+
+        <item>אמפייר סטייט בילדינג נמצא ב..</item>
+        <item>ניו יורק</item>
+        <item>קליפורניה</item>
+        <item>מיין</item>
+        <item>מיאמי</item>
+    </array>
+
+    <array name="questionB96">
+
+        <item>באיזו יבשת נמצאים מפלי הניאגרה?</item>
+        <item>צפון אמריקה</item>
+        <item>דרום אמריקה</item>
+        <item>אירופה</item>
+        <item>אסיה</item>
+    </array>
+
+    <array name="questionB97">
+
+        <item>כמה שנים כיהן ברק אובמה כנשיא ארה\"ב?</item>
+        <item>8</item>
+        <item>4</item>
+        <item>6</item>
+        <item>10</item>
+    </array>
+
+    <array name="questionB98">
+
+        <item>מתי נכתב המסמך המכונה \"הצהרת בלפור\"?</item>
+        <item>1917</item>
+        <item>1908</item>
+        <item>1927</item>
+        <item>1900</item>
+    </array>
+
+    <array name="questionB99">
+
+        <item>מי חתם על הצהרת בלפור?</item>
+        <item>שר החוץ הבריטי</item>
+        <item>שר החוץ הגרמני</item>
+        <item>שר החוץ האיטלקי</item>
+        <item>שר החוץ הספרדי</item>
+    </array>
+
+    <array name="questionB100">
+
+        <item>מה סימלו שבעת הכוכבים בדגל שהציע הרצל כדגל המדינה?</item>
+        <item>מספר שעות העבודה היומיות</item>
+        <item>כמספר ימי השבוע</item>
+        <item>מכיוון ש7 הוא מקודש ביהדות</item>
+        <item>כמספר החגים העבריים</item>
+    </array>
+
+    <array name="questionB101">
+
+        <item>על איזה מדינה שלט נפוליאון?</item>
+        <item>צרפת</item>
+        <item>ספרד</item>
+        <item>איטליה</item>
+        <item>גרמניה</item>
+    </array>
+
+    <array name="questionB102">
+
+        <item>במונופול, הכלא חולק משבצת ביחד עם..</item>
+        <item>מעבר חופשי</item>
+        <item>חנייה חופשית</item>
+        <item>רכבת ישראל</item>
+        <item>לך לכלא</item>
+    </array>
+
+    <array name="questionB103">
+
+        <item>לאיזו חברה שייך הדוא\"ל הוטמייל?</item>
+        <item>מיקרוסופט</item>
+        <item>גוגל</item>
+        <item>יאהו</item>
+        <item>אמדוקס</item>
+    </array>
+
+    <array name="questionB104">
+
+        <item>כמה קומות יש במגדל משה אביב?</item>
+        <item>כ70</item>
+        <item>כ90</item>
+        <item>כ120</item>
+        <item>כ50</item>
+    </array>
+
+    <array name="questionB105">
+
+        <item>באיזו שנה נפטר נתן יונתן?</item>
+        <item>2004</item>
+        <item>2010</item>
+        <item>1990</item>
+        <item>1994</item>
+    </array>
+
+    <array name="questionB106">
+
+        <item>מי מהשחקנים לא שיחק באופן קבוע בסדרה \"קרובים קרובים\"?</item>
+        <item>חנה מרון</item>
+        <item>יהורם גאון</item>
+        <item>משה גרשוני</item>
+        <item>יהודה ברקן</item>
+    </array>
+
+    <array name="questionB107">
+
+        <item>לפי מילות השיר \"שימי ידך\", \"היי ,היי, גליה...\"</item>
+        <item>בת הרים יפייפיה</item>
+        <item>בת גלים יפייפיה</item>
+        <item>בת ערים יפייפיה</item>
+        <item>בת בדים יפייפיה</item>
+    </array>
+
+    <array name="questionB108">
+
+        <item>כמה זרועות יש לתמנון?</item>
+        <item>8</item>
+        <item>6</item>
+        <item>4</item>
+        <item>10</item>
+    </array>
+
+    <array name="questionB109">
+
+        <item>איזה אי הננו הגדול בעולם?</item>
+        <item>גרינלנד</item>
+        <item>פינלנד</item>
+        <item>איסלנד</item>
+        <item>בריטניה</item>
+    </array>
+
+    <array name="questionB110">
+
+        <item>מהי השפה המדוברת בעולם?</item>
+        <item>סינית</item>
+        <item>ספרדית</item>
+        <item>ערבית</item>
+        <item>אנגלית</item>
+    </array>
+
+    <array name="questionB111">
+
+        <item>היכן יש יותר תושבים?</item>
+        <item>אסיה</item>
+        <item>אירופה</item>
+        <item>אמריקה</item>
+        <item>אפריקה</item>
+    </array>
+
+    <array name="questionB112">
+
+        <item>כמה בנים היו ליעקב?</item>
+        <item>12</item>
+        <item>10</item>
+        <item>4</item>
+        <item>22</item>
+    </array>
+
+    <array name="questionB113">
+
+        <item>בנתיבי איילון, איזה מחלף צפוני יותר?</item>
+        <item>אוניברסיטה</item>
+        <item>השלום</item>
+        <item>לה גווארדיה</item>
+        <item>ארלוזורוב</item>
+    </array>
+
+    <array name="questionB114">
+
+        <item>כמה שערים הבקיעה ישראל במונדיאל 1970?</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>4</item>
+    </array>
+
+    <array name="questionB115">
+
+        <item>כמה מדינות הצבעת בעד מדינת ישראל בכ\"ט בנובמבר?</item>
+        <item>33</item>
+        <item>25</item>
+        <item>45</item>
+        <item>49</item>
+    </array>
+
+    <array name="questionB116">
+
+        <item>איך קראו לרוצח בסרט \"אני מה עשית בקיץ האחרון\"?</item>
+        <item>בן ויליס</item>
+        <item>ג\'ון ויליס</item>
+        <item>בן ג\'קסון</item>
+        <item>ג\'ון בנסון</item>
+    </array>
+
+    <array name="questionB117">
+
+        <item>מי גילם את \"אודטה\" בתוכנית ארץ נהדרת?</item>
+        <item>טל פרידמן</item>
+        <item>מאור כהן</item>
+        <item>שני כהן</item>
+        <item>עלמה זק</item>
+    </array>
+
+    <array name="questionB118">
+
+        <item>איזה מנחה את \"ערב ים תיכוני\" ברדיו לב המדינה?</item>
+        <item>אליקו כהן</item>
+        <item>דידי הררי</item>
+        <item>ירון אשבל</item>
+        <item>חיים אתגר</item>
+    </array>
+
+    <array name="questionB119">
+
+        <item>מי שר רת השיר \"החיים שלנו תותים\"?</item>
+        <item>חנן בן ארי</item>
+        <item>רענן בן ארי</item>
+        <item>נתן בן ארי</item>
+        <item>דני בן ארי</item>
+    </array>
+
+    <array name="questionB120">
+
+        <item>לפי חיים משה,\"נשבע, כמו פרפר לאש..\"</item>
+        <item>כמו גופי המתרגש</item>
+        <item>כמו מילה אחת פשוטה</item>
+        <item>כמו לחוש במתרגש</item>
+        <item>כמו היום הזה שבא</item>
+    </array>
+
+    <array name="questionB121">
+
+        <item>לפי שלמה ארצי,\"גשם יורד וזה חורף, תל אביב חסומה..\"</item>
+        <item>וגם חיפה</item>
+        <item>וזה נורא</item>
+        <item>וגם טבריה</item>
+        <item>משום מה</item>
+    </array>
+
+    <array name="questionB122">
+
+        <item>מי היה ראש ממשלת ישראל במלחמת ששת הימים?</item>
+        <item>לוי אשכול</item>
+        <item>מנחם בגין</item>
+        <item>בן גוריון</item>
+        <item>גולדה מאיר</item>
+    </array>
+
+    <array name="questionB123">
+
+        <item>איפה נמצא מעבר המיתלה?</item>
+        <item>בחצי האי סיני</item>
+        <item>בירדן</item>
+        <item>באצבע הגליל</item>
+        <item>בסוריה</item>
+    </array>
+
+    <array name="questionB124">
+
+        <item>מהו השיר הישראלי הראשון שזכה באירוויזיון?</item>
+        <item>אבניבי</item>
+        <item>דיוה</item>
+        <item>הללויה</item>
+        <item>כאן</item>
+    </array>
+
+    <array name="questionB125">
+
+        <item>מי שרה את השיר \"זה רק ספורט\"?</item>
+        <item>דפנה דקל</item>
+        <item>מירי מסיקה</item>
+        <item>ירדנה ארזי</item>
+        <item>ריטה</item>
+    </array>
+
     <array name="questions_medium">
         <item>@array/questionB1</item>
         <item>@array/questionB2</item>
@@ -72,6 +1132,137 @@
         <item>@array/questionB5</item>
         <item>@array/questionB6</item>
         <item>@array/questionB7</item>
+        <item>@array/questionB8</item>
+        <item>@array/questionB9</item>
+        <item>@array/questionB10</item>
+
+        <item>@array/questionB11</item>
+        <item>@array/questionB12</item>
+        <item>@array/questionB13</item>
+        <item>@array/questionB14</item>
+        <item>@array/questionB15</item>
+        <item>@array/questionB16</item>
+        <item>@array/questionB17</item>
+        <item>@array/questionB18</item>
+        <item>@array/questionB19</item>
+        <item>@array/questionB20</item>
+
+        <item>@array/questionB21</item>
+        <item>@array/questionB22</item>
+        <item>@array/questionB23</item>
+        <item>@array/questionB24</item>
+        <item>@array/questionB25</item>
+        <item>@array/questionB26</item>
+        <item>@array/questionB27</item>
+        <item>@array/questionB28</item>
+        <item>@array/questionB29</item>
+        <item>@array/questionB30</item>
+
+        <item>@array/questionB31</item>
+        <item>@array/questionB32</item>
+        <item>@array/questionB33</item>
+        <item>@array/questionB34</item>
+        <item>@array/questionB35</item>
+        <item>@array/questionB36</item>
+        <item>@array/questionB37</item>
+        <item>@array/questionB38</item>
+        <item>@array/questionB39</item>
+        <item>@array/questionB40</item>
+
+        <item>@array/questionB41</item>
+        <item>@array/questionB42</item>
+        <item>@array/questionB43</item>
+        <item>@array/questionB44</item>
+        <item>@array/questionB45</item>
+        <item>@array/questionB46</item>
+        <item>@array/questionB47</item>
+        <item>@array/questionB48</item>
+        <item>@array/questionB49</item>
+        <item>@array/questionB50</item>
+
+        <item>@array/questionB51</item>
+        <item>@array/questionB52</item>
+        <item>@array/questionB53</item>
+        <item>@array/questionB54</item>
+        <item>@array/questionB55</item>
+        <item>@array/questionB56</item>
+        <item>@array/questionB57</item>
+        <item>@array/questionB58</item>
+        <item>@array/questionB59</item>
+        <item>@array/questionB60</item>
+
+        <item>@array/questionB61</item>
+        <item>@array/questionB62</item>
+        <item>@array/questionB63</item>
+        <item>@array/questionB64</item>
+        <item>@array/questionB65</item>
+        <item>@array/questionB66</item>
+        <item>@array/questionB67</item>
+        <item>@array/questionB68</item>
+        <item>@array/questionB69</item>
+        <item>@array/questionB70</item>
+
+        <item>@array/questionB71</item>
+        <item>@array/questionB72</item>
+        <item>@array/questionB73</item>
+        <item>@array/questionB74</item>
+        <item>@array/questionB75</item>
+        <item>@array/questionB76</item>
+        <item>@array/questionB77</item>
+        <item>@array/questionB78</item>
+        <item>@array/questionB79</item>
+        <item>@array/questionB80</item>
+
+        <item>@array/questionB81</item>
+        <item>@array/questionB82</item>
+        <item>@array/questionB83</item>
+        <item>@array/questionB84</item>
+        <item>@array/questionB85</item>
+        <item>@array/questionB86</item>
+        <item>@array/questionB87</item>
+        <item>@array/questionB88</item>
+        <item>@array/questionB89</item>
+        <item>@array/questionB90</item>
+
+        <item>@array/questionB91</item>
+        <item>@array/questionB92</item>
+        <item>@array/questionB93</item>
+        <item>@array/questionB94</item>
+        <item>@array/questionB95</item>
+        <item>@array/questionB96</item>
+        <item>@array/questionB97</item>
+        <item>@array/questionB98</item>
+        <item>@array/questionB99</item>
+        <item>@array/questionB100</item>
+
+        <item>@array/questionB100</item>
+        <item>@array/questionB102</item>
+        <item>@array/questionB103</item>
+        <item>@array/questionB104</item>
+        <item>@array/questionB105</item>
+        <item>@array/questionB106</item>
+        <item>@array/questionB107</item>
+        <item>@array/questionB108</item>
+        <item>@array/questionB109</item>
+        <item>@array/questionB110</item>
+
+        <item>@array/questionB111</item>
+        <item>@array/questionB112</item>
+        <item>@array/questionB113</item>
+        <item>@array/questionB114</item>
+        <item>@array/questionB115</item>
+        <item>@array/questionB116</item>
+        <item>@array/questionB117</item>
+        <item>@array/questionB118</item>
+        <item>@array/questionB119</item>
+        <item>@array/questionB120</item>
+
+        <item>@array/questionB121</item>
+        <item>@array/questionB122</item>
+        <item>@array/questionB123</item>
+        <item>@array/questionB124</item>
+        <item>@array/questionB125</item>
+
 
     </array>
 </resources>

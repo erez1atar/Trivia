@@ -22,7 +22,22 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_10_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
 
         <TextView
             android:layout_width="0dp"
@@ -32,7 +47,7 @@
             android:textSize="20dp"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:text="1" />
+            android:text="10" />
 
         <Space
             android:layout_width="0dp"
@@ -44,11 +59,10 @@
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:textAlignment="center"
-            android:textSize="15dp"
             android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 0       -       1000"
-            android:id="@+id/stage_1_txt"/>
+            android:textSize="20sp"
+            android:text="500,0000 - 1,000,000"
+            android:id="@+id/stage_10_txt"/>
 
         <Space
             android:layout_width="0dp"
@@ -84,437 +98,28 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_9_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/circle_light_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="2" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 1000       -       2000"
-            android:id="@+id/stage_2_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_light_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="3" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 2000       -       5000"
-            android:id="@+id/stage_3_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_light_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="4" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 5000       -       10000"
-            android:id="@+id/stage_4_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="5" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 10000       -       20000"
-            android:id="@+id/stage_5_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="6" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 50000       -       100000"
-            android:id="@+id/stage_6_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_blue"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="7" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 100000       -       200000"
-            android:id="@+id/stage_7_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_red"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:text="8" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 200000       -       300000"
-            android:id="@+id/stage_8_txt"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shekel_regular"
-            android:scaleY="0.8"
-            android:scaleX="0.8"
-            android:layout_weight="1"/>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/circle_red"
             android:textSize="20dp"
             android:textColor="@android:color/black"
             android:textAlignment="center"
@@ -531,8 +136,8 @@
             android:layout_weight="5"
             android:textAlignment="center"
             android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 300000       -       500000"
+            android:textSize="20sp"
+            android:text="300,000 - 500,000"
             android:id="@+id/stage_9_txt"/>
 
         <Space
@@ -569,17 +174,32 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_8_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/circle_red"
+            android:background="@drawable/circle_light_blue"
             android:textSize="20dp"
             android:textColor="@android:color/black"
             android:textAlignment="center"
-            android:text="10" />
+            android:text="8" />
 
         <Space
             android:layout_width="0dp"
@@ -592,9 +212,538 @@
             android:layout_weight="5"
             android:textAlignment="center"
             android:gravity="center"
-            android:background="@drawable/stage_background"
-            android:text=" 500000       -       1000000"
-            android:id="@+id/stage_10_txt"/>
+            android:textSize="20sp"
+            android:text="200,000 - 300,000"
+            android:id="@+id/stage_8_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_7_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_light_blue"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="7" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="100,000 - 200,000"
+            android:id="@+id/stage_7_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_6_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_blue"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="6" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text=" 50,000  -  100,000"
+            android:id="@+id/stage_6_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_5_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_blue"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="5" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="10,000  -  20,000"
+            android:id="@+id/stage_5_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_4_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_blue"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="4" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="5,000   -   10,000"
+            android:id="@+id/stage_4_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_3_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_red"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="3" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="2,000   -   5,000"
+            android:id="@+id/stage_3_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_2_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_red"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="2" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="1,000   -   2,000"
+            android:id="@+id/stage_2_txt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shekel_regular"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3X"
+            android:textSize="20sp"
+            android:id="@+id/stage_1_x3"
+            android:textAlignment="center"
+            android:textColor="#DBC21F"
+            android:layout_weight="0.8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_red"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="1" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="   0     -     1,000 "
+            android:id="@+id/stage_1_txt"/>
 
         <Space
             android:layout_width="0dp"
@@ -626,7 +775,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:textSize="45sp"
+        android:textSize="25sp"
         android:scaleX="0.88"
         android:scaleY="0.88"
         android:background="@drawable/button_waiting"
@@ -637,6 +786,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"/>
+
 
 
 </LinearLayout>

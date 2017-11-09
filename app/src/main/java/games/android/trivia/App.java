@@ -2,6 +2,7 @@ package games.android.trivia;
 
 import android.app.Application;
 
+import games.android.trivia.Analytics.FirebaseAnalytics;
 import games.android.trivia.DataBase.DBManager;
 import games.android.trivia.DataBase.ScoreCursorAdapter;
 import games.android.trivia.GlobalHighScore.FirebaseManager;
@@ -20,6 +21,7 @@ public class App extends Application {
     private static WinnerAdapter winAdapter = null;
     private static FirebaseManager firebaseManager = null;
     private static UserDefaultManager userDefaultManager = null;
+    private static FirebaseAnalytics firebaseAnalytics = null;
 
     public App()
     {
@@ -80,5 +82,12 @@ public class App extends Application {
             userDefaultManager = new UserDefaultManager();
         }
         return userDefaultManager;
+    }
+
+    public static FirebaseAnalytics getAnalyticsManager() {
+        if(firebaseAnalytics == null){
+            firebaseAnalytics = new FirebaseAnalytics();
+        }
+        return firebaseAnalytics;
     }
 }

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import games.android.trivia.R;
+import games.android.trivia.Utility;
 
 /**
  * Created by Erez on 11/10/2017.
@@ -40,6 +41,7 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
     public class ViewHolderWinner {
         TextView name;
         TextView score;
+        TextView place;
     }
 
     @Override
@@ -52,6 +54,7 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
             holder = new ViewHolderWinner();
             holder.name = (TextView) convertView.findViewById(R.id.nameWinner);
             holder.score = (TextView) convertView.findViewById(R.id.scoreWinner);
+            holder.place = (TextView) convertView.findViewById(R.id.winner_table_place);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolderWinner) convertView.getTag();
@@ -60,7 +63,9 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
 
         holder.name.setText(winnerDatas.get(position).getName());
 
-        holder.score.setText(String.valueOf(winnerDatas.get(position).getScore()));
+        holder.score.setText(Utility.getNumberFormat(winnerDatas.get(position).getScore()));
+
+        holder.place.setText(String.valueOf(position + 1));
 
         return convertView;
     }

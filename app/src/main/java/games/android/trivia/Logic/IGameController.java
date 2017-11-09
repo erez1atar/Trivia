@@ -14,5 +14,9 @@ public interface IGameController {
 
     void onShowIncurrectQuestionfinished();
 
+    void onPrizeReadyPrize(int prize);
+
+    void forceEndGame();
+
 
 }

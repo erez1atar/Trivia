@@ -14,8 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import games.android.trivia.App;
 import games.android.trivia.R;

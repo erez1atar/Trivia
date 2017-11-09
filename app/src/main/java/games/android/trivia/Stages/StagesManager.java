@@ -65,4 +65,8 @@ public class StagesManager
     public interface StagesListener {
         void onStageChanged();
     }
+
+    public boolean isFirstQuestionInStage(int qustionNum) {
+        return this.stagesData.getIsFirstQuestionInStage(qustionNum);
+    }
 }

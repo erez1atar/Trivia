@@ -11,12 +11,12 @@
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"/>
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="4"
         android:orientation="horizontal">
 
         <android.support.v4.widget.Space
@@ -30,7 +30,7 @@
             android:layout_weight="2"
             android:scaleX="0.8"
             android:scaleY="0.8"
-            android:background="@drawable/coins"/>
+            android:background="@drawable/icons"/>
 
         <android.support.v4.widget.Space
             android:layout_width="0dp"

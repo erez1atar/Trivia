@@ -14,7 +14,7 @@ public class GlobalHighScoreManager implements FirebaseManager.HighScoreListener
     private FirebaseManager firebaseManager = null;
     private String lastName = null;
     private int lastScore = 0;
-    private int minWinnersToSaved = 5;
+    private int minWinnersToSaved = 30;
 
     public GlobalHighScoreManager() {
         firebaseManager = App.getFirebaseManager();

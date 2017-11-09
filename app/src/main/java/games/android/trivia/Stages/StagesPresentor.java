@@ -25,33 +25,7 @@ public class StagesPresentor extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        start.setTypeface(App.getResourcesManager().getNumbersFont());
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();/*
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent intent = new Intent(StagesPresentor.this, GameActivity.class);
-                        startActivity(intent);
-                    }
-                });
-
-            }
-        });
-        thread.run();*/
-
+        //start.setTypeface(App.getResourcesManager().getNumbersFont());
 
     }
 }

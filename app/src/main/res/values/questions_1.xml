@@ -64,6 +64,646 @@
         <item>שרת האוצר</item>
     </array>
 
+    <array name="questionA8">
+
+        <item>מי אמר את המשפט \"אנחנו במפה ואנחנו נשארים במפה\"?</item>
+        <item>טל ברודי</item>
+        <item>אייל ברקובית</item>
+        <item>דוד בן גוריון</item>
+        <item>נפתלי בנט</item>
+    </array>
+
+    <array name="questionA9">
+
+        <item>\"מה רוצה התולעת...\"</item>
+        <item>מחפשת חקה</item>
+        <item>מחפשת טרפה</item>
+        <item>מנבלת פיה</item>
+        <item>מהלכת לבדה</item>
+    </array>
+
+    <array name="questionA10">
+
+        <item>מה שמה הפרטי של הזמרת מסיקה?</item>
+        <item>מירי</item>
+        <item>דקלה</item>
+        <item>איילה</item>
+        <item>ענת</item>
+    </array>
+
+    <array name="questionA11">
+
+        <item>מה פירוש המילה \"תוגה\"?</item>
+        <item>עצב</item>
+        <item>שמחה</item>
+        <item>בלבול</item>
+        <item>החמרה</item>
+    </array>
+
+    <array name="questionA12">
+
+        <item>מה פירוש המילה \"תמיר\"?</item>
+        <item>גבוה</item>
+        <item>תמים</item>
+        <item>טהור</item>
+        <item>עצלן</item>
+    </array>
+
+    <array name="questionA13">
+
+        <item>מה פירוש המושג \" שירות דב\"?</item>
+        <item>כוונות טובות אך תוצאות מזיקות</item>
+        <item>כוונות רעות עם תוצאות טובות</item>
+        <item>מקלקל בכוונה</item>
+        <item>שירות מהיר</item>
+    </array>
+
+    <array name="questionA14">
+
+        <item>מה פירוש המילה \"שעטנז\"?</item>
+        <item>ערבוב עם מין בשאינו מינו</item>
+        <item>שמחה</item>
+        <item>מסיבה גדולה</item>
+        <item>מסירת חפץ יקר ערך</item>
+    </array>
+
+    <array name="questionA15">
+
+        <item>מה פירוש המשוג \"ראה צל הרים כהרים\"?</item>
+        <item>לא ראה דברים כפי שהם</item>
+        <item>ראה את הדברים בצורה צלולה</item>
+        <item>התייחס בזלזול לאנשים</item>
+        <item>חזה את העתיד</item>
+    </array>
+
+    <array name="questionA16">
+
+    <item>אלפא רומיאו זהו רכב..</item>
+        <item>איטלקי</item>
+        <item>יפני</item>
+        <item>אמריקאי</item>
+        <item>צרפתי</item>
+    </array>
+
+    <array name="questionA17">
+
+        <item>ק\"ג תפוחים שווה במשקלו ל-</item>
+        <item>1000 גרם אגסים</item>
+        <item>100 גרם בצלים</item>
+        <item>2 ק\"ג אגוזים</item>
+        <item>1000 ק\"ג מלונים</item>
+    </array>
+
+    <array name="questionA18">
+
+        <item>באיזו יבשת שוכנת יפן?</item>
+        <item>אסיה</item>
+        <item>אירופה</item>
+        <item>אמריקה</item>
+        <item>אפריקה</item>
+    </array>
+
+    <array name="questionA19">
+
+        <item>באיזו יבשת נמצאת לוב?</item>
+        <item>אפריקה</item>
+        <item>אמריקה</item>
+        <item>אסיה</item>
+        <item>אירופה</item>
+    </array>
+
+    <array name="questionA20">
+
+        <item>כמה תושבים יש בישראל נכון ל2017?</item>
+        <item>כ8.5 מיליון</item>
+        <item>כ6 מיליון</item>
+        <item>כ4 מיליון</item>
+        <item>כ11 מיליון</item>
+    </array>
+
+    <array name="questionA21">
+
+        <item>עם איזו מדינה גובלת פקיסטן?</item>
+        <item>הודו</item>
+        <item>עיראק</item>
+        <item>רוסיה</item>
+        <item>אתיופיה</item>
+    </array>
+
+    <array name="questionA22">
+
+    <item>מיהו ממציא הנורה?</item>
+        <item>תומאס אדיסון</item>
+        <item>אלברט איינשטיין</item>
+        <item>בנג\'מין פרנקלין</item>
+        <item>ניוטון</item>
+    </array>
+
+    <array name="questionA23">
+
+        <item>מיהו ממציא הפייסבוק?</item>
+        <item>מארק צוקרברג</item>
+        <item>תומאס אדיסון</item>
+        <item>סטיב ג\'ובס</item>
+        <item>ביל גייטס</item>
+    </array>
+
+    <array name="questionA24">
+
+        <item>מיהו ממציא הטלפון?</item>
+        <item>אלכסנדר גראם בל</item>
+        <item>ניוטון</item>
+        <item>ביל גייטס</item>
+        <item>ניקולה טסלה</item>
+    </array>
+
+    <array name="questionA25">
+
+        <item>מי גילם את פיסטוק?</item>
+        <item>ספי ריבלין</item>
+        <item>ציפי שביט</item>
+        <item>אבי גריניק</item>
+        <item>דודו זר</item>
+    </array>
+
+    <array name="questionA26">
+
+        <item>לחוח הינו מאכל</item>
+        <item>תימני</item>
+        <item>עיראקי</item>
+        <item>מרוקאי</item>
+        <item>כורדי</item>
+    </array>
+
+    <array name="questionA27">
+
+        <item>מי כיהן כראש ממשלה במלחמת לבנון השניה?</item>
+        <item>אהוד אולמרט</item>
+        <item>בנימין נתניהו</item>
+        <item>אריאל שרון</item>
+        <item>אהוד ברק</item>
+    </array>
+
+    <array name="questionA28">
+
+    <item>מי כיהן כראש ממשלה במלחמת יום הכיפורים?</item>
+        <item>גולדה מאיר</item>
+        <item>יצחק רבין</item>
+        <item>יצחק שמיר</item>
+        <item>שמעון פרס</item>
+    </array>
+
+    <array name="questionA29">
+
+        <item>מה הפירוש של אבט\"ש?</item>
+        <item>אבטחת ישובים</item>
+        <item>אבטחת שטחים</item>
+        <item>אבטחת מתקנים</item>
+        <item>אבטיח שלם</item>
+    </array>
+
+    <array name="questionA30">
+
+        <item>מה פירוש ראשי התיבות אג\"מ?</item>
+        <item>אגף מבצעים</item>
+        <item>אגם מרכזי</item>
+        <item>אש מתפשטת</item>
+        <item>ארון משומש</item>
+    </array>
+
+    <array name="questionA31">
+
+        <item>דרך איזו עיר עובר כביש 4?</item>
+        <item>חדרה</item>
+        <item>באר שבע</item>
+        <item>עפולה</item>
+        <item>נצרת</item>
+    </array>
+
+    <array name="questionA32">
+
+        <item>איזו עיר אינה נמצאת על שפת הים התיכון?</item>
+        <item>רחובות</item>
+        <item>אשדוד</item>
+        <item>אשקלון</item>
+        <item>חיפה</item>
+    </array>
+
+    <array name="questionA33">
+
+    <item>לפי מילות השיר \"את הגשם תן רק בעיתו..\"</item>
+        <item>ובאביב פזר לנו פרחים</item>
+        <item>ובקיץ תאיר את השטחים</item>
+        <item>ובסתיו טפח את העצים</item>
+        <item>ובקיץ שמח את האנשים</item>
+    </array>
+
+    <array name="questionA34">
+
+        <item>כמה פעמים התגרש רוס בסדרה \"חברים\"?</item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+
+    <array name="questionA35">
+
+        <item>בסדרה \"נמלטים\" ,למה רצה גיבור הסדרה להיכנס לכלא?</item>
+        <item>כדי להימלט עם אחיו האסיר</item>
+        <item>כדי להוכיח כי מסוגל לשהות בכלא</item>
+        <item>כדי לבצע ראיון עם רוצח</item>
+        <item>כי שהה בדיכאון</item>
+    </array>
+
+    <array name="questionA36">
+
+        <item>כל כמה שנים מתקיים המונדיאל?</item>
+        <item>4 שנים</item>
+        <item>שנתיים</item>
+        <item>3 שנים</item>
+        <item>10 שנים</item>
+    </array>
+
+    <array name="questionA37">
+
+        <item>מהו ההר הגבוה בעולם?</item>
+        <item>האוורסט</item>
+        <item>מנסלו</item>
+        <item>להוטסה</item>
+        <item>מקלו</item>
+    </array>
+
+    <array name="questionA38">
+
+        <item>מיהו \"השרוף\"?</item>
+        <item>חיים צינוביץ</item>
+        <item>אביב גפן</item>
+        <item>רמי פורטיס</item>
+        <item>עברי לידר</item>
+    </array>
+
+    <array name="questionA39">
+
+        <item>עיר הבירה של אוסטריה היא</item>
+        <item>וינה</item>
+        <item>וורשה</item>
+        <item>באקו</item>
+        <item>קייב</item>
+    </array>
+
+    <array name="questionA40">
+
+        <item>מהי בירת גרמניה?</item>
+        <item>ברלין</item>
+        <item>בריסל</item>
+        <item>מינכן</item>
+        <item>רומא</item>
+    </array>
+
+    <array name="questionA41">
+
+        <item>מהי בירת הודו?</item>
+        <item>ניו דלהי</item>
+        <item>מומביי</item>
+        <item>קופנגן</item>
+        <item>דובאי</item>
+    </array>
+
+    <array name="questionA42">
+
+        <item>מהי בירת קפריסין?</item>
+        <item>ניקוסיה</item>
+        <item>איי נאפה</item>
+        <item>לרנקה</item>
+        <item>כרתים</item>
+    </array>
+
+    <array name="questionA43">
+
+        <item>מהי בירת איטליה?</item>
+        <item>רומא</item>
+        <item>מילאנו</item>
+        <item>ונציה</item>
+        <item>סיציליה</item>
+    </array>
+
+    <array name="questionA44">
+
+        <item>מתח חשמלי נמדד ב..</item>
+        <item>וולט</item>
+        <item>אמפר</item>
+        <item>קולון</item>
+        <item>ניוטון</item>
+    </array>
+
+    <array name="questionA45">
+
+        <item>זרם חשמלי נמדד ב..</item>
+        <item>אמפר</item>
+        <item>וולט</item>
+        <item>קולון</item>
+        <item>ניוטון</item>
+    </array>
+
+    <array name="questionA46">
+
+        <item>לאיזו חברה שייך הדוא"ל ג\'ימייל?</item>
+        <item>גוגל</item>
+        <item>מיקרוסופט</item>
+        <item>יאהו</item>
+        <item>אינטל</item>
+    </array>
+
+    <array name="questionA47">
+
+        <item>איזה כוכב לכת הוא הקרוב ביותר לשמש?</item>
+        <item>חמה</item>
+        <item>נגה</item>
+        <item>שבתאי</item>
+        <item>מאדים</item>
+    </array>
+
+    <array name="questionA48">
+
+        <item>אילו כלבים משמשים ככלבי מזחלות?</item>
+        <item>האסקי סיבירי</item>
+        <item>לברדור</item>
+        <item>רועה גרמני</item>
+        <item>ביגל</item>
+    </array>
+
+    <array name="questionA49">
+
+        <item>הדמות הראשית בסדרה \"סמוך על סול\" היא במקור מסדרת..</item>
+        <item>שובר שורות</item>
+        <item>נמלטים</item>
+        <item>שקרים קטנים גדולים</item>
+        <item>הנותרים</item>
+    </array>
+
+    <array name="questionA50">
+
+        <item>מה שמה של אשתו של שרק?</item>
+        <item>פיונה</item>
+        <item>מריה</item>
+        <item>פנינה</item>
+        <item>קאריה</item>
+    </array>
+
+    <array name="questionA51">
+
+        <item>איזה מן הפולטיקאים היה דייר באח הגדול?</item>
+        <item>שרון גל</item>
+        <item>יאיר לפיד</item>
+        <item>אביגדור ליברמן</item>
+        <item>נפתלי בנט</item>
+    </array>
+
+    <array name="questionA52">
+
+        <item>היכן ממוקמים הגנים הבאהים?</item>
+        <item>חיפה</item>
+        <item>עכו</item>
+        <item>צפת</item>
+        <item>יפו</item>
+    </array>
+
+    <array name="questionA53">
+
+        <item>כמה צלעות יש למתומן?</item>
+        <item>8</item>
+        <item>10</item>
+        <item>6</item>
+        <item>12</item>
+    </array>
+
+    <array name="questionA54">
+
+        <item>האוניברסיטה בירושלים נקראת</item>
+        <item>האוניברסיטה העברית</item>
+        <item>אוניברסיטת תל אביב</item>
+        <item>אוניברסיטת בן גוריון</item>
+        <item>אוניברסיטת אריאל</item>
+    </array>
+
+    <array name="questionA55">
+
+        <item>ארץ מוצאו של הטקילה היא</item>
+        <item>מקסיקו</item>
+        <item>איטליה</item>
+        <item>פורטוגל</item>
+        <item>ארגנטינה</item>
+    </array>
+
+    <array name="questionA56">
+
+        <item>ארץ מוצאו של המשקה אוזו היא</item>
+        <item>יוון</item>
+        <item>רומניה</item>
+        <item>ישראל</item>
+        <item>מצרים</item>
+    </array>
+
+    <array name="questionA57">
+
+        <item>בורשט הינו מאכל</item>
+        <item>פולני</item>
+        <item>איטלקי</item>
+        <item>קנייתי</item>
+        <item>ספרדי</item>
+    </array>
+
+    <array name="questionA58">
+
+        <item>לפי מילות השיר \"נפרדנו כך...\"</item>
+        <item>הייתה דממה</item>
+        <item>הייתה מהומה</item>
+        <item>בשקט רך</item>
+        <item>ללא חשש</item>
+    </array>
+
+    <array name="questionA59">
+
+        <item>\"בראש השנה,בראש השנה...\"</item>
+        <item>פרחה שושנה אצלי בגינה</item>
+        <item>צמחה שושנה אצלי בגינה</item>
+        <item>הלכה שושנה אצלי בגינה</item>
+        <item>ברחה שושנה אצלי בגינה</item>
+    </array>
+
+    <array name="questionA60">
+
+        <item>אלקטרון הוא בעל מטען</item>
+        <item>שלילי</item>
+        <item>חיובי</item>
+        <item>ללא מטען</item>
+        <item>כבד</item>
+    </array>
+
+    <array name="questionA61">
+
+        <item>מה שמו של \"הבורר\" מתוך הסדרה \"הבורר\"?</item>
+        <item>ברוך אסולין</item>
+        <item>עמי אמזלג</item>
+        <item>סמי סומו</item>
+        <item>אבי אסולין</item>
+    </array>
+
+    <array name="questionA62">
+
+        <item>מי גילם את יודל\'ה באסקימו לימון?</item>
+        <item>צחי נוי</item>
+        <item>יהונתן סגל</item>
+        <item>אלי תבור</item>
+        <item>יפתח קצור</item>
+    </array>
+
+    <array name="questionA63">
+
+        <item>איזה שיר שר שמש לחייליו בסרט \"ספיחס\"?</item>
+        <item>נומי נומי ילדתי</item>
+        <item>הדואר בא היום</item>
+        <item>יפה שלי</item>
+        <item>התקווה</item>
+    </array>
+
+    <array name="questionA64">
+
+        <item>מי היכה בסלע ויצאו ממנו מים?</item>
+        <item>משה</item>
+        <item>אהרון</item>
+        <item>יעקב</item>
+        <item>אברהם</item>
+    </array>
+
+    <array name="questionA65">
+
+        <item>בניו של נח היו שם,חם ו..</item>
+        <item>יפת</item>
+        <item>מתושלח</item>
+        <item>אברהם</item>
+        <item>יעקב</item>
+    </array>
+
+    <array name="questionA66">
+
+        <item>פרנסואה הולנד היה נשיאה של..</item>
+        <item>צרפת</item>
+        <item>הולנד</item>
+        <item>גרמניה</item>
+        <item>איטליה</item>
+    </array>
+
+    <array name="questionA67">
+
+        <item>מי כיהן כנשיא צרפת לאחר פרנסואה הולנד?</item>
+        <item>מקרון</item>
+        <item>ז\'אק שיראק</item>
+        <item>סרקוזי</item>
+        <item>מיטראן</item>
+    </array>
+
+    <array name="questionA68">
+
+        <item>מה פירוש ראשי התיבות אח"י?</item>
+        <item>אוניית חיל הים</item>
+        <item>אוגדת חימוש</item>
+        <item>אגף חילוץ</item>
+        <item>אל חשש ילדי</item>
+    </array>
+
+    <array name="questionA69">
+
+        <item>מה פירוש ראשי התיבות בג\"ץ?</item>
+        <item>בית דין גבוה לצדק</item>
+        <item>בית דין גדול וצודק</item>
+        <item>בית דין גבוה</item>
+        <item>בית דין צודק</item>
+    </array>
+
+    <array name="questionA70">
+
+        <item>מה פירוש ראשי התיבות בה\"ד בצבא?</item>
+        <item>בסיס הדרכה</item>
+        <item>בסיס הדגמה</item>
+        <item>בסיס הדרגים הגבוהים</item>
+        <item>בסיס דרומי</item>
+    </array>
+
+    <array name="questionA71">
+
+        <item>פירוש ראשי התיבות בקו\"ם?</item>
+        <item>בסיס קליטה ומיון</item>
+        <item>בסיס קבלה ומיון</item>
+        <item>בסיס קבלה ומיגון</item>
+        <item>בסיס קליטה ומסירה</item>
+    </array>
+
+    <array name="questionA72">
+
+        <item>פירוש ראשי התיבות הח\"מ?</item>
+        <item>החתום מטה</item>
+        <item>החתום מורשה</item>
+        <item>החלטה מחושבת</item>
+        <item>חתימה מרצון</item>
+    </array>
+
+    <array name="questionA73">
+
+        <item>הטאג-מאהל נמצא ב..</item>
+        <item>הודו</item>
+        <item>סרי לנקה</item>
+        <item>תאילנד</item>
+        <item>ירדן</item>
+    </array>
+
+    <array name="questionA74">
+
+        <item>לאיזו מדינה שייך האי פורטו ריקו?</item>
+        <item>ארה\"ב</item>
+        <item>קנדה</item>
+        <item>ספרד</item>
+        <item>צרפת</item>
+    </array>
+
+    <array name="questionA75">
+
+        <item>לאיזו מדינה שייך האי סיציליה?</item>
+        <item>איטליה</item>
+        <item>ספרד</item>
+        <item>בלגיה</item>
+        <item>בולגריה</item>
+    </array>
+
+    <array name="questionA76">
+
+        <item>כמה בתים מותר לבנות במונופול ברחוב אחד?</item>
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>1</item>
+    </array>
+
+    <array name="questionA77">
+
+        <item>כמה כוכבים ישנם  בדגל ארצות הברית?</item>
+        <item>50</item>
+        <item>60</item>
+        <item>40</item>
+        <item>30</item>
+    </array>
+
+    <array name="questionA78">
+
+        <item>כמה נשים כיהנו כראש ממשלת ישראל?</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+
+
     <array name="questions_easy">
         <item>@array/questionA1</item>
         <item>@array/questionA2</item>
@@ -72,6 +712,84 @@
         <item>@array/questionA5</item>
         <item>@array/questionA6</item>
         <item>@array/questionA7</item>
+        <item>@array/questionA8</item>
+        <item>@array/questionA9</item>
+        <item>@array/questionA10</item>
+
+        <item>@array/questionA11</item>
+        <item>@array/questionA12</item>
+        <item>@array/questionA13</item>
+        <item>@array/questionA14</item>
+        <item>@array/questionA15</item>
+        <item>@array/questionA16</item>
+        <item>@array/questionA17</item>
+        <item>@array/questionA18</item>
+        <item>@array/questionA19</item>
+        <item>@array/questionA20</item>
+
+        <item>@array/questionA21</item>
+        <item>@array/questionA22</item>
+        <item>@array/questionA23</item>
+        <item>@array/questionA24</item>
+        <item>@array/questionA25</item>
+        <item>@array/questionA26</item>
+        <item>@array/questionA27</item>
+        <item>@array/questionA28</item>
+        <item>@array/questionA29</item>
+        <item>@array/questionA30</item>
+
+        <item>@array/questionA31</item>
+        <item>@array/questionA32</item>
+        <item>@array/questionA33</item>
+        <item>@array/questionA34</item>
+        <item>@array/questionA35</item>
+        <item>@array/questionA36</item>
+        <item>@array/questionA37</item>
+        <item>@array/questionA38</item>
+        <item>@array/questionA39</item>
+        <item>@array/questionA40</item>
+
+        <item>@array/questionA41</item>
+        <item>@array/questionA42</item>
+        <item>@array/questionA43</item>
+        <item>@array/questionA44</item>
+        <item>@array/questionA45</item>
+        <item>@array/questionA46</item>
+        <item>@array/questionA47</item>
+        <item>@array/questionA48</item>
+        <item>@array/questionA49</item>
+        <item>@array/questionA50</item>
+
+        <item>@array/questionA51</item>
+        <item>@array/questionA52</item>
+        <item>@array/questionA53</item>
+        <item>@array/questionA54</item>
+        <item>@array/questionA55</item>
+        <item>@array/questionA56</item>
+        <item>@array/questionA57</item>
+        <item>@array/questionA58</item>
+        <item>@array/questionA59</item>
+        <item>@array/questionA60</item>
+
+        <item>@array/questionA61</item>
+        <item>@array/questionA62</item>
+        <item>@array/questionA63</item>
+        <item>@array/questionA64</item>
+        <item>@array/questionA65</item>
+        <item>@array/questionA66</item>
+        <item>@array/questionA67</item>
+        <item>@array/questionA68</item>
+        <item>@array/questionA69</item>
+        <item>@array/questionA70</item>
+
+        <item>@array/questionA71</item>
+        <item>@array/questionA72</item>
+        <item>@array/questionA73</item>
+        <item>@array/questionA74</item>
+        <item>@array/questionA75</item>
+        <item>@array/questionA76</item>
+        <item>@array/questionA77</item>
+        <item>@array/questionA78</item>
 
     </array>
 </resources>

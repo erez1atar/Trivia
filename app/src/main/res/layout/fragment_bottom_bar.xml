@@ -98,18 +98,19 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
 
-        <ImageView
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
-            android:background="@drawable/money_bag"/>
+            android:text="הגרל פרס"
+            android:background="@drawable/red_circle_background"
+            android:id="@+id/button_bar_stop"/>
 
         <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.9"/>
+            android:layout_weight="0.6"/>
+
     </LinearLayout>
 
     <android.support.v4.widget.Space

@@ -1,6 +1,7 @@
 package games.android.trivia;
 
 import android.os.CountDownTimer;
+import android.util.Log;
 
 /**
  * Created by Erez on 05/10/2017.
@@ -16,10 +17,12 @@ public class Timer
     }
 
     public void start(int seconds) {
+        endTimer();
         timer = new CountDownTimer(seconds * 1000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 listener.onTickUpdated((int)millisUntilFinished / 1000);
+                Log.d("onTick", millisUntilFinished / 1000 + "");
             }
 
             @Override

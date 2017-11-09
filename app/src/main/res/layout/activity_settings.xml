@@ -8,6 +8,20 @@
     android:orientation="vertical"
     tools:context="games.android.trivia.Settings.SettingsActivity">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="תודות"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textAlignment="center"
+        android:background="@drawable/button_waiting2"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:id="@+id/settings_credits"/>
+
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"

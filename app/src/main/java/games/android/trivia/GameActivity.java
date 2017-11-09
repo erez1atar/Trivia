@@ -18,7 +18,15 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.lang.ref.WeakReference;
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Locale;
 
 import games.android.trivia.Bars.BottomBar;
 import games.android.trivia.Bars.TopBarFragment;
@@ -47,12 +55,21 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     private Drawable regularBackground = null;
     private Drawable watingBackground1 = null;
     private Drawable watingBackground2 = null;
+    private ValueAnimator animator = null;
+    private int randomPrize = 0;
+    private AdView mAdView;
+    private TextView gameTimerView = null;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         this.initTopBar();
         this.initBottomBar();
 
@@ -66,6 +83,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer2 = (Button)findViewById(R.id.answer_2);
         answer3 = (Button)findViewById(R.id.answer_3);
         answer4 = (Button)findViewById(R.id.answer_4);
+        gameTimerView = (TextView)findViewById(R.id.game_timer);
+        gameTimerView.setTypeface(App.getResourcesManager().getTimerFont());
 
         this.gameController = new GameController(this);
         this.answerListener = new AnswerListener(this.gameController);
@@ -86,11 +105,11 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer4 = (Button)findViewById(R.id.answer_4);
 
         typeface = Typeface.createFromAsset(getAssets(),"fonts/hebrew.ttf");
-        answer1.setTypeface(typeface);
-        answer2.setTypeface(typeface);
-        answer3.setTypeface(typeface);
-        answer4.setTypeface(typeface);
-        questionTxt.setTypeface(typeface);
+//        answer1.setTypeface(typeface);
+//        answer2.setTypeface(typeface);
+//        answer3.setTypeface(typeface);
+//        answer4.setTypeface(typeface);
+//        questionTxt.setTypeface(typeface);
 
 
         Log.d("GameActivity", "initButtons");
@@ -128,22 +147,14 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
     private void showcorrectAnim() {
         Log.d("GameActivity", "showCurrectAnim");
-        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,true), 300);
+        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,true), 600);
         new Handler().postDelayed(new FinishQuestionRunnable(gameController, true), 1500);
-    }
-
-    void showCorrectAnswerColor() {
-        this.lastAnswerPicked.setBackground(correctBackground);
-    }
-
-    void  showWaitingColor() {
-        this.lastAnswerPicked.setBackground(watingBackground1);
     }
 
     @Override
     public void onIncorrectAnswer() {
         Log.d("GameActivity", "onInCorrectAnswer");
-        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,false), 1000);
+        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,false), 600);
         new Handler().postDelayed(new FinishQuestionRunnable(gameController, false), 1500);
     }
 
@@ -151,10 +162,13 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     public void onNewQuestionLoaded(Question question) {
         this.setEnabledAllAnswers(true);
         questionTxt.setText(question.getQuestion());
-        answer1.setText(question.getAnswers()[0]);
-        answer2.setText(question.getAnswers()[1]);
-        answer3.setText(question.getAnswers()[2]);
-        answer4.setText(question.getAnswers()[3]);
+        ArrayList<String> answers = new ArrayList<String>(Arrays.asList(question.getAnswers()));
+        Collections.shuffle(answers);
+
+        answer1.setText(answers.get(0));
+        answer2.setText(answers.get(1));
+        answer3.setText(answers.get(2));
+        answer4.setText(answers.get(3));
 
         answer1.startAnimation(scaleInAnim);
         answer2.startAnimation(scaleInAnim);
@@ -170,7 +184,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     @Override
     public void onMoneyChanged(int money) {
         Log.d("game", ("score now is " +  money));
-        this.topBar.setScoreTxt(String.valueOf(money));
+        String formatStr = NumberFormat.getNumberInstance(Locale.US).format(money);
+        this.topBar.setScoreTxt(formatStr);
     }
 
     @Override
@@ -192,41 +207,44 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     }
 
     @Override
-    public void showTime(int seconds) {
+    public void showTurnTime(int seconds) {
         this.topBar.setTime(seconds);
     }
 
     @Override
-    public void setPrize(final int minValue, final int maxValue, final int prize) {
+    public void showGameTime(int seconds) {
+        gameTimerView.setText(getTimeFormat(seconds));
+        Log.d("game timer", " " + seconds);
+    }
 
-        ValueAnimator animator = ValueAnimator.ofInt(minValue, maxValue);
+    @Override
+    public void startRadomPrizeLottery(final int minValue, final int maxValue, final int prize) {
 
-        animator.setDuration(1000);
+        this.clearButtons();
+        animator = ValueAnimator.ofInt(minValue, maxValue);
+        bottomBar.enabledStopBtn(true);
+        animator.setDuration(15000);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             public void onAnimationUpdate(ValueAnimator animation) {
-                int random = (int)(minValue + Math.random() * (maxValue - minValue));
-                bottomBar.setPrize(String.valueOf(random));
+                randomPrize = (int)(minValue + Math.random() * (maxValue - minValue));
+                String formatStr = NumberFormat.getNumberInstance(Locale.US).format(randomPrize);
+                bottomBar.setPrize(formatStr);
             }
         });
         animator.start();
+    }
 
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1020);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        bottomBar.setPrize(String.valueOf(prize));
-                    }
-                });
-            }
-        });
-        thread.start();
+    private void clearButtons() {
+        questionTxt.setText("");
+        answer1.setText("");
+        answer2.setText("");
+        answer3.setText("");
+        answer4.setText("");
+
+        answer1.setBackground(regularBackground);
+        answer2.setBackground(regularBackground);
+        answer3.setBackground(regularBackground);
+        answer4.setBackground(regularBackground);
     }
 
     @Override
@@ -251,6 +269,15 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         }
     }
 
+    @Override
+    public void onStopPrizeBtnClicked() {
+        bottomBar.enabledStopBtn(false);
+        animator.cancel();
+        String formatStr = NumberFormat.getNumberInstance(Locale.US).format(randomPrize);
+        bottomBar.setPrize(formatStr);
+        gameController.onPrizeReadyPrize(randomPrize);
+    }
+
     private class AnswerListener implements View.OnClickListener {
         IGameController controller = null;
 
@@ -266,36 +293,6 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
             v.setBackground(watingBackground1);
             controller.onAnswerPicked(((Button)v).getText().toString());
         }
-    }
-
-    private void btnWaitingAnimation(final View v) {
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for(int i = 0 ; i < 4 ; i++){
-                    try {
-                        Log.d("btn wating" , "sleep");
-                        Thread.sleep(150);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    final int idx = i;
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Log.d("btn wating" , "running");
-                            if(idx % 2 == 0){
-                                v.setBackground(watingBackground1);
-                            }
-                            else {
-                                v.setBackground(watingBackground2);
-                            }
-                        }
-                    });
-                }
-            }
-        });
-        thread.start();
     }
 
     private void setEnabledAllAnswers(boolean enable) {
@@ -354,5 +351,18 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
             }
         }
+    }
+
+    private String getTimeFormat(int sec){
+        int hours = sec / 3600;
+        int minutes = (sec % 3600) / 60;
+        int seconds = sec % 60;
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        gameController.forceEndGame();
     }
 }

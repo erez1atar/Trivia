@@ -22,8 +22,10 @@ public interface IGamePresentor {
 
     void showHearts(int hearts);
 
-    void showTime(int seconds);
+    void showTurnTime(int seconds);
 
-    void setPrize(int minValue, int maxValue, int prize);
+    void showGameTime(int seconds);
+
+    void startRadomPrizeLottery(int minValue, int maxValue, int prize);
 
 }

@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        App.getAnalyticsManager().logAppOpenedEvent();
+
         Button start = (Button)findViewById(R.id.start_game_btn);
         start.setOnClickListener(new View.OnClickListener() {
             @Override

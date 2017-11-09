@@ -12,4 +12,9 @@ public class ResourcesManager {
         Typeface numbersFont = Typeface.createFromAsset(App.getInstance().getAssets(),"fonts/hebrew.ttf");
         return numbersFont;
     }
+
+    public Typeface getTimerFont() {
+        Typeface numbersFont = Typeface.createFromAsset(App.getInstance().getAssets(),"fonts/alarm_clock.ttf");
+        return numbersFont;
+    }
 }

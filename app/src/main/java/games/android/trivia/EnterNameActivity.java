@@ -30,6 +30,7 @@ public class EnterNameActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 App.getUserDefaultManager().setUserName(name.getText().toString());
+                App.getAnalyticsManager().logNameInsertedEvent(name.getText().toString());
                 startActivity(new Intent(EnterNameActivity.this,StagesPresentor.class));
             }
         });

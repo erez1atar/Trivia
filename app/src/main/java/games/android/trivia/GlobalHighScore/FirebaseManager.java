@@ -1,11 +1,13 @@
 package games.android.trivia.GlobalHighScore;
 
+import android.os.Bundle;
 import android.util.Log;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.ArrayList;
@@ -26,12 +28,16 @@ public class FirebaseManager {
     private FirebaseStorage storage;
     private static final String HIGH_SCORE_KEY = "high_score";
     private HighScoreListener highScoreListener = null;
+    private FirebaseAnalytics mFirebaseAnalytics;
+
+    private static FirebaseManager instance =  null;
 
     public FirebaseManager() {
         Firebase.setAndroidContext(App.getInstance());
         executor = Executors.newFixedThreadPool(5);
         fb = new Firebase("https://trivia-280c2.firebaseio.com");
         storage = FirebaseStorage.getInstance();
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(App.getInstance());
     }
 
     public void setHighScoreListener(HighScoreListener highScoreListener) {
@@ -91,5 +97,9 @@ public class FirebaseManager {
                 fb.child(HIGH_SCORE_KEY).child(id).removeValue();
             }
         });
+    }
+
+    public void logEvent(String name, Bundle bundle){
+        mFirebaseAnalytics.logEvent(name, bundle);
     }
 }

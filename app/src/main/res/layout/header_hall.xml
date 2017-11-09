@@ -16,7 +16,6 @@
         android:id="@+id/hall_of_fame_score"
         />
 
-
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -27,6 +26,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="שם"
         android:id="@+id/hall_of_fame_name"
-         />
+        />
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"/>
 
 </LinearLayout>

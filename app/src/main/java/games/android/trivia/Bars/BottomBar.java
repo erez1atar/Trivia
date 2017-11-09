@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 import games.android.trivia.App;
@@ -21,6 +22,7 @@ public class BottomBar extends Fragment {
     private String format = "%d  -  %d";
     private BottomBarListener listener = null;
     private TextView StageIdTxt = null;
+    private Button stopBtn = null;
 
     public BottomBar() {
         // Required empty public constructor
@@ -46,6 +48,14 @@ public class BottomBar extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        stopBtn = (Button)getView().findViewById(R.id.button_bar_stop);
+
+        stopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onStopPrizeBtnClicked();
+            }
+        });
         this.rangeTxt = (TextView) getView().findViewById(R.id.bottom_bar_range);
         this.prize = (TextView)getView().findViewById(R.id.bottom_bar_prize) ;
         this.StageIdTxt = (TextView)getView().findViewById(R.id.bottom_bar_stage_id);
@@ -68,5 +78,17 @@ public class BottomBar extends Fragment {
 
     public interface BottomBarListener {
         void onBottomBarCreatedFinished();
+        void onStopPrizeBtnClicked();
+    }
+
+    public void enabledStopBtn(boolean enabled) {
+        stopBtn.setEnabled(enabled);
+        if(enabled){
+            Animation heartPulse = AnimationUtils.loadAnimation(App.getInstance().getApplicationContext(),R.anim.heart_pulse_big);
+            stopBtn.startAnimation(heartPulse);
+        }
+        else {
+            stopBtn.clearAnimation();
+        }
     }
 }

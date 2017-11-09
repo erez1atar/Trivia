@@ -12,6 +12,7 @@ import java.util.Collections;
 
 import games.android.trivia.App;
 import games.android.trivia.R;
+import games.android.trivia.Utility;
 
 
 /**
@@ -43,6 +44,7 @@ public class WinnerAdapter extends ArrayAdapter
     {
         private TextView score;
         private TextView name;
+        private TextView place;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent)
@@ -54,13 +56,16 @@ public class WinnerAdapter extends ArrayAdapter
             ViewHolder vh = new ViewHolder();
             vh.score = (TextView)convertView.findViewById(R.id.scoreWinner);
             vh.name = (TextView)convertView.findViewById(R.id.nameWinner);
+            vh.place = (TextView)convertView.findViewById(R.id.winner_table_place);
             convertView.setTag(vh);
         }
         ViewHolder vh = (ViewHolder)convertView.getTag();
         vh.score.setTypeface(App.getResourcesManager().getNumbersFont());
         vh.name.setTypeface(App.getResourcesManager().getNumbersFont());
-        vh.score.setText(String.valueOf(winners.get(position).getScore()));
+        vh.place.setTypeface(App.getResourcesManager().getNumbersFont());
+        vh.score.setText(Utility.getNumberFormat(winners.get(position).getScore()));
         vh.name.setText(winners.get(position).getName());
+        vh.place.setText((String.valueOf(position + 1)));
         return convertView;
     }
 
