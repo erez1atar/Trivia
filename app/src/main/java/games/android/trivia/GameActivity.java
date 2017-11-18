@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
@@ -12,10 +13,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -59,7 +63,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     private int randomPrize = 0;
     private AdView mAdView;
     private TextView gameTimerView = null;
-
+    private ImageView arrow = null;
+    private ViewGroup.LayoutParams lp = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +96,27 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
         this.initButtons();
 
+        if(App.getUserDefaultManager().getGameNumber() <= 5){
+            this.initArraow();
+        }
+
+
+    }
+
+    private void initArraow()
+    {
+        arrow = new ImageView(this);
+        arrow.setImageResource(R.drawable.arrows);
+        arrow.setScaleY(0.5f);
+        arrow.setScaleX(0.5f);
+
+        lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        arrow.setY(size.y * 0.1f);
+        GameActivity.this.addContentView(arrow, lp);
+        arrow.setVisibility(View.INVISIBLE);
     }
 
     private void onGameStart() {
@@ -221,6 +247,10 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     public void startRadomPrizeLottery(final int minValue, final int maxValue, final int prize) {
 
         this.clearButtons();
+        if(arrow != null){
+            arrow.setVisibility(View.VISIBLE);
+        }
+
         animator = ValueAnimator.ofInt(minValue, maxValue);
         bottomBar.enabledStopBtn(true);
         animator.setDuration(15000);
@@ -271,6 +301,10 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
 
     @Override
     public void onStopPrizeBtnClicked() {
+        if(arrow != null){
+            arrow.setVisibility(View.INVISIBLE);
+        }
+
         bottomBar.enabledStopBtn(false);
         animator.cancel();
         String formatStr = NumberFormat.getNumberInstance(Locale.US).format(randomPrize);

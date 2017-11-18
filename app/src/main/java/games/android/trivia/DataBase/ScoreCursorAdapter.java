@@ -30,8 +30,8 @@ public class ScoreCursorAdapter extends CursorAdapter
         ViewHolder vh = new ViewHolder();
         vh.name = (TextView) view.findViewById(R.id.nameWinner);
         vh.score = (TextView) view.findViewById(R.id.scoreWinner);
-        vh.name.setTypeface(App.getResourcesManager().getNumbersFont());
-        vh.score.setTypeface(App.getResourcesManager().getNumbersFont());
+        vh.place = (TextView)view.findViewById(R.id.winner_table_place);
+
         view.setTag(vh);
         return view;
     }
@@ -40,6 +40,7 @@ public class ScoreCursorAdapter extends CursorAdapter
     {
         TextView name;
         TextView score;
+        TextView place;
     }
 
     @Override
@@ -53,5 +54,6 @@ public class ScoreCursorAdapter extends CursorAdapter
 
         vh.name.setText(nameVal);
         vh.score.setText(String.valueOf(scoreVal));
+        vh.place.setText(String.valueOf(cursor.getPosition() + 1));
     }
 }

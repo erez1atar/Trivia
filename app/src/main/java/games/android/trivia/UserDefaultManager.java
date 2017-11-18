@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 public class UserDefaultManager {
     private SharedPreferences preferences;
     private final String NAME_KEY = "name";
+    private final String GAME_NUM_KEY = "game_num";
 
     public UserDefaultManager() {
         preferences = PreferenceManager.getDefaultSharedPreferences(App.getInstance());
@@ -23,6 +24,18 @@ public class UserDefaultManager {
     public void setUserName(String name) {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString(NAME_KEY,name);
+        editor.apply();
+    }
+
+    public int getGameNumber() {
+        return preferences.getInt(GAME_NUM_KEY, 0);
+    }
+
+    public void increaseGameNumber(){
+        int gameNum = getGameNumber();
+        gameNum++;
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt(GAME_NUM_KEY,gameNum);
         editor.apply();
     }
 }

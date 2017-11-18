@@ -50,7 +50,7 @@
         android:background="@drawable/button_correct_style"
         android:id="@+id/enter_name_name"
         android:textAlignment="center"
-        android:hint="אכנס שם.."
+        android:hint="הכנס שם.."
         android:gravity="center"/>
 
 

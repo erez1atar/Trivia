@@ -55,6 +55,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
     @Override
     public void onNewGameStart() {
         App.getAnalyticsManager().logStartGameEvent();
+        App.getUserDefaultManager().increaseGameNumber();
         gameTimer.start(210);
         stagesManager.onGameStart();
         wallet = new Wallet(0);

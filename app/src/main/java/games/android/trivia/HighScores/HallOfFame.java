@@ -25,7 +25,7 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
 
     public static final String INTENT_HIGH_SCORE_KEY = "hs";
     public static final String INTENT_LOCAL_HISH_SCORE_VALUE = "lo";
-    public static final String INTENT_GLOBAL_HISH_SCORE_VALUE = "lo";
+    public static final String INTENT_GLOBAL_HISH_SCORE_VALUE = "gl";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,9 +50,9 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
     }
 
     private void initLocal() {
-        ((TextView)(findViewById(R.id.hall_of_fame_name))).setTypeface(App.getResourcesManager().getNumbersFont());
+        /*((TextView)(findViewById(R.id.hall_of_fame_name))).setTypeface(App.getResourcesManager().getNumbersFont());
         ((TextView)(findViewById(R.id.hall_of_fame_score))).setTypeface(App.getResourcesManager().getNumbersFont());
-        ((TextView)(findViewById(R.id.restartFromList))).setTypeface(App.getResourcesManager().getNumbersFont());
+        ((TextView)(findViewById(R.id.restartFromList))).setTypeface(App.getResourcesManager().getNumbersFont());*/
 
         ListView listView = (ListView)findViewById(R.id.listOfWinners);
         DBManager manager = App.getDataBase();
