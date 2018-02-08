@@ -11,6 +11,9 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -28,6 +31,7 @@ public class FirebaseManager {
     private FirebaseStorage storage;
     private static final String HIGH_SCORE_KEY = "high_score";
     private HighScoreListener highScoreListener = null;
+    private MonthlyHighScoreListener monthlyHighScoreListener = null;
     private FirebaseAnalytics mFirebaseAnalytics;
 
     private static FirebaseManager instance =  null;
@@ -44,6 +48,10 @@ public class FirebaseManager {
         this.highScoreListener = highScoreListener;
     }
 
+    public void setMonthlyHighScoreListener(MonthlyHighScoreListener highScoreListener) {
+        this.monthlyHighScoreListener = highScoreListener;
+    }
+
     public void addWinner(final WinnerData winnerData) {
         executor.execute(new Runnable() {
             @Override
@@ -53,9 +61,17 @@ public class FirebaseManager {
         });
     }
 
-    public void requestHighScores() {
+    public void addMonthlyWinner(final WinnerData winnerData) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                fb.child(getMontlyTableKey()).push().setValue(winnerData);
+            }
+        });
+    }
 
-        fb.child(HIGH_SCORE_KEY).addListenerForSingleValueEvent(new ValueEventListener() {
+    private void doRequestHighScore(final String tableKey) {
+        fb.child(tableKey).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 final DataSnapshot dataSnapshotFinal = dataSnapshot;
@@ -69,8 +85,11 @@ public class FirebaseManager {
                             highScores.add(new FirebaseWinnerWrapper(winnerData, postSnapshot.getKey()));
                             Log.d("requestHighScores ", winnerData.toString());
                         }
-                        if(highScoreListener != null) {
+                        if(HIGH_SCORE_KEY.equals(tableKey)) {
                             highScoreListener.onHighScoresReady(highScores);
+                        }
+                        else {
+                            monthlyHighScoreListener.onMonthlyHighScoresReady(highScores);
                         }
                     }
                 });
@@ -82,11 +101,22 @@ public class FirebaseManager {
 
             }
         });
+    }
 
+    public void requestHighScores() {
+        this.doRequestHighScore(HIGH_SCORE_KEY);
+    }
+
+    public void requestMonthlyHighScores() {
+        this.doRequestHighScore(getMontlyTableKey());
     }
 
     public interface HighScoreListener {
         void onHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
+    }
+
+    public interface MonthlyHighScoreListener {
+        void onMonthlyHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
     }
 
     public void removeWinner(final String id) {
@@ -97,6 +127,22 @@ public class FirebaseManager {
                 fb.child(HIGH_SCORE_KEY).child(id).removeValue();
             }
         });
+    }
+
+    public void removeMonthlyWinner(final String id) {
+        Log.d("fb", "try to remove " + id);
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                fb.child(getMontlyTableKey()).child(id).removeValue();
+            }
+        });
+    }
+
+    private String getMontlyTableKey() {
+        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+        String key =  String.format("%s_%d_%d",HIGH_SCORE_KEY,calendar.get(Calendar.MONTH),calendar.get(Calendar.YEAR));
+        return key;
     }
 
     public void logEvent(String name, Bundle bundle){

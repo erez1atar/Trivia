@@ -67,6 +67,19 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
 
         holder.place.setText(String.valueOf(position + 1));
 
+        if(position == 0){
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_1_background);
+        }
+        else if(position == 1){
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_2_background);
+        }
+        else if(position == 2){
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_3_background);
+        }
+        else {
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_background);
+        }
+
         return convertView;
     }
 }

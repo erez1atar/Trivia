@@ -21,11 +21,21 @@ import games.android.trivia.GlobalHighScore.GlobalHighScoreManager;
 import games.android.trivia.R;
 
 
-public class HallOfFame extends AppCompatActivity implements FirebaseManager.HighScoreListener {
+public class HallOfFame extends AppCompatActivity implements FirebaseManager.HighScoreListener,FirebaseManager.MonthlyHighScoreListener {
+
+
+    private enum GLOBAL_TYPE  {
+            MONTHLY,
+            ALL_TIMES
+    }
 
     public static final String INTENT_HIGH_SCORE_KEY = "hs";
     public static final String INTENT_LOCAL_HISH_SCORE_VALUE = "lo";
     public static final String INTENT_GLOBAL_HISH_SCORE_VALUE = "gl";
+
+    private Button montly_btn = null;
+    private Button all_times_btn = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +43,19 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
 
         Intent intent = getIntent();
         String type = intent.getStringExtra(HallOfFame.INTENT_HIGH_SCORE_KEY);
+        all_times_btn = (Button)findViewById(R.id.hall_of_fame_all_times);
+        montly_btn = (Button)findViewById(R.id.hall_of_fame_monthly);
+
         if(type.equals(HallOfFame.INTENT_GLOBAL_HISH_SCORE_VALUE)){
-            initGlobal();
+            initGlobal(GLOBAL_TYPE.ALL_TIMES);
+            this.actButtonsState(true);
         }
         else {
             initLocal();
+            all_times_btn.setVisibility(View.INVISIBLE);
+            all_times_btn.setEnabled(false);
+            montly_btn.setVisibility(View.INVISIBLE);
+            montly_btn.setEnabled(false);
         }
 
         Button restart = (Button)findViewById(R.id.restartFromList);
@@ -45,6 +63,22 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        all_times_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initGlobal(GLOBAL_TYPE.ALL_TIMES);
+                actButtonsState(true);
+            }
+        });
+
+        montly_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initGlobal(GLOBAL_TYPE.MONTHLY);
+                actButtonsState(false);
             }
         });
     }
@@ -61,13 +95,28 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
         listView.setAdapter(adapter);
     }
 
-    private void initGlobal() {
-        App.getFirebaseManager().setHighScoreListener(this);
-        App.getFirebaseManager().requestHighScores();
+    private void initGlobal(GLOBAL_TYPE type) {
+        if(type == GLOBAL_TYPE.MONTHLY){
+            App.getFirebaseManager().setMonthlyHighScoreListener(this);
+            App.getFirebaseManager().requestMonthlyHighScores();
+        }
+        else {
+            App.getFirebaseManager().setHighScoreListener(this);
+            App.getFirebaseManager().requestHighScores();
+        }
     }
 
     @Override
     public void onHighScoresReady(final ArrayList<FirebaseWinnerWrapper> winnerWrappers) {
+        doHighScoreTableInit(winnerWrappers);
+    }
+
+    @Override
+    public void onMonthlyHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers) {
+        doHighScoreTableInit(winnerWrappers);
+    }
+
+    private void doHighScoreTableInit(final ArrayList<FirebaseWinnerWrapper> winnerWrappers) {
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -85,5 +134,12 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
                 listView.setAdapter(globalScoreAdapter);
             }
         });
+    }
+
+    private void actButtonsState(boolean allTimesOn) {
+
+        all_times_btn.setBackgroundResource(allTimesOn ? R.drawable.button_correct_style : R.drawable.button_style);
+        montly_btn.setBackgroundResource(allTimesOn ? R.drawable.button_style : R.drawable.button_correct_style);
+
     }
 }

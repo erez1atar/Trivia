@@ -95,11 +95,7 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         this.answerListener = new AnswerListener(this.gameController);
 
         this.initButtons();
-
-        if(App.getUserDefaultManager().getGameNumber() <= 5){
-            this.initArraow();
-        }
-
+        this.initArraow();
 
     }
 
@@ -107,8 +103,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     {
         arrow = new ImageView(this);
         arrow.setImageResource(R.drawable.arrows);
-        arrow.setScaleY(0.5f);
-        arrow.setScaleX(0.5f);
+        arrow.setScaleY(0.4f);
+        arrow.setScaleX(0.4f);
 
         lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         Display display = getWindowManager().getDefaultDisplay();
@@ -250,6 +246,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         if(arrow != null){
             arrow.setVisibility(View.VISIBLE);
         }
+        this.setEnabledAllAnswers(false);
+        this.serVisibilityAllAnswers(false);
 
         animator = ValueAnimator.ofInt(minValue, maxValue);
         bottomBar.enabledStopBtn(true);
@@ -304,7 +302,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         if(arrow != null){
             arrow.setVisibility(View.INVISIBLE);
         }
-
+        this.setEnabledAllAnswers(true);
+        this.serVisibilityAllAnswers(true);
         bottomBar.enabledStopBtn(false);
         animator.cancel();
         String formatStr = NumberFormat.getNumberInstance(Locale.US).format(randomPrize);
@@ -327,6 +326,15 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
             v.setBackground(watingBackground1);
             controller.onAnswerPicked(((Button)v).getText().toString());
         }
+    }
+
+    private void serVisibilityAllAnswers(boolean visible){
+
+        this.answer1.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+        this.answer2.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+        this.answer3.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+        this.answer4.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+
     }
 
     private void setEnabledAllAnswers(boolean enable) {

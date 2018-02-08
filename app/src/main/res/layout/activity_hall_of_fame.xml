@@ -26,6 +26,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="כל הזמנים"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/game_background"
+            android:id="@+id/hall_of_fame_all_times"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="חודשי"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/game_background"
+            android:id="@+id/hall_of_fame_monthly"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1">
 
         <ImageView

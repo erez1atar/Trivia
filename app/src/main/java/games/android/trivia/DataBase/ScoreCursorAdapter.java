@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import games.android.trivia.App;
 import games.android.trivia.R;
+import games.android.trivia.Utility;
 
 
 /**
@@ -53,7 +54,7 @@ public class ScoreCursorAdapter extends CursorAdapter
         int scoreVal = cursorScore.getScore();
 
         vh.name.setText(nameVal);
-        vh.score.setText(String.valueOf(scoreVal));
+        vh.score.setText(Utility.getNumberFormat(scoreVal));
         vh.place.setText(String.valueOf(cursor.getPosition() + 1));
     }
 }
