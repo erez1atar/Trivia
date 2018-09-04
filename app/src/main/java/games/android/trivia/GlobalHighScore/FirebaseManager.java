@@ -26,6 +26,15 @@ import games.android.trivia.HighScores.WinnerData;
 
 public class FirebaseManager {
 
+
+    public interface HighScoreListener {
+        void onHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
+    }
+
+    public interface MonthlyHighScoreListener {
+        void onMonthlyHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
+    }
+
     private Executor executor;
     private Firebase fb;
     private FirebaseStorage storage;
@@ -111,13 +120,6 @@ public class FirebaseManager {
         this.doRequestHighScore(getMontlyTableKey());
     }
 
-    public interface HighScoreListener {
-        void onHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
-    }
-
-    public interface MonthlyHighScoreListener {
-        void onMonthlyHighScoresReady(ArrayList<FirebaseWinnerWrapper> winnerWrappers);
-    }
 
     public void removeWinner(final String id) {
         Log.d("fb", "try to remove " + id);

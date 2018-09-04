@@ -1189,6 +1189,78 @@
         <item>אי שם</item>
     </array>
 
+    <array name="questionC133">
+
+        <item>לאיזו מדינה אין חוף לים התיכון?</item>
+        <item>שוויץ</item>
+        <item>בלגיה</item>
+        <item>הולנד</item>
+        <item>גרמניה</item>
+    </array>
+
+    <array name="questionC134">
+
+        <item>איזו מדינה אינה גובלת עם יוון?</item>
+        <item>מונטנגרו</item>
+        <item>אלבניה</item>
+        <item>מקדוניה</item>
+        <item>בולגריה</item>
+    </array>
+
+    <array name="questionC135">
+
+        <item>איזו מדינה אינה שוכנת על חופי הים השחור?</item>
+        <item>פולין</item>
+        <item>אוקריאנה</item>
+        <item>רוסיה</item>
+        <item>רומניה</item>
+    </array>
+
+    <array name="questionC136">
+
+        <item>איזו עיר צפונית יותר?</item>
+        <item>אמסטרדם</item>
+        <item>פריז</item>
+        <item>רומא</item>
+        <item>וינה</item>
+    </array>
+
+    <array name="questionC137">
+
+        <item>שחקן המזוהה עם מכבי תל אביב בכדורגל?</item>
+        <item>אבי נימני</item>
+        <item>יוסי אבוקסיס</item>
+        <item>מוטי קקון</item>
+        <item>אלי אוחנה</item>
+    </array>
+
+    <array name="questionC138">
+
+        <item>כמה כוכבים ישנם בדגל סין?</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+
+    <array name="questionC139">
+
+        <item>מהו שטח מדינת ישראל?</item>
+        <item>20 אלף קמ"ר</item>
+        <item>100 אלף קמ"ר</item>
+        <item>5 אלף קמ"ר</item>
+        <item>50 אלף קמ"ר</item>
+    </array>
+
+    <array name="questionC140">
+
+        <item>מתי החלו שידורי גלי צה"ל?</item>
+        <item>1950</item>
+        <item>1951</item>
+        <item>1947</item>
+        <item>1955</item>
+    </array>
+
     <array name="questions_hard">
         <item>@array/questionC1</item>
         <item>@array/questionC2</item>
@@ -1335,6 +1407,15 @@
 
         <item>@array/questionC131</item>
         <item>@array/questionC132</item>
+        <item>@array/questionC133</item>
+        <item>@array/questionC134</item>
+        <item>@array/questionC135</item>
+        <item>@array/questionC136</item>
+        <item>@array/questionC137</item>
+
+        <item>@array/questionC138</item>
+        <item>@array/questionC139</item>
+        <item>@array/questionC140</item>
 
     </array>
 </resources>

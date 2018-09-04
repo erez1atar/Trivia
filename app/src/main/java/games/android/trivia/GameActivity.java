@@ -174,9 +174,17 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     }
 
     @Override
-    public void onIncorrectAnswer() {
+    public void onIncorrectAnswer(String correctAnswer) {
+        Button[] answers = {this.answer1, this.answer2, this.answer3, this.answer4};
+        Button correctView = null;
+        for(int i = 0 ; i < answers.length ; i++) {
+            if(answers[i].getText().toString().compareTo(correctAnswer) == 0) {
+                correctView = answers[i];
+            }
+        }
         Log.d("GameActivity", "onInCorrectAnswer");
         new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,lastAnswerPicked,false), 600);
+        new Handler().postDelayed(new ResultAnswerRunnable(this,gameController,correctView,true), 600);
         new Handler().postDelayed(new FinishQuestionRunnable(gameController, false), 1500);
     }
 

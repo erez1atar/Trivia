@@ -1124,6 +1124,87 @@
         <item>ריטה</item>
     </array>
 
+    <array name="questionB126">
+
+        <item>איזו עיר מזוהה עם השומרונים?</item>
+        <item>חולון</item>
+        <item>יפו</item>
+        <item>בת ים</item>
+        <item>ראשון לציון</item>
+    </array>
+
+    <array name="questionB127">
+
+        <item>מי היה בעלה הראשון של מדונה?</item>
+        <item>שון פן</item>
+        <item>ג\'ורג\' קלוני</item>
+        <item>בראד פיט</item>
+        <item>מתיו פרי</item>
+    </array>
+
+    <array name="questionB128">
+
+        <item>היכן נמצאת צומת הסירה?</item>
+        <item>הרצליה</item>
+        <item>תל אביב</item>
+        <item>חיפה</item>
+        <item>רעננה</item>
+    </array>
+
+    <array name="questionB129">
+
+        <item>מאיזו רשת חברתית נולד ה"האשטג"?</item>
+        <item>טוויטר</item>
+        <item>פייסבוק</item>
+        <item>לינקדאין</item>
+        <item>מקושרים</item>
+    </array>
+
+    <array name="questionB130">
+
+        <item>כמה שיניים יש לאדם בוגר?</item>
+        <item>32</item>
+        <item>30</item>
+        <item>28</item>
+        <item>34</item>
+    </array>
+
+    <array name="questionB131">
+
+        <item>בזמן הקמת המדינה כמה יהודים חיו בארץ ישראל?</item>
+        <item>700 אלף</item>
+        <item>200 אלף</item>
+        <item>2 מיליון</item>
+        <item>3 מיליון</item>
+    </array>
+
+    <array name="questionB132">
+
+        <item>לאיזה יעד המריא מטוס אל על לראשונה?</item>
+        <item>ז\'נבה</item>
+        <item>לונדון</item>
+        <item>בוקרשט</item>
+        <item>רומא</item>
+    </array>
+
+    <array name="questionB133">
+
+        <item>מאיזה סרט לקוח המשפט "מזה לא נשאר אפילו חצי, אתה חייב לי נקניקיה"?</item>
+        <item>אלכס חולה אהבה</item>
+        <item>חגיגה בסנוקר</item>
+        <item>ספיחס</item>
+        <item>צ\'רלי וחצי</item>
+    </array>
+
+    <array name="questionB134">
+
+        <item>איפה קבורה נעמי שמר?</item>
+        <item>קיבוץ כנרת</item>
+        <item>שפיים</item>
+        <item>רשפון</item>
+        <item>נתניה</item>
+    </array>
+
     <array name="questions_medium">
         <item>@array/questionB1</item>
         <item>@array/questionB2</item>
@@ -1262,6 +1343,15 @@
         <item>@array/questionB123</item>
         <item>@array/questionB124</item>
         <item>@array/questionB125</item>
+        <item>@array/questionB126</item>
+        <item>@array/questionB127</item>
+        <item>@array/questionB128</item>
+        <item>@array/questionB129</item>
+        <item>@array/questionB130</item>
+        <item>@array/questionB131</item>
+        <item>@array/questionB132</item>
+        <item>@array/questionB133</item>
+        <item>@array/questionB134</item>
 
 
     </array>

@@ -704,6 +704,23 @@
     </array>
 
 
+    <array name="questionA79">
+        <item>מהם ראשי תיבות נת"צ?</item>
+        <item>נתיב תחבורה ציבורית</item>
+        <item>נתיבי ישראל</item>
+        <item>נתיב ללא שוליים</item>
+        <item>נתיב תחבורה צהוב</item>
+    </array>
+
+    <array name="questionA80">
+        <item>מהם התאריך העברי של הקמת המדינה?</item>
+        <item>ה באייר</item>
+        <item>ג באייר</item>
+        <item>ז באייר</item>
+        <item>ח באייר</item>
+    </array>
+
+
     <array name="questions_easy">
         <item>@array/questionA1</item>
         <item>@array/questionA2</item>
@@ -790,6 +807,8 @@
         <item>@array/questionA76</item>
         <item>@array/questionA77</item>
         <item>@array/questionA78</item>
+        <item>@array/questionA79</item>
+        <item>@array/questionA80</item>
 
     </array>
 </resources>

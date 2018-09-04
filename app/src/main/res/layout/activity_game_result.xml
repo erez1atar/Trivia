@@ -8,31 +8,6 @@
     android:background="@drawable/result_background"
     tools:context="games.android.trivia.ActivityGameResult">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textColor="@android:color/black"
-        android:id="@+id/game_result_you_win"
-        android:text="זכית ב"
-        android:textSize="60sp"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:textColor="@android:color/black"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="100sp"
-        android:id="@+id/game_result_score"/>
 
     <Space
         android:layout_width="match_parent"
@@ -45,24 +20,161 @@
         android:layout_weight="2"
         android:orientation="horizontal">
 
-        <Space
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="45"
+                android:background="@drawable/coins_new"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="-45"
+                android:background="@drawable/coins_new"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:id="@+id/game_result_you_win"
+                android:text="זכית ב"
+                android:textSize="60sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="45"
+                android:background="@drawable/coins_new"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="-45"
+                android:background="@drawable/coins_new"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:background="@drawable/score_label_background"
+        android:id="@+id/game_result_score"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:text="נכנסת אל\n טבלת כל הזמנים"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:visibility="invisible"
+                android:id="@+id/text_all_times"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:background="@drawable/medal"
+                android:visibility="invisible"
+                android:id="@+id/medal_all_times"/>
+        </LinearLayout>
+
+
+        <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:scaleY="0.6"
-            android:scaleX="0.6"
-            android:background="@drawable/money_bag"/>
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:text="נכנסת אל\n טבלת החודש"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:visibility="invisible"
+                android:id="@+id/text_month"/>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:background="@drawable/medal"
+                android:visibility="invisible"
+                android:id="@+id/medal_month"/>
+        </LinearLayout>
     </LinearLayout>
 
     <Space
@@ -85,7 +197,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="0.5"/>
 
     <Button
         android:layout_width="match_parent"

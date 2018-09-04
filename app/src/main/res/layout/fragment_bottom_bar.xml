@@ -43,7 +43,7 @@
             android:layout_weight="5"
             android:textAlignment="center"
             android:gravity="center"
-            android:background="@drawable/stage_background"
+            android:background="@drawable/stage_background_red"
             android:text=" 500000       -       1000000"
             android:id="@+id/bottom_bar_range"/>
 

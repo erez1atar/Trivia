@@ -20,10 +20,6 @@ public class Question
         this.question = question;
     }
 
-    public String getCorrectAns() {
-        return correctAns;
-    }
-
     public String[] getAnswers() {
         return answers;
     }
@@ -50,6 +46,10 @@ public class Question
 
     public boolean isAnswerCorrect(String answer) {
         return answer.equals(correctAns);
+    }
+
+    public String getCorrectAnswer() {
+        return correctAns;
     }
     public void setAnswers(String[] answers) {
         this.answers = answers;

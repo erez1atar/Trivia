@@ -10,22 +10,27 @@
         android:roundIcon="@drawable/icons"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".GameActivity"
-                  android:noHistory="true" />
+                  android:noHistory="true"
+                    android:screenOrientation="portrait"/>
         <activity
             android:name=".Stages.StagesPresentor"
-            android:noHistory="true" />
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
         <activity android:name=".HighScores.HallOfFame" />
         <activity
             android:name=".ActivityGameResult"
-            android:noHistory="true" />
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".EnterNameActivity"
             android:noHistory="true" />

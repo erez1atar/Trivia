@@ -10,7 +10,7 @@ public interface IGamePresentor {
 
     void onCorrectAnswer();
 
-    void onIncorrectAnswer();
+    void onIncorrectAnswer(String correctAnswer);
 
     void onNewQuestionLoaded(Question question);
 

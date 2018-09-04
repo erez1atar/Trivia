@@ -50,7 +50,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
                 instance.actFinishGame();
             }
         });
-        globalHighScoreManager = new GlobalHighScoreManager();
+        globalHighScoreManager = GlobalHighScoreManager.getInstance();
     }
     @Override
     public void onNewGameStart() {
@@ -97,7 +97,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
         else {
             this.hearts--;
             this.presentor.showHearts(this.hearts);
-            presentor.onIncorrectAnswer();
+            presentor.onIncorrectAnswer(currentQuestion.getCorrectAnswer());
             presentor.onMoneyChanged(wallet.getMoney());
         }
     }
