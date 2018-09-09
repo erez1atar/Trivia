@@ -721,6 +721,52 @@
     </array>
 
 
+    <array name="questionA81">
+
+        <item>מקור ה\"טפטפות\" הוא?</item>
+        <item>ישראל</item>
+        <item>ארה"ב</item>
+        <item>צרפת</item>
+        <item>גרמניה</item>
+    </array>
+
+    <array name="questionA82">
+
+        <item>בדגל אזרבייג\'ן ניתן למצוא..</item>
+        <item>ירח</item>
+        <item>שמש</item>
+        <item>מגן דוד</item>
+        <item>שולחן</item>
+    </array>
+
+    <array name="questionA83">
+
+        <item>מהו צבע כומתת פיקוד העורף?</item>
+        <item>כתום</item>
+        <item>סגול</item>
+        <item>שחור</item>
+        <item>ירוק</item>
+    </array>
+
+    <array name="questionA84">
+
+        <item>לפי הפתגם \"אין דין...</item>
+        <item>ואין דיין</item>
+        <item>ואין משפט</item>
+        <item>ואין שופט</item>
+        <item>ואין מקדש</item>
+    </array>
+
+    <array name="questionA85">
+
+        <item>לפי הפתגם \"אין חדש...</item>
+        <item>תחת השמש</item>
+        <item>תחת הירח</item>
+        <item>ולא יהיה</item>
+        <item>היום</item>
+    </array>
+
+
     <array name="questions_easy">
         <item>@array/questionA1</item>
         <item>@array/questionA2</item>
@@ -809,6 +855,11 @@
         <item>@array/questionA78</item>
         <item>@array/questionA79</item>
         <item>@array/questionA80</item>
+        <item>@array/questionA81</item>
+        <item>@array/questionA82</item>
+        <item>@array/questionA83</item>
+        <item>@array/questionA84</item>
+        <item>@array/questionA85</item>
 
     </array>
 </resources>

@@ -1254,11 +1254,325 @@
 
     <array name="questionC140">
 
-        <item>מתי החלו שידורי גלי צה"ל?</item>
+        <item>מתי החלו שידורי גלי צה\"ל?</item>
         <item>1950</item>
         <item>1951</item>
         <item>1947</item>
         <item>1955</item>
+    </array>
+
+    <array name="questionC141">
+
+        <item>צבעי דגל בולגריה </item>
+        <item>לבן ירוק אדום</item>
+        <item>לבן ירוק כחול</item>
+        <item>אדום לבן שחור</item>
+        <item>לבן ירוק צהוב</item>
+    </array>
+
+    <array name="questionC142">
+
+        <item>איזו חיה ניתן למצוא בדגל סרי לנקה?</item>
+        <item>אריה</item>
+        <item>פיל</item>
+        <item>קוף</item>
+        <item>זברה</item>
+    </array>
+
+    <array name="questionC143">
+
+        <item>מה כתוב על דגל עיראק?</item>
+        <item>אללה עכבר</item>
+        <item>לעולם ועד</item>
+        <item>חיי נצח</item>
+        <item>לא ניכנע</item>
+    </array>
+
+    <array name="questionC144">
+
+        <item>כמה שנים פעל המרגל אלי כהן בסוריה?</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </array>
+
+    <array name="questionC145">
+
+        <item>באיזו שנה נתפס המרגל אלי כהן?</item>
+        <item>1965</item>
+        <item>1987</item>
+        <item>1973</item>
+        <item>1969</item>
+    </array>
+
+    <array name="questionC146">
+
+        <item>מה היה שמו הסורי של המרגל אלי כהן?</item>
+        <item>כאמל אמין תאבת</item>
+        <item>מוחמד אמין</item>
+        <item>מחמוד גלאם</item>
+        <item>עבאס אבו אמון</item>
+    </array>
+
+    <array name="questionC147">
+
+    <item>בכמה מוערך השטח אשר רכש הברון רוטשילד בישראל?</item>
+        <item>500 אלף דונם</item>
+        <item>100 אלף דונם</item>
+        <item>50 אלף דונם</item>
+        <item>20 אלף דונם</item>
+    </array>
+
+    <array name="questionC148">
+
+        <item>איך קוראים לאלבום הראשון של התקווה 6?</item>
+        <item>התקווה 6</item>
+        <item>אפגוש את אלוהים</item>
+        <item>יום מן הימים</item>
+        <item>קוקוריקו</item>
+    </array>
+
+    <array name="questionC149">
+
+        <item>שמו של המבצע להשמדת חיל האוויר במצרי במלחמת ששת הימים?</item>
+        <item>מבצע מוקד</item>
+        <item>מבצע פורט סעיד</item>
+        <item>מבצע לקט</item>
+        <item>מבצע עמורה</item>
+    </array>
+
+    <array name="questionC150">
+
+        <item>שמו הרשמי של מבצע אנטבה?</item>
+        <item>מבצע כדור רעם</item>
+        <item>מבצע מגן העם</item>
+        <item>מבצע חומה ומגדל</item>
+        <item>חומה שחרר וסע</item>
+    </array>
+
+    <array name="questionC151">
+
+        <item>צבע כומתת חיל שיריון?</item>
+        <item>שחור</item>
+        <item>אדום</item>
+        <item>תכלת</item>
+        <item>ורוד</item>
+    </array>
+
+    <array name="questionC152">
+
+    <item>איזו המצאה היא המצאה ישראלית?</item>
+        <item>דיסק און קי</item>
+        <item>ווקמן</item>
+        <item>המצלמה הדיגיטלית</item>
+        <item>המודם</item>
+    </array>
+
+    <array name="questionC153">
+
+    <item>בכמה נרכשה וייז ע\"י גוגל?</item>
+        <item>מיליארד דולר</item>
+        <item>200 מיליון דולר</item>
+        <item>3 מיליארד דולר</item>
+        <item>600 מיליון דולר</item>
+    </array>
+
+    <array name="questionC154">
+
+        <item>כוכב הלכת מאדים נקרא גם</item>
+        <item>מארס</item>
+        <item>צדק</item>
+        <item>ונוס</item>
+        <item>מרקורי</item>
+    </array>
+
+    <array name="questionC155">
+
+        <item>איזה כוכב לכת גדול יותר?</item>
+        <item>צדק</item>
+        <item>כדור הארץ</item>
+        <item>נוגה</item>
+        <item>חמה</item>
+    </array>
+
+    <array name="questionC156">
+
+        <item>מהו אורכו של נהר האמזונס?</item>
+        <item>כ6 אלף קילומטר</item>
+        <item>כאלף קילומטר</item>
+        <item>כ50 אלף קילומטר</item>
+        <item>כ12 אלף קילומטר</item>
+    </array>
+
+    <array name="questionC157">
+
+        <item>באיזה ארץ נמצא הנהר הצהוב?</item>
+        <item>סין</item>
+        <item>יפן</item>
+        <item>טייוואן</item>
+        <item>תאילנד</item>
+    </array>
+
+    <array name="questionC158">
+        <item>באיזה מדינה נמצא אגם קומו?</item>
+        <item>איטליה</item>
+        <item>רוסיה</item>
+        <item>צרפת</item>
+        <item>אוקריאנה</item>
+    </array>
+
+    <array name="questionC159">
+
+        <item>אלבומו של איזה זמר מכר את מספר העותקים הרב ביותר בכל הזמנים?</item>
+        <item>מייקל ג'קסון</item>
+        <item>מדונה</item>
+        <item>ויטני יוסטון</item>
+        <item>פינק פלויד</item>
+    </array>
+
+    <array name="questionC160">
+
+        <item>כמה עותקים מכר אלבומו של מייקל ג\'קסון thriller?</item>
+        <item>110 מיליון</item>
+        <item>30 מיליון</item>
+        <item>600 מיליון</item>
+        <item>220 מיליון</item>
+    </array>
+
+    <array name="questionC161">
+
+        <item>מספר חברי הלהקה לד זפלין?</item>
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+
+    <array name="questionC162">
+
+        <item>מספר החברים בלהקת בקסטריט בויז?</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>7</item>
+    </array>
+
+    <array name="questionC163">
+
+    <item>מתי יצא אלבום הבכורה של להקת בקסטריט בויז?</item>
+    <item>1995</item>
+    <item>1992</item>
+    <item>2000</item>
+    <item>1985</item>
+    </array>
+
+    <array name="questionC164">
+
+        <item>באיזה שנה נולד אלטון ג\'ון?</item>
+        <item>1947</item>
+        <item>1943</item>
+        <item>1966</item>
+        <item>1954</item>
+    </array>
+
+    <array name="questionC165">
+
+        <item>פירוש הפתגם "ברחל בתך הקטנה"?</item>
+        <item>בתנאים ברורים</item>
+        <item>דבר חשוב</item>
+        <item>דבר קטן</item>
+        <item>בבקשה ממך</item>
+    </array>
+
+    <array name="questionC166">
+
+        <item>מי אמר את המשפאץט \"מדינת ישראל יותר ממה שציפיתי פחות ממה שקוויתי\"?</item>
+        <item>זרח ורפטיג</item>
+        <item>ביאליק</item>
+        <item>חנה סנש</item>
+        <item>יצחק רבין</item>
+    </array>
+
+    <array name="questionC167">
+
+        <item>מי אמר את המשפט \"השלום יגיע כשהערבים יאהבו את ילדיהם יותר מאשר ישנאו אותנו\"?</item>
+        <item>גולדה מאיר</item>
+        <item>בנימין נתניהו</item>
+        <item>יצחק רבין</item>
+        <item>מנחם בגין</item>
+    </array>
+
+    <array name="questionC168">
+
+        <item>הזמרת בריטני ספירס נולדה ב..</item>
+        <item>מיסיסיפי</item>
+        <item>ניו יורק</item>
+        <item>לוס אנגלס</item>
+        <item>אלבמה</item>
+    </array>
+
+    <array name="questionC169">
+
+        <item>כמה ספרים כתבה בריטני ספירס?</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+    </array>
+
+    <array name="questionC170">
+
+        <item>למי בריטני ספירס נישאה לראשונה?</item>
+        <item>ג\'ייסון אלכנסדר</item>
+        <item>ג\'סטין טימברלייק</item>
+        <item>ריצ\'רד גיר</item>
+        <item>קווין פדרליין</item>
+    </array>
+
+    <array name="questionC171">
+
+        <item>כמה פעמים התגרשה בריטני ספירס?</item>
+        <item>2</item>
+        <item>3</item>
+        <item>1</item>
+        <item>5</item>
+    </array>
+
+    <array name="questionC172">
+
+        <item>מי מכר בסך הכל הכי הרבה אלבומים בהיסטוריה?</item>
+        <item>הביטלס</item>
+        <item>לד זפלין</item>
+        <item>מייקל ג\'קסון</item>
+        <item>מדונה</item>
+    </array>
+
+    <array name="questionC173">
+
+        <item>מתי הוציא מדונה את אלבומה הראשון?</item>
+        <item>1983</item>
+        <item>1944</item>
+        <item>1988</item>
+        <item>1980</item>
+    </array>
+
+    <array name="questionC174">
+
+        <item>מהו מוצא הוריה של מדונה?</item>
+        <item>איטלקי-צרפתי-קנדי</item>
+        <item>הודי-יפני-סיני</item>
+        <item>צרפתי-אנגלי-איטלקי</item>
+        <item>מקסיקני-אנגלי-ארגנטינאי</item>
+    </array>
+
+    <array name="questionC175">
+
+        <item>היכן גדל שלמה גרוניך?</item>
+        <item>חדרה</item>
+        <item>נתניה</item>
+        <item>לוד</item>
+        <item>חיפה</item>
     </array>
 
     <array name="questions_hard">
@@ -1416,6 +1730,44 @@
         <item>@array/questionC138</item>
         <item>@array/questionC139</item>
         <item>@array/questionC140</item>
+        <item>@array/questionC141</item>
+        <item>@array/questionC142</item>
+        <item>@array/questionC143</item>
+        <item>@array/questionC144</item>
+        <item>@array/questionC145</item>
+        <item>@array/questionC146</item>
+        <item>@array/questionC147</item>
+        <item>@array/questionC148</item>
+        <item>@array/questionC149</item>
+        <item>@array/questionC150</item>
+
+        <item>@array/questionC151</item>
+        <item>@array/questionC152</item>
+        <item>@array/questionC153</item>
+        <item>@array/questionC154</item>
+        <item>@array/questionC155</item>
+        <item>@array/questionC156</item>
+        <item>@array/questionC157</item>
+
+        <item>@array/questionC158</item>
+        <item>@array/questionC159</item>
+        <item>@array/questionC160</item>
+        <item>@array/questionC161</item>
+        <item>@array/questionC162</item>
+        <item>@array/questionC163</item>
+        <item>@array/questionC164</item>
+        <item>@array/questionC165</item>
+        <item>@array/questionC166</item>
+        <item>@array/questionC167</item>
+
+        <item>@array/questionC168</item>
+        <item>@array/questionC169</item>
+        <item>@array/questionC170</item>
+        <item>@array/questionC171</item>
+        <item>@array/questionC172</item>
+        <item>@array/questionC173</item>
+        <item>@array/questionC174</item>
+        <item>@array/questionC175</item>
 
     </array>
 </resources>

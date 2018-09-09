@@ -1,6 +1,8 @@
 package games.android.trivia;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.gsm.GsmCellLocation;
@@ -47,8 +49,15 @@ public class ActivityGameResult extends AppCompatActivity implements GlobalHighS
         });
 
         Intent intent = getIntent();
-        score = intent.getIntExtra(INTENT_SCORE_KEY, 0);
-        GlobalHighScoreManager.getInstance().requestTablesData(this);
+
+        // MY HACK - its because the reqeues to add winner not finished, and the firebase manager not support two requwsts data and to add winner,
+        // so i put delay to solve it
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                GlobalHighScoreManager.getInstance().requestTablesData(ActivityGameResult.this);
+            }
+        }, 3000);
 
         Button backBtn = (Button)findViewById(R.id.game_result_back);
         backBtn.setOnClickListener(new View.OnClickListener() {

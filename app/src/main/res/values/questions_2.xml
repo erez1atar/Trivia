@@ -1205,6 +1205,203 @@
         <item>נתניה</item>
     </array>
 
+    <array name="questionB135">
+        <item>דגל אלבניה ברובו..</item>
+        <item>אדום</item>
+        <item>לבן</item>
+        <item>כחול</item>
+        <item>צהוב</item>
+    </array>
+
+    <array name="questionB136">
+
+        <item>כמה כוכבים יש בדגל טורקיה?</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+
+    <array name="questionB137">
+
+        <item>באיזה גיל נפטר בנימין זאב הרצל?</item>
+        <item>44</item>
+        <item>62</item>
+        <item>78</item>
+        <item>56</item>
+    </array>
+
+    <array name="questionB138">
+
+        <item>היכן נולד בנימין זאב הרצל?</item>
+        <item>הונגריה</item>
+        <item>בולגריה</item>
+        <item>סרביה</item>
+        <item>אנגליה</item>
+    </array>
+
+    <array name="questionB139">
+
+        <item>רבין היה הרמטכ\"ל ה-</item>
+        <item>שביעי</item>
+        <item>רביעי</item>
+        <item>שישי</item>
+        <item>תשיעי</item>
+    </array>
+
+    <array name="questionB140">
+
+        <item>מי אמר את המשפט \" טירוף זה לחזור על אותה פעולה ולצפות לתוצאה שונה"\?</item>
+        <item>אלברט איינשטיין</item>
+        <item>אייזיק ניוטון</item>
+        <item>תומס אדיסון</item>
+        <item>צ\'רצ\'יל</item>
+    </array>
+
+    <array name="questionB141">
+
+        <item>מקור שם הלהקה \"התקווה 6\" הוא</item>
+        <item>כתובת סולני הלהקה</item>
+        <item>ההמנון הלאומי</item>
+        <item>תקוותם שתוך 6 שנים יהיה טוב</item>
+        <item>שם אמו של סולם הלהקה</item>
+    </array>
+
+    <array name="questionB142">
+
+        <item>כמה שנים סך הכל כיהן אהוד ברק כשר בטחון?</item>
+        <item>8</item>
+        <item>4</item>
+        <item>6</item>
+        <item>10</item>
+    </array>
+
+    <array name="questionB143">
+
+        <item>מה היה ערכו המקסימלי של הביטקוין ב2017?</item>
+        <item>כ20 אלף דולר</item>
+        <item>כ10 אלף דולר</item>
+        <item>כאלף דולר</item>
+        <item>כ12 אלף דולר</item>
+    </array>
+
+    <array name="questionB144">
+
+        <item>בכיר פלסטיני שחוסל במבצע עמוד ענן</item>
+        <item>אחד ג\'אברי</item>
+        <item>מוחמד דף</item>
+        <item>אחמד יאסין</item>
+        <item>יאסר עראפת</item>
+    </array>
+
+    <array name="questionB145">
+
+        <item>מספר הרקטות שנואו מעזה לעבר ישראל במהלך מבצע עמוד ענן?</item>
+        <item>1500</item>
+        <item>500</item>
+        <item>9000</item>
+        <item>7000</item>
+    </array>
+
+    <array name="questionB146">
+
+        <item>מתי הוקמה חטיבת גבעתי?</item>
+        <item>1983</item>
+        <item>1960</item>
+        <item>1976</item>
+        <item>1988</item>
+    </array>
+
+    <array name="questionB147">
+
+        <item>כלי נשק שניתן למצוא בסמל החטיבה גבעתי</item>
+        <item>חרב</item>
+        <item>רובה</item>
+        <item>אקדח</item>
+        <item>טיל</item>
+</array>
+
+    <array name="questionB148">
+
+        <item>מהו צבע כומתת חיל המודיעין?</item>
+        <item>ירוק</item>
+        <item>סגול</item>
+        <item>לבן</item>
+        <item>כחול</item>
+    </array>
+
+    <array name="questionB149">
+
+        <item>צבע חולצת מכבי תל אביב?</item>
+        <item>צהוב כחול</item>
+        <item>ירוק לבן</item>
+        <item>אדום לבן</item>
+        <item>שחור לבן</item>
+    </array>
+
+    <array name="questionB150">
+
+        <item>מהי היבשת בו שוכן נהר האמזונס?</item>
+        <item>אמריקה</item>
+        <item>אסיה</item>
+        <item>אפריקה</item>
+        <item>אירופה</item>
+    </array>
+
+    <array name="questionB151">
+
+        <item>היכן נמצא נהר היאנצה?</item>
+        <item>אסיה</item>
+        <item>אירופה</item>
+        <item>אמריקה</item>
+        <item>אפריקה</item>
+    </array>
+
+    <array name="questionB152">
+
+        <item>באיזה ארץ נמצא נהר הלנה?</item>
+        <item>רוסיה</item>
+        <item>צרפת</item>
+        <item>אנגליה</item>
+        <item>מצרים</item>
+    </array>
+
+    <array name="questionB153">
+
+        <item>באיזו יבשת נמצא נהר הפרנה?</item>
+        <item>דרום אמריקה</item>
+        <item>צפון אמריקה</item>
+        <item>אירופה</item>
+        <item>אסיה</item>
+    </array>
+
+    <array name="questionB154">
+
+        <item>איך נקרא אלבומה הראשון של הלהקה לד זפלין?</item>
+        <item>לד זפלין</item>
+        <item>הספינה</item>
+        <item>הניצוץ</item>
+        <item>הראש</item>
+    </array>
+
+    <array name="questionB155">
+
+        <item>אלבומה הראשון של בריטני ספירס?</item>
+        <item>Baby one more time</item>
+        <item>I did it again</item>
+        <item>Crazy</item>
+        <item>I am</item>
+    </array>
+
+    <array name="questionB156">
+
+        <item>בכמה מוערך הונה של מדונה?</item>
+        <item>כ900 מיליון דולר</item>
+        <item>כ100 מיליון דולר</item>
+        <item>כ2מילארד דולר</item>
+        <item>כ50 מיליון דולר</item>
+    </array>
+
     <array name="questions_medium">
         <item>@array/questionB1</item>
         <item>@array/questionB2</item>
@@ -1352,6 +1549,28 @@
         <item>@array/questionB132</item>
         <item>@array/questionB133</item>
         <item>@array/questionB134</item>
+        <item>@array/questionB135</item>
+        <item>@array/questionB136</item>
+        <item>@array/questionB137</item>
+        <item>@array/questionB138</item>
+        <item>@array/questionB139</item>
+        <item>@array/questionB140</item>
+        <item>@array/questionB141</item>
+        <item>@array/questionB142</item>
+        <item>@array/questionB143</item>
+        <item>@array/questionB144</item>
+        <item>@array/questionB145</item>
+        <item>@array/questionB146</item>
+        <item>@array/questionB147</item>
+        <item>@array/questionB148</item>
+        <item>@array/questionB149</item>
+        <item>@array/questionB150</item>
+        <item>@array/questionB151</item>
+        <item>@array/questionB152</item>
+        <item>@array/questionB153</item>
+        <item>@array/questionB154</item>
+        <item>@array/questionB155</item>
+        <item>@array/questionB156</item>
 
 
     </array>
