@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import games.android.trivia.App;
@@ -23,6 +24,7 @@ public class BottomBar extends Fragment {
     private BottomBarListener listener = null;
     private TextView StageIdTxt = null;
     private Button stopBtn = null;
+    private LinearLayout stageBackground = null;
 
     public BottomBar() {
         // Required empty public constructor
@@ -59,13 +61,15 @@ public class BottomBar extends Fragment {
         this.rangeTxt = (TextView) getView().findViewById(R.id.bottom_bar_range);
         this.prize = (TextView)getView().findViewById(R.id.bottom_bar_prize) ;
         this.StageIdTxt = (TextView)getView().findViewById(R.id.bottom_bar_stage_id);
+        stageBackground = getView().findViewById(R.id.bottom_bar_stage_layout);
         this.prize.setTypeface(App.getResourcesManager().getNumbersFont());
         this.listener.onBottomBarCreatedFinished();
     }
 
-    public void showRange(int min, int max, int id) {
+    public void showRange(int min, int max, int id, int background) {
         this.rangeTxt.setText(String.format(this.format,min,max));
         this.StageIdTxt.setText(String.valueOf(id));
+        this.stageBackground.setBackgroundResource(background);
     }
 
     public void setPrize(String prize) {
@@ -84,7 +88,7 @@ public class BottomBar extends Fragment {
     public void enabledStopBtn(boolean enabled) {
         stopBtn.setEnabled(enabled);
         if(enabled){
-            Animation heartPulse = AnimationUtils.loadAnimation(App.getInstance().getApplicationContext(),R.anim.heart_pulse_big);
+            Animation heartPulse = AnimationUtils.loadAnimation(App.getInstance().getApplicationContext(),R.anim.heart_pulse);
             stopBtn.startAnimation(heartPulse);
         }
         else {

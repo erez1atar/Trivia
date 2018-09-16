@@ -4,18 +4,17 @@
     android:background="@drawable/hall_of_fame_item_background"
     android:layout_height="50dp">
 
-
-
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="0.4"
         android:textSize="25sp"
         android:textAlignment="center"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/scoreWinner" />
+        android:id="@+id/winner_table_place" />
+
 
     <TextView
         android:layout_width="0dp"
@@ -31,12 +30,12 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.4"
+        android:layout_weight="1"
         android:textSize="25sp"
         android:textAlignment="center"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/winner_table_place" />
+        android:id="@+id/scoreWinner" />
 
 </LinearLayout>

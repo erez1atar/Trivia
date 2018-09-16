@@ -18,7 +18,7 @@ public interface IGamePresentor {
 
     void onLoseGame(int score);
 
-    void showStage(int minValue, int maxValue, int id);
+    void showStage(int minValue, int maxValue, int id, int backgroundResId);
 
     void showHearts(int hearts);
 

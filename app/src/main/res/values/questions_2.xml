@@ -1402,6 +1402,94 @@
         <item>כ50 מיליון דולר</item>
     </array>
 
+    <array name="questionB157">
+
+        <item>מינו הישראלי הראשון שזכה בזהב באולימפידה?</item>
+        <item>גל פרידמן</item>
+        <item>יעל ארד</item>
+        <item>גל צוברי</item>
+        <item>רות שחמורוב</item>
+    </array>
+
+    <array name="questionB158">
+
+        <item>מתי ענף ג'ודו נשים הפך לענף רשמי באולימפידה?</item>
+        <item>1992</item>
+        <item>2000</item>
+        <item>1976</item>
+        <item>1952</item>
+    </array>
+
+    <array name="questionB159">
+        <item>כמה תושבים חיים בקפריסין?</item>
+        <item>כ1 מיליון</item>
+        <item>כ5 מיליון</item>
+        <item>כ10 מיליון</item>
+        <item>כ50 מיליון</item>
+    </array>
+
+    <array name="questionB160">
+
+        <item>איזה יסוד מסומן באות o?</item>
+        <item>חמצן</item>
+        <item>פחמן</item>
+        <item>מימן</item>
+        <item>כלור</item>
+    </array>
+
+    <array name="questionB161">
+
+        <item>איזה יסוד מסומן באות H?</item>
+        <item>מימן</item>
+        <item>אבץ</item>
+        <item>זרחן</item>
+        <item>צורן</item>
+    </array>
+
+    <array name="questionB162">
+
+        <item>מה פירוש הביטוי "על כורחו"?</item>
+        <item>נגד רצונו</item>
+        <item>אין לו כוחות עוד</item>
+        <item>חוזקו</item>
+        <item>על גבו</item>
+    </array>
+
+    <array name="questionB163">
+
+        <item>לאיזה צב נינג'ה יש מוט עץ כנשק?</item>
+        <item>דונטלו</item>
+        <item>מיכלאנג'לו</item>
+        <item>רפאל</item>
+        <item>לאונרדו</item>
+    </array>
+
+    <array name="questionB164">
+
+        <item>על איזו מעבורת חלל היה אילן רמון?</item>
+        <item>קולומביה</item>
+        <item>צ'לנג'ר</item>
+        <item>אטלנטיס</item>
+        <item>דיסקברי</item>
+    </array>
+
+    <array name="questionB165">
+        <item>כמה פעמים זכתה מכבי ת"א בכדורסל באליפות אירופה עד 2018?</item>
+        <item>6</item>
+        <item>5</item>
+        <item>3</item>
+        <item>8</item>
+    </array>
+
+    <array name="questionB166">
+
+    <item>כמה פעמים הפסידה מכבי ת"א בכדורסל בגמר אליפות אירופה נכון ל2018?</item>
+        <item>9</item>
+        <item>7</item>
+        <item>3</item>
+        <item>12</item>
+    </array>
+
     <array name="questions_medium">
         <item>@array/questionB1</item>
         <item>@array/questionB2</item>
@@ -1571,6 +1659,16 @@
         <item>@array/questionB154</item>
         <item>@array/questionB155</item>
         <item>@array/questionB156</item>
+        <item>@array/questionB157</item>
+        <item>@array/questionB158</item>
+        <item>@array/questionB159</item>
+        <item>@array/questionB160</item>
+        <item>@array/questionB161</item>
+        <item>@array/questionB162</item>
+        <item>@array/questionB163</item>
+        <item>@array/questionB164</item>
+        <item>@array/questionB165</item>
+        <item>@array/questionB166</item>
 
 
     </array>

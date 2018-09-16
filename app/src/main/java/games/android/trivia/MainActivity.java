@@ -1,6 +1,8 @@
 package games.android.trivia;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +44,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button rateUs = (Button)findViewById(R.id.rate_us);
+        rateUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("market://details?id=" + App.getInstance().getPackageName());
+                Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                        Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                try {
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://play.google.com/store/apps/details?id=" + App.getInstance().getPackageName())));
+                }
+            }
+        });
+        int highScore = App.getDataBase().getLocalHighScore();
+        boolean showRateUs = highScore
+                > 1000000 && App.getUserDefaultManager().getGameNumber() < 20;
+        rateUs.setVisibility(showRateUs ? View.VISIBLE : View.INVISIBLE);
+        rateUs.setEnabled(showRateUs);
 
         Button hallOfFameGlobal = (Button)findViewById(R.id.hall_of_fame_global_btn);
         hallOfFameGlobal.setOnClickListener(new View.OnClickListener() {

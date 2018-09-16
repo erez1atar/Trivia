@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import games.android.trivia.Questions.QuestionBank;
+import games.android.trivia.R;
 
 /**
  * Created by Erez on 04/10/2017.
@@ -26,6 +27,17 @@ public class StagesManager
     public void setStagesListener(StagesListener stagesListener) {
         this.stagesListener = stagesListener;
     }
+
+    public int getStageBackGround(int stage) {
+        if(stage <= 2) {
+            return R.drawable.stage_background_red;
+        }
+        if(stage <= 5) {
+            return R.drawable.stage_background_grey;
+        }
+        return R.drawable.stage_background_blue;
+    }
+
 
     public void onGameStart() {
         this.currentStage = stages.get(1);

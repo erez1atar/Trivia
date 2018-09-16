@@ -227,8 +227,8 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     }
 
     @Override
-    public void showStage(int minValue, int maxValue, int id) {
-        this.bottomBar.showRange(minValue, maxValue, id);
+    public void showStage(int minValue, int maxValue, int id, int backgroundResId) {
+        this.bottomBar.showRange(minValue, maxValue, id, backgroundResId);
     }
 
     @Override

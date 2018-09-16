@@ -1575,6 +1575,414 @@
         <item>חיפה</item>
     </array>
 
+    <array name="questionC176">
+
+        <item>מדליית הזהב באולימפידה עשויה בעיקר מ..</item>
+        <item>כסף</item>
+        <item>זהב</item>
+        <item>ברונזה</item>
+        <item>ניקל</item>
+    </array>
+
+    <array name="questionC177">
+
+        <item>כמה אחוז זהב יש במדללית הזהב באולימפדיה?</item>
+        <item>כ1 אחוז</item>
+        <item>כ90 אחוז</item>
+        <item>כ70 אחוז</item>
+        <item>כ50 אחוז</item>
+    </array>
+
+    <array name="questionC178">
+
+        <item>באיזו אולפידה זכה גל פרידמן במדלית זהב?</item>
+        <item>2004</item>
+        <item>2008</item>
+        <item>2012</item>
+        <item>2000</item>
+    </array>
+
+    <array name="questionC179">
+
+        <item>מה היהשמו של דוד בן גוריון לפני שכלה לישראל?</item>
+        <item>דוד יוסף גרין</item>
+        <item>דוד בן גרין</item>
+        <item>דוד בר גרון</item>
+        <item>דוד גורגור</item>
+    </array>
+
+    <array name="questionC180">
+
+        <item>מהי המהירות המקסימלית בה שוחה הדולפין?</item>
+        <item>60 קמ"ש</item>
+        <item>20
+
+            [ 09-16 22:15:26.166 20514:20514 V/         ]
+            קמ"ש</item>
+        <item>10 קמ"ש</item>
+        <item>80 קמ"ש</item>
+    </array>
+
+    <array name="questionC181">
+
+        <item>מהי המהירות המקסימום עליה יכולה להגיע אריה?</item>
+        <item>80 קמ"ש</item>
+        <item>50 קמ"ש</item>
+        <item>40 קמ"ש</item>
+        <item>150 קמ"ש</item>
+    </array>
+
+    <array name="questionC182">
+
+        <item>כמה זמן נמשך הריונה של הלביאה?</item>
+        <item>110 ימים</item>
+        <item>220 ימים</item>
+        <item>50 ימים</item>
+        <item>180 ימים</item>
+    </array>
+
+    <array name="questionC183">
+
+        <item>מהי תוחלת החיים של האריה בטבע?</item>
+        <item>כ14 שנים</item>
+        <item>כ28 שנים</item>
+        <item>כ8 שנים</item>
+        <item>כ22 שנים</item>
+    </array>
+
+    <array name="questionC184">
+
+        <item>מהי תוחלת החיים של הגמל?</item>
+        <item>40 שנים</item>
+        <item>20 שנים</item>
+        <item>10 שנים</item>
+        <item>80 שנים</item>
+    </array>
+
+    <array name="questionC185">
+
+        <item>כמה ביצים מטיל צב הים בכל הטלה?</item>
+        <item>כ100</item>
+        <item>כ1000</item>
+        <item>כ10</item>
+        <item>כ600</item>
+    </array>
+
+    <array name="questionC186">
+
+        <item>דבון-רקס הוא אחד הגזעי ה..</item>
+        <item>חתולים</item>
+        <item>כלבים</item>
+        <item>אריות</item>
+        <item>דינוזאורים</item>
+    </array>
+
+    <array name="questionC187">
+
+        <item>מאו מצרי הוא אחד הגזעי ה..</item>
+        <item>חתולים</item>
+        <item>כלבים</item>
+        <item>אריות</item>
+        <item>פילים</item>
+    </array>
+
+    <array name="questionC188">
+
+        <item>כמה ליטרים מים יכול ללגום פיל בלגימה אחת?</item>
+        <item>כ10 ליטרים</item>
+        <item>כ2 ליטרים</item>
+        <item>כ60 ליטרים</item>
+        <item>כ40 ליטרים</item>
+    </array>
+
+    <array name="questionC189">
+
+        <item>כמה שוקל פיל שהרגע נולד?</item>
+        <item>100 ק"ג</item>
+        <item>1 טון</item>
+        <item>500 ק"ג</item>
+        <item>30 ק"ג</item>
+    </array>
+
+    <array name="questionC190">
+
+        <item>באיזו מדינה יש יותר תושבים?</item>
+        <item>פקיסטן</item>
+        <item>יפן</item>
+        <item>גרמניה </item>
+        <item>טורקיה</item>
+    </array>
+
+    <array name="questionC191">
+
+        <item>באיזו מדינה יש יותר תושבים?</item>
+        <item>איראן</item>
+        <item>ספרד</item>
+        <item>עיראק</item>
+        <item>גאנה</item>
+    </array>
+
+    <array name="questionC192">
+
+        <item>כמה תושבים חיים בפורטוגל?</item>
+        <item>כ10 מיליון</item>
+        <item>כ50 מיליון</item>
+        <item>כ100 מיליון</item>
+        <item>כ140 מיליון</item>
+    </array>
+
+    <array name="questionC193">
+
+        <item>באיזו מדינה יש יותר תושבים?</item>
+        <item>ישראל</item>
+        <item>נורבגיה</item>
+        <item>אירלנד</item>
+        <item>דנמרק</item>
+    </array>
+
+    <array name="questionC194">
+
+        <item>כמה תושבים חיים בקטאר?</item>
+        <item>כ2 מיליון</item>
+        <item>כ8 מיליון</item>
+        <item>כ40 מיליון</item>
+        <item>כ15 מיליון</item>
+    </array>
+
+    <array name="questionC195">
+
+        <item>איזה יסוד מסומן באות c?</item>
+        <item>פחמן</item>
+        <item>חמצן</item>
+        <item>ארגון</item>
+        <item>קריפטון</item>
+    </array>
+
+    <array name="questionC196">
+
+        <item>איזה יסוד מסומן באותיות cu?</item>
+        <item>נחושת</item>
+        <item>מימן</item>
+        <item>אבץ</item>
+        <item>גליום</item>
+    </array>
+
+    <array name="questionC197">
+
+        <item>איזה יסוד מסומן באותיות AU?</item>
+        <item>זהב</item>
+        <item>כסף</item>
+        <item>מגנזיום</item>
+        <item>נתרן</item>
+    </array>
+
+    <array name="questionC198">
+
+        <item>מהו העיטור הראשון בחשיבותו בצה"ל?</item>
+        <item>עיטור הגבורה</item>
+        <item>עיטור העוז</item>
+        <item>עיטור המופת</item>
+        <item>צל"ש הרמטכ"ל</item>
+    </array>
+
+    <array name="questionC199">
+
+        <item>טראמפ הוא נשיא ארצות הברית מספר..</item>
+        <item>45</item>
+        <item>40</item>
+        <item>35</item>
+        <item>50</item>
+    </array>
+
+    <array name="questionC200">
+
+        <item>מי מבין הבאים לא היה נשיא המדינה?</item>
+        <item>לוי אשכול</item>
+        <item>עזר ויצמן</item>
+        <item>אפרים קציר</item>
+        <item>יצחק בן צבי</item>
+    </array>
+
+    <array name="questionC201">
+
+        <item>באיזה שנה התבצע הפיגוע במגדלי התאומים?</item>
+        <item>2001</item>
+        <item>2004</item>
+        <item>1999</item>
+        <item>2003</item>
+    </array>
+
+    <array name="questionC202">
+
+        <item>איפה היה ממוקם מפעל לייצור "סוסיתא"?</item>
+        <item>חיפה</item>
+        <item>נהריה</item>
+        <item>תל אביב</item>
+        <item>יבנה</item>
+    </array>
+
+    <array name="questionC203">
+
+        <item>כמה פרקים היו לסדרה המקורית של דרדסים?</item>
+        <item>420</item>
+        <item>140</item>
+        <item>230</item>
+        <item>310</item>
+    </array>
+
+    <array name="questionC204">
+
+        <item>כמה פעמים נבחרת ישראל בכדורגל זכתה בגביע אסיה?</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </array>
+
+    <array name="questionC205">
+
+        <item>כמה פעמים זכתה מכבי תל אביב בכדורגל בגביע אסיה?</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>0</item>
+    </array>
+
+    <array name="questionC206">
+
+        <item>מתי סולקה ישראל מקונפדרצית הכדורגל של אסיה?</item>
+        <item>1978</item>
+        <item>1955</item>
+        <item>1982</item>
+        <item>1986</item>
+    </array>
+
+    <array name="questionC207">
+
+        <item>מתי התקבלה ההתאחדות הישראלית לאופ"א?</item>
+        <item>1994</item>
+        <item>1990</item>
+        <item>1980</item>
+        <item>1998</item>
+    </array>
+
+    <array name="questionC208">
+
+        <item>באיזו שנה הושק אתר ynet?</item>
+        <item>2000</item>
+        <item>2002</item>
+        <item>1997</item>
+        <item>2008</item>
+    </array>
+
+    <array name="questionC209">
+
+        <item>מה אורכו של גשר המיתרים בירושלים?</item>
+        <item>380 מטר</item>
+        <item>260 מטר</item>
+        <item>110 מטר</item>
+        <item>50 מטר</item>
+    </array>
+
+    <array name="questionC210">
+
+        <item>מה פירוש הביטוי "פורץ גדר"?</item>]
+        <item>פושע</item>
+        <item>חוצפן</item>
+        <item>חדשן</item>
+        <item>אדם בעל חזון</item>
+    </array>
+
+    <array name="questionC211">
+
+        <item>מה פירוש המילה "פלצות"?</item>
+        <item>פחד</item>
+        <item>שחצנות</item>
+        <item>שמחה</item>
+        <item>כעס</item>
+    </array>
+
+    <array name="questionC212">
+
+        <item>מה פירוש הביטוי "עד בוש"?</item>
+        <item>זמן רב</item>
+        <item>בושה עצומה</item>
+        <item>רחוק מאד</item>
+        <item>עד גובה המים</item>
+    </array>
+
+    <array name="questionC213">
+
+        <item>מה פירוש הביטוי "על קרן צבי"?</item>
+        <item>סיכון רב</item>
+        <item>השקעה בטוחה</item>
+        <item>הון רב</item>
+        <item>הון מועט</item>
+    </array>
+
+    <array name="questionC214">
+
+        <item>מה פירוש הביטוח "עמד על טעותו"?</item>
+        <item>הבין את טעותו</item>
+        <item>התעקש למרות שטעה</item>
+        <item>טעה פעמים רבות</item>
+        <item>צדק</item>
+    </array>
+
+    <array name="questionC215">
+
+        <item>מהו אורך כל כלי הדם בגוף האדם?</item>
+        <item>100 אלף ק"מ</item>
+        <item>1 ק"מ</item>
+        <item>100 מטר</item>
+        <item>5 ק"מ</item>
+    </array>
+
+    <array name="questionC216">
+
+        <item>באיזה תאריך נרצח יצחק רבין</item>
+        <item>4 בנובמבר</item>
+        <item>6 בנובמבר</item>
+        <item>10 בנובמבר</item>
+        <item>4 בדצמבר</item>
+    </array>
+
+    <array name="questionC217">
+
+        <item>איזה צבע הבנדנה של צב הנינג'ה דונטלו?</item>
+        <item>סגולה</item>
+        <item>כתומה</item>
+        <item>ירוקה</item>
+        <item>כחולה</item>
+    </array>
+
+    <array name="questionC218">
+
+        <item>בן כמה היה ניל ארמסטרונג כאשר נחת על הירח?</item>
+        <item>39</item>
+        <item>45</item>
+        <item>24</item>
+        <item>34</item>
+    </array>
+
+    <array name="questionC219">
+
+        <item>כמה זמן שהה ניל ארמסטורנג על אדמת הירח?</item>
+        <item>שעתיים וחצי</item>
+        <item>שעה</item>
+        <item>חצי שעה</item>
+        <item>שעה וחצי</item>
+    </array>
+
+    <array name="questionC220">
+
+        <item>כמה זמן שהתה בחלל המעבורת קולומביה לפני התפרקותה?</item>
+        <item>כ16 ימים</item>
+        <item>כ8 ימים</item>
+        <item>כ28 ימים</item>
+        <item>כיומיים</item>
+    </array>
+
     <array name="questions_hard">
         <item>@array/questionC1</item>
         <item>@array/questionC2</item>
@@ -1768,6 +2176,55 @@
         <item>@array/questionC173</item>
         <item>@array/questionC174</item>
         <item>@array/questionC175</item>
+        <item>@array/questionC176</item>
+        <item>@array/questionC177</item>
+        <item>@array/questionC178</item>
+        <item>@array/questionC179</item>
+        <item>@array/questionC180</item>
+        <item>@array/questionC181</item>
+        <item>@array/questionC182</item>
+        <item>@array/questionC183</item>
+        <item>@array/questionC184</item>
+        <item>@array/questionC185</item>
+
+        <item>@array/questionC186</item>
+        <item>@array/questionC187</item>
+        <item>@array/questionC188</item>
+        <item>@array/questionC189</item>
+        <item>@array/questionC190</item>
+        <item>@array/questionC191</item>
+        <item>@array/questionC192</item>
+        <item>@array/questionC193</item>
+        <item>@array/questionC194</item>
+        <item>@array/questionC195</item>
+        <item>@array/questionC196</item>
+        <item>@array/questionC197</item>
+        <item>@array/questionC198</item>
+        <item>@array/questionC199</item>
+        <item>@array/questionC198</item>
+        <item>@array/questionC199</item>
+
+        <item>@array/questionC200</item>
+        <item>@array/questionC201</item>
+        <item>@array/questionC202</item>
+        <item>@array/questionC203</item>
+        <item>@array/questionC204</item>
+        <item>@array/questionC205</item>
+        <item>@array/questionC206</item>
+        <item>@array/questionC207</item>
+        <item>@array/questionC208</item>
+        <item>@array/questionC209</item>
+        <item>@array/questionC210</item>
+        <item>@array/questionC211</item>
+        <item>@array/questionC212</item>
+        <item>@array/questionC213</item>
+        <item>@array/questionC214</item>
+        <item>@array/questionC215</item>
+        <item>@array/questionC216</item>
+        <item>@array/questionC217</item>
+        <item>@array/questionC218</item>
+        <item>@array/questionC219</item>
+        <item>@array/questionC220</item>
 
     </array>
 </resources>

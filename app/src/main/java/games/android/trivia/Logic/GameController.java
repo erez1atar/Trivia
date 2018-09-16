@@ -70,7 +70,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
         singleTurnTimer.endTimer();
         this.questionNum++;
         this.stagesManager.onQuestionNumChanged(this.questionNum);
-        presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId());
+        presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId(), this.stagesManager.getStageBackGround(this.stagesManager.getStageId()));
         if(stagesManager.isFirstQuestionInStage(this.questionNum)){
             presentor.startRadomPrizeLottery(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.currntPrize);
         }
@@ -147,7 +147,7 @@ public class GameController implements IGameController,StagesManager.StagesListe
 
     @Override
     public void onStageChanged() {
-        this.presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId());
+        this.presentor.showStage(this.stagesManager.getMinInRange(), this.stagesManager.getMaxInRange(), this.stagesManager.getStageId(), this.stagesManager.getStageBackGround(this.stagesManager.getStageId()));
     }
 
 

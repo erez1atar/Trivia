@@ -42,6 +42,18 @@ public class DBManager
         return dbHelper.getAll();
     }
 
+    public int getLocalHighScore() {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        CursorScore cursor = new CursorScore(db.rawQuery(DBConsts.SQL_MAX_SCORE, null));
+        if(!cursor.moveToFirst())
+        {
+            cursor.close();
+            return 0;
+        }
+        return cursor.getScore();
+
+    }
+
     private void update(SQLiteDatabase db, WinnerData data)
     {
         CursorScore cursor = new CursorScore(db.rawQuery(DBConsts.SQL_MIN_SCORE, null));

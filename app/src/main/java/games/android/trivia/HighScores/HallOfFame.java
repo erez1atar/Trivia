@@ -81,6 +81,10 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
                 actButtonsState(false);
             }
         });
+
+        ((TextView)(findViewById(R.id.hall_of_fame_name))).setTypeface(App.getResourcesManager().getNumbersFont());
+        ((TextView)(findViewById(R.id.hall_of_fame_score))).setTypeface(App.getResourcesManager().getNumbersFont());
+        ((TextView)(findViewById(R.id.restartFromList))).setTypeface(App.getResourcesManager().getNumbersFont());
     }
 
     private void initLocal() {
@@ -120,9 +124,6 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ((TextView)(findViewById(R.id.hall_of_fame_name))).setTypeface(App.getResourcesManager().getNumbersFont());
-                ((TextView)(findViewById(R.id.hall_of_fame_score))).setTypeface(App.getResourcesManager().getNumbersFont());
-                ((TextView)(findViewById(R.id.restartFromList))).setTypeface(App.getResourcesManager().getNumbersFont());
 
                 ArrayList<WinnerData> winnerDatas = new ArrayList<>();
                 for(int i = 0 ; i < winnerWrappers.size() ; ++i){

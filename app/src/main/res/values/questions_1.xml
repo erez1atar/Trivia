@@ -766,6 +766,88 @@
         <item>היום</item>
     </array>
 
+    <array name="questionA86">
+
+        <item>איזה ענף אינו קיים באולימפידה?</item>
+        <item>חד אופן
+        </item>
+        <item>אופני bmx</item>
+        <item>אופני הרים</item>
+        <item>אופני כביש</item>
+    </array>
+
+    <array name="questionA87">
+
+        <item>באיזו מדינה יש יותר תושבים?</item>
+        <item>סין</item>
+        <item>הודו</item>
+        <item>ברזיל</item>
+        <item>ארצות הברית</item>
+    </array>
+
+    <array name="questionA88">
+
+        <item>מה פירוש המילה פגרה?</item>
+        <item>חופשה</item>
+        <item>חור</item>
+        <item>חריץ</item>
+        <item>קרן</item>
+    </array>
+
+    <array name="questionA89">
+
+        <item>מה פירוש המילה "פדרציה"?</item>
+        <item>אגודה</item>
+        <item>חד</item>
+        <item>בוגר</item>
+        <item>לאומי</item>
+    </array>
+
+    <array name="questionA90">
+
+        <item>מה פירוש המילה עגורן?</item>
+        <item>מנוף</item>
+        <item>משאית</item>
+        <item>סירה</item>
+        <item>מכונית</item>
+    </array>
+
+    <array name="questionA91">
+
+        <item>מה פירוש המילה "עסיס"?</item>
+        <item>מיץ פירות</item>
+        <item>סלט ירקות</item>
+        <item>פרי טרופי</item>
+        <item>גזוז</item>
+    </array>
+
+    <array name="questionA92">
+
+        <item>היכן מתרחשת עלילת צבי הנינג'ה?</item>
+        <item>ניו יורק</item>
+        <item>וושינגטון</item>
+        <item>לוס אנג'לס</item>
+        <item>ברזיליה</item>
+    </array>
+
+    <array name="questionA93">
+
+        <item>אביהם המאמץ של צבי הנינג'ה הינו..</item>
+        <item>חולדה</item>
+        <item>צב</item>
+        <item>חתול</item>
+        <item>שבלול</item>
+    </array>
+
+    <array name="questionA94">
+
+        <item>מיהו האדם הראשון שדרך על הירח?</item>
+        <item>ניל ארמסטרונג</item>
+        <item>באז אולדרין</item>
+        <item>פרנק בורמן</item>
+        <item>אלן בין</item>
+    </array>
+
 
     <array name="questions_easy">
         <item>@array/questionA1</item>
@@ -860,6 +942,15 @@
         <item>@array/questionA83</item>
         <item>@array/questionA84</item>
         <item>@array/questionA85</item>
+        <item>@array/questionA86</item>
+        <item>@array/questionA87</item>
+        <item>@array/questionA88</item>
+        <item>@array/questionA89</item>
+        <item>@array/questionA90</item>
+        <item>@array/questionA91</item>
+        <item>@array/questionA92</item>
+        <item>@array/questionA93</item>
+        <item>@array/questionA94</item>
 
     </array>
 </resources>

@@ -33,6 +33,9 @@ public class DBConsts {
     public static final String SQL_MIN_SCORE =
             "SELECT * FROM " + FeedEntry.SCORES_TABLE_NAME +  " ORDER BY "  + FeedEntry.SCORES_COLUMN_SCORE + " LIMIT 1;";
 
+    public static final String SQL_MAX_SCORE =
+            "SELECT * FROM " + FeedEntry.SCORES_TABLE_NAME +  " ORDER BY "  + FeedEntry.SCORES_COLUMN_SCORE + " DESC " + " LIMIT 1;";
+
     public static final String SQL_INSERT_STATMENT =
     "INSERT INTO " + FeedEntry.SCORES_TABLE_NAME +  " ( " + FeedEntry.SCORES_COLUMN_SCORE + COMMA_SKP  + FeedEntry.SCORES_COLUMN_NAME + " ) VALUES (?,?)";
     public static final int INSERT_SCORE_IDX = 1;
