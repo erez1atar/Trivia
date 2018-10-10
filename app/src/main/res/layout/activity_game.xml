@@ -26,6 +26,10 @@
         android:layout_weight="1.5"
         android:textSize="30dp"
         android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="2sp"
         android:textAlignment="center"
         android:id="@+id/game_timer"/>
     <TextView
@@ -37,6 +41,10 @@
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="25sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="25sp"
+        android:autoSizeStepGranularity="2sp"
         android:background="@drawable/question_style"
         android:id="@+id/question"/>
 
@@ -111,6 +119,35 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:id="@+id/boosts_panel">
+
+        <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/video"
+            android:textSize="10sp"
+            android:text="50/50"
+            android:background="@drawable/button_video_style"
+            android:id="@+id/fifty_fifty_btn"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"

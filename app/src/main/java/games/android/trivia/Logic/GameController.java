@@ -2,6 +2,8 @@ package games.android.trivia.Logic;
 
 import android.util.Log;
 
+import java.util.ArrayList;
+
 import games.android.trivia.App;
 import games.android.trivia.GlobalHighScore.GlobalHighScoreManager;
 import games.android.trivia.HighScores.WinnerAdapter;
@@ -79,6 +81,10 @@ public class GameController implements IGameController,StagesManager.StagesListe
         }
     }
 
+    public int getQuestionNum() {
+        return this.questionNum;
+    }
+
     private void startNewQuestion() {
         currentQuestion = questionBank.getNextQuestion(this.stagesManager.getDiffculty());
         presentor.onNewQuestionLoaded(currentQuestion);
@@ -136,6 +142,38 @@ public class GameController implements IGameController,StagesManager.StagesListe
     @Override
     public void forceEndGame() {
         this.actFinishGame();
+    }
+
+    @Override
+    public void onVideoStart() {
+        this.gameTimer.pause();
+        this.singleTurnTimer.pause();
+    }
+
+    @Override
+    public ArrayList<String> getOptionsToFiftyFifty() {
+        ArrayList<String> options = new ArrayList<>();
+        String currectAnswer = this.currentQuestion.getCorrectAnswer();
+        options.add(currectAnswer);
+        String[]  answers = currentQuestion.getAnswers();
+        for(int i = 0 ; i < answers.length && options.size() < 2; i++) {
+            if(!answers[i].equals(currectAnswer)) {
+                options.add(answers[i]);
+                break;
+            }
+        }
+        return options;
+    }
+
+    @Override
+    public void onVideoEnd() {
+        this.gameTimer.resume();
+        this.singleTurnTimer.resume();
+    }
+
+    @Override
+    public void fiftyFiftyReward() {
+
     }
 
     private int getRandomPrize() {

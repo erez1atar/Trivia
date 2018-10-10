@@ -11,6 +11,7 @@ public class Timer
 {
     private CountDownTimer timer = null;
     private TimerListener listener = null;
+    private long lastMiliSecLeft = 0;
 
     public Timer(TimerListener listener) {
         this.listener = listener;
@@ -21,6 +22,7 @@ public class Timer
         timer = new CountDownTimer(seconds * 1000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
+                Timer.this.lastMiliSecLeft = millisUntilFinished;
                 listener.onTickUpdated((int)millisUntilFinished / 1000);
                 Log.d("onTick", millisUntilFinished / 1000 + "");
             }
@@ -31,6 +33,14 @@ public class Timer
             }
         };
         timer.start();
+    }
+
+    public void pause() {
+        this.timer.cancel();
+    }
+
+    public void resume() {
+        this.start((int)this.lastMiliSecLeft / 1000);
     }
 
     public void endTimer() {

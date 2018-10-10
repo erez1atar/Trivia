@@ -3,10 +3,19 @@ package games.android.trivia;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.google.ads.consent.ConsentForm;
+import com.google.ads.consent.ConsentFormListener;
+import com.google.ads.consent.ConsentStatus;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import games.android.trivia.HighScores.HallOfFame;
 import games.android.trivia.Settings.SettingsActivity;

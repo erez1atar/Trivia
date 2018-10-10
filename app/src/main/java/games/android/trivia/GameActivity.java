@@ -19,11 +19,16 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import java.lang.ref.WeakReference;
 import java.text.NumberFormat;
@@ -38,7 +43,7 @@ import games.android.trivia.Logic.GameController;
 import games.android.trivia.Logic.IGameController;
 import games.android.trivia.Questions.Question;
 
-public class GameActivity extends AppCompatActivity implements IGamePresentor,TopBarFragment.TopBarListener,BottomBar.BottomBarListener{
+public class GameActivity extends AppCompatActivity implements IGamePresentor,TopBarFragment.TopBarListener,BottomBar.BottomBarListener,RewardedVideoAdListener{
 
     private Button answer1 = null;
     private Button answer2 = null;
@@ -65,6 +70,9 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
     private TextView gameTimerView = null;
     private ImageView arrow = null;
     private ViewGroup.LayoutParams lp = null;
+    private RewardedVideoAd mRewardedVideoAd = null;
+    private ImageButton fiftyFiftyBtn = null;
+    private boolean fiftyFiftyRewarded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +82,9 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        mRewardedVideoAd.setRewardedVideoAdListener(this);
+        loadRewardedVideoAd();
 
         this.initTopBar();
         this.initBottomBar();
@@ -88,6 +99,7 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer2 = (Button)findViewById(R.id.answer_2);
         answer3 = (Button)findViewById(R.id.answer_3);
         answer4 = (Button)findViewById(R.id.answer_4);
+        fiftyFiftyBtn = (ImageButton)findViewById(R.id.fifty_fifty_btn);
         gameTimerView = (TextView)findViewById(R.id.game_timer);
         gameTimerView.setTypeface(App.getResourcesManager().getTimerFont());
 
@@ -97,6 +109,19 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         this.initButtons();
         this.initArraow();
 
+    }
+
+    private void trySetVideoState(boolean active) {
+        int gameNum = App.getUserDefaultManager().getGameNumber();
+        int questionNum = this.gameController.getQuestionNum();
+        if(gameNum %3 == 0 && questionNum >= 6 && !fiftyFiftyRewarded) {
+            this.fiftyFiftyBtn.setVisibility(active ? View.VISIBLE : View.INVISIBLE);
+            this.fiftyFiftyBtn.setEnabled(active);
+        }
+        else {
+            this.fiftyFiftyBtn.setVisibility(View.INVISIBLE);
+            this.fiftyFiftyBtn.setEnabled(false);
+        }
     }
 
     private void initArraow()
@@ -125,6 +150,12 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer2 = (Button)findViewById(R.id.answer_2);
         answer3 = (Button)findViewById(R.id.answer_3);
         answer4 = (Button)findViewById(R.id.answer_4);
+        fiftyFiftyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mRewardedVideoAd.show();
+            }
+        });
 
         typeface = Typeface.createFromAsset(getAssets(),"fonts/hebrew.ttf");
 //        answer1.setTypeface(typeface);
@@ -195,6 +226,11 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         ArrayList<String> answers = new ArrayList<String>(Arrays.asList(question.getAnswers()));
         Collections.shuffle(answers);
 
+        answer1.setVisibility(View.VISIBLE);
+        answer2.setVisibility(View.VISIBLE);
+        answer3.setVisibility(View.VISIBLE);
+        answer4.setVisibility(View.VISIBLE);
+
         answer1.setText(answers.get(0));
         answer2.setText(answers.get(1));
         answer3.setText(answers.get(2));
@@ -209,6 +245,9 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer2.setBackground(regularBackground);
         answer3.setBackground(regularBackground);
         answer4.setBackground(regularBackground);
+
+        this.trySetVideoState(true);
+
     }
 
     @Override
@@ -281,6 +320,7 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         answer2.setBackground(regularBackground);
         answer3.setBackground(regularBackground);
         answer4.setBackground(regularBackground);
+        this.trySetVideoState(false);
     }
 
     @Override
@@ -317,6 +357,82 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         String formatStr = NumberFormat.getNumberInstance(Locale.US).format(randomPrize);
         bottomBar.setPrize(formatStr);
         gameController.onPrizeReadyPrize(randomPrize);
+    }
+    private void loadRewardedVideoAd() {
+        mRewardedVideoAd.loadAd("ca-app-pub-1765755909018734/6285995268",
+                new AdRequest.Builder().build());
+
+        // mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917", new AdRequest.Builder().build());
+    }
+
+    @Override
+    public void onRewardedVideoAdLoaded() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+        this.gameController.onVideoStart();
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+        this.gameController.onVideoEnd();
+    }
+
+    @Override
+    public void onRewarded(RewardItem rewardItem) {
+        fiftyFiftyRewarded = true;
+        this.trySetVideoState(false);
+        ArrayList<String> options = this.gameController.getOptionsToFiftyFifty();
+
+        for(int i = 0 ; i < options.size() ; i++) {
+            answer1.setVisibility(this.isStringInArray(answer1.getText().toString(), options) ? View.VISIBLE : View.INVISIBLE);
+            answer2.setVisibility(this.isStringInArray(answer2.getText().toString(), options) ? View.VISIBLE : View.INVISIBLE);
+            answer3.setVisibility(this.isStringInArray(answer3.getText().toString(), options) ? View.VISIBLE : View.INVISIBLE);
+            answer4.setVisibility(this.isStringInArray(answer4.getText().toString(), options) ? View.VISIBLE : View.INVISIBLE);
+        }
+    }
+    private boolean isStringInArray(String str, ArrayList<String> array) {
+        for(int i = 0 ; i < array.size() ; i++) {
+            if(str.equals(array.get(i))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+        this.gameController.onVideoEnd();
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int i) {
+
+    }
+
+    @Override
+    public void onResume() {
+        mRewardedVideoAd.resume(this);
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        mRewardedVideoAd.pause(this);
+        super.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        mRewardedVideoAd.destroy(this);
+        super.onDestroy();
     }
 
     private class AnswerListener implements View.OnClickListener {

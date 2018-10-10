@@ -36,8 +36,6 @@ public class FirebaseAnalytics {
     }
 
     public void logNameInsertedEvent(String name){
-        Bundle bundle = new Bundle();
-        bundle.putString(NAME_PARAM, name);
-        firebaseManager.logEvent(INSERT_NAME_EVENT, bundle);
+        firebaseManager.logEvent(INSERT_NAME_EVENT, new Bundle());
     }
 }
