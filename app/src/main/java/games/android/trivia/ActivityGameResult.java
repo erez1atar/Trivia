@@ -36,7 +36,7 @@ public class ActivityGameResult extends AppCompatActivity implements GlobalHighS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_result);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-1765755909018734/3155379363");
+        mInterstitialAd.setAdUnitId("ca-app-pub-1765755909018734/5793788632");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.setAdListener(new AdListener() {
             @Override

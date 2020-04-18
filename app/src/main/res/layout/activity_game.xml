@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/game_background"
+    android:background="@drawable/main_background"
     tools:context="games.android.trivia.GameActivity">
 
     <FrameLayout
@@ -165,7 +165,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-1765755909018734/6521755219">
+        ads:adUnitId="ca-app-pub-1765755909018734/4779680741">
     </com.google.android.gms.ads.AdView>
 
 

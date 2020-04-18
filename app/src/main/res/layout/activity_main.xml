@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/main_background"
     tools:context="games.android.trivia.MainActivity">
 
     <android.support.v4.widget.Space
@@ -49,8 +49,9 @@
         android:gravity="center"
         android:scaleX="0.8"
         android:scaleY="0.6"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3C2F2F"
         android:text="התחל"
+        android:textStyle="bold"
         android:textSize="35sp"
         android:id="@+id/start_game_btn"
         />
@@ -69,8 +70,9 @@
         android:gravity="center"
         android:scaleX="0.8"
         android:scaleY="0.6"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3C2F2F"
         android:text="שיאים אישיים"
+        android:textStyle="bold"
         android:textSize="35sp"
         android:id="@+id/hall_of_fame_btn"
         />
@@ -89,8 +91,9 @@
         android:gravity="center"
         android:scaleX="0.8"
         android:scaleY="0.6"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3C2F2F"
         android:text="שיאים"
+        android:textStyle="bold"
         android:textSize="35sp"
         android:id="@+id/hall_of_fame_global_btn"
         />
@@ -109,8 +112,9 @@
         android:gravity="center"
         android:scaleX="0.8"
         android:scaleY="0.6"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3C2F2F"
         android:text="הגדרות"
+        android:textStyle="bold"
         android:textSize="35sp"
         android:id="@+id/main_go_settings_btn"
         />
@@ -124,7 +128,7 @@
         android:gravity="center"
         android:scaleX="0.8"
         android:scaleY="0.6"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3C2F2F"
         android:drawableStart="@drawable/stars_5"
         android:drawableEnd="@drawable/stars_5"
         android:text="דרגו אותנו"

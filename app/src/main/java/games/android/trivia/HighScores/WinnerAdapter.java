@@ -64,7 +64,8 @@ public class WinnerAdapter extends ArrayAdapter
         vh.name.setTypeface(App.getResourcesManager().getNumbersFont());
         vh.place.setTypeface(App.getResourcesManager().getNumbersFont());
         vh.score.setText(Utility.getNumberFormat(winners.get(position).getScore()));
-        vh.name.setText(winners.get(position).getName());
+        String nameOneLine = winners.get(position).getName().split("\n")[0];
+        vh.name.setText(nameOneLine);
         vh.place.setText((String.valueOf(position + 1)));
         return convertView;
     }

@@ -133,6 +133,7 @@ public class HallOfFame extends AppCompatActivity implements FirebaseManager.Hig
                 GlobalScoreAdapter globalScoreAdapter = new GlobalScoreAdapter(HallOfFame.this,R.layout.winner, winnerDatas);
                 ListView listView = (ListView)findViewById(R.id.listOfWinners);
                 listView.setAdapter(globalScoreAdapter);
+                listView.setClipToPadding(true);
             }
         });
     }

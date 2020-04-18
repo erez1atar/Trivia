@@ -36,6 +36,10 @@
             android:noHistory="true" />
         <activity android:name=".Settings.SettingsActivity" />
         <activity android:name=".CreditsActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1765755909018734~3111375856"/>
     </application>
 
 </manifest>

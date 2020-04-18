@@ -38,7 +38,7 @@ public class FirebaseManager {
     private Executor executor;
     private Firebase fb;
     private FirebaseStorage storage;
-    private static final String HIGH_SCORE_KEY = "high_score";
+    private static final String HIGH_SCORE_KEY = "high_score_lifetime";
     private HighScoreListener highScoreListener = null;
     private MonthlyHighScoreListener monthlyHighScoreListener = null;
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -143,7 +143,7 @@ public class FirebaseManager {
 
     private String getMontlyTableKey() {
         Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
-        String key =  String.format("%s_%d_%d",HIGH_SCORE_KEY,calendar.get(Calendar.MONTH),calendar.get(Calendar.YEAR));
+        String key =  String.format("m%s_%d_%d",HIGH_SCORE_KEY,calendar.get(Calendar.MONTH),calendar.get(Calendar.YEAR));
         return key;
     }
 

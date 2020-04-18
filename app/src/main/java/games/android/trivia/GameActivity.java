@@ -359,7 +359,7 @@ public class GameActivity extends AppCompatActivity implements IGamePresentor,To
         gameController.onPrizeReadyPrize(randomPrize);
     }
     private void loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd("ca-app-pub-1765755909018734/6285995268",
+        mRewardedVideoAd.loadAd("ca-app-pub-1765755909018734/1854543629",
                 new AdRequest.Builder().build());
 
         // mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917", new AdRequest.Builder().build());

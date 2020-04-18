@@ -848,6 +848,96 @@
         <item>אלן בין</item>
     </array>
 
+    <array name="questionA95">
+
+        <item>בית המקדש הראשון נקרא גם</item>
+        <item>מקדש שלמה</item>
+        <item>מקדש דוד</item>
+        <item>מקדש משה</item>
+        <item>מקדש אחאב</item>
+    </array>
+
+    <array name="questionA96">
+
+        <item>מי הרס את בית המקדש הראשון?</item>
+        <item>נבוכדנצר</item>
+        <item>מורדי העם</item>
+        <item>חמורבי</item>
+        <item>סנחריב</item>
+    </array>
+
+    <array name="questionA97">
+
+        <item>מי אחראי לבניית בית המקדש הראשון?</item>
+        <item>שלמה</item>
+        <item>דוד</item>
+        <item>משה</item>
+        <item>ירבעם</item>
+    </array>
+
+    <array name="questionA98">
+
+        <item>כמה שנים עמד על תלו בית המקדש הראשון?</item>
+        <item>כ400 שנים</item>
+        <item>כ1000 שנים</item>
+        <item>כ50 שנים</item>
+        <item>כ100 שנים</item>
+    </array>
+
+    <array name="questionA99">
+
+        <item>אלבום הבכורה של ליאור נרקיס נקרא</item>
+        <item>תפילת חיי</item>
+        <item>העולם כמו גלגל</item>
+        <item>חי לאהבה</item>
+        <item>סימנים</item>
+    </array>
+
+    <array name="questionA100">
+
+        <item>ארץ מולדתו של ארקדי דוכין</item>
+        <item>בלארוס</item>
+        <item>יוון</item>
+        <item>טורקיה</item>
+        <item>רומניה</item>
+    </array>
+
+    <array name="questionA101">
+
+        <item>מי לא היה חבר בחברים של נטאשה?</item>
+        <item>אביתר בנאי</item>
+        <item>ארקדי דוכין</item>
+        <item>מיקי הררי</item>
+        <item>מיכה שטרית</item>
+    </array>
+
+    <array name="questionA102">
+
+        <item>הבלון היחיד שלא התפוצץ בספר מעשה בחמישה בלונים?</item>
+        <item>אדום</item>
+        <item>ירוק</item>
+        <item>צהוב</item>
+        <item>כחול</item>
+    </array>
+
+    <array name="questionA103">
+
+        <item>מי כתב את הספר מעשה בחמישה בלונים?</item>
+        <item>מרים רות</item>
+        <item>עמוס עוז</item>
+        <item>חגי ברקת</item>
+        <item>שרי וולך</item>
+    </array>
+
+    <array name="questionA104">
+
+        <item>היכן נולד רודריגו גונזלס?</item>
+        <item>צ'ילה</item>
+        <item>ארגנטינה</item>
+        <item>ברזיל</item>
+        <item>ספרד</item>
+    </array>
+
 
     <array name="questions_easy">
         <item>@array/questionA1</item>

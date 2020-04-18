@@ -10,9 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.ads.consent.ConsentForm;
-import com.google.ads.consent.ConsentFormListener;
-import com.google.ads.consent.ConsentStatus;
+
+import com.google.android.gms.ads.MobileAds;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MobileAds.initialize(this, "ca-app-pub-1765755909018734~3111375856");
 
         App.getAnalyticsManager().logAppOpenedEvent();
 

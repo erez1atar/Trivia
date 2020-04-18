@@ -61,7 +61,8 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
         }
         Log.d("getView", "position = " + position);
 
-        holder.name.setText(winnerDatas.get(position).getName());
+        String nameOneLine = winnerDatas.get(position).getName().split("\n")[0];
+        holder.name.setText(nameOneLine);
 
         holder.score.setText(Utility.getNumberFormat(winnerDatas.get(position).getScore()));
 
@@ -71,10 +72,10 @@ public class GlobalScoreAdapter extends ArrayAdapter<WinnerData> {
             convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_1_background);
         }
         else if(position == 1){
-            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_2_background);
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_background);
         }
         else if(position == 2){
-            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_no_3_background);
+            convertView.setBackgroundResource(R.drawable.hall_of_fame_item_background);
         }
         else {
             convertView.setBackgroundResource(R.drawable.hall_of_fame_item_background);
